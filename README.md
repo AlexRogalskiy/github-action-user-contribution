@@ -10,8 +10,8 @@
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 [![Chat](https://img.shields.io/badge/chat-discussions-success.svg)](https://github.com/AlexRogalskiy/github-action-user-contribution/discussions)
 
-[![DeepSource](https://deepsource.io/gh/AlexRogalskiy/github-action-user-contribution.svg/?label=active+issues\&show_trend=true)](https://deepsource.io/gh/AlexRogalskiy/github-action-user-contribution/?ref=repository-badge)
-[![DeepScan grade](https://deepscan.io/api/teams/11946/projects/16759/branches/365085/badge/grade.svg)](https://deepscan.io/dashboard#view=project\&tid=11946\&pid=16759\&bid=365085)
+[![DeepSource](https://deepsource.io/gh/AlexRogalskiy/github-action-user-contribution.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/AlexRogalskiy/github-action-user-contribution/?ref=repository-badge)
+[![DeepScan grade](https://deepscan.io/api/teams/11946/projects/17041/branches/375447/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11946&pid=17041&bid=375447)
 
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/AlexRogalskiy/github-action-user-contribution)
 ![GitHub Release Date](https://img.shields.io/github/release-date/AlexRogalskiy/github-action-user-contribution)
@@ -31,9 +31,9 @@
 [![dependencies Status](https://status.david-dm.org/gh/AlexRogalskiy/github-action-user-contribution.svg)](https://david-dm.org/AlexRogalskiy/github-action-user-contribution)
 [![devDependencies Status](https://status.david-dm.org/gh/AlexRogalskiy/github-action-user-contribution.svg)](https://david-dm.org/AlexRogalskiy/github-action-user-contribution?type=dev)
 
-[![Codeac](https://static.codeac.io/badges/2-359044925.svg)](https://app.codeac.io/github/AlexRogalskiy/github-action-user-contribution)
+[![Codeac](https://static.codeac.io/badges/2-364233123.svg "Codeac")](https://app.codeac.io/github/AlexRogalskiy/github-action-user-contribution)
 [![Coverage Status](https://coveralls.io/repos/github/AlexRogalskiy/github-action-user-contribution/badge.svg?branch=master)](https://coveralls.io/github/AlexRogalskiy/github-action-user-contribution?branch=master)
-[![codebeat badge](https://codebeat.co/badges/00c81938-7852-49c4-ac3f-17b62bfd60b2)](https://codebeat.co/projects/github-com-alexrogalskiy-github-action-user-contribution-master)
+[![codebeat badge](https://codebeat.co/badges/43096f7e-887a-436c-b372-dd6667f1ae8c)](https://codebeat.co/projects/github-com-alexrogalskiy-github-action-user-contribution-master)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/AlexRogalskiy/github-action-user-contribution.svg?logo=lgtm\&logoWidth=18)](https://lgtm.com/projects/g/AlexRogalskiy/github-action-user-contribution/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/AlexRogalskiy/github-action-user-contribution.svg?logo=lgtm\&logoWidth=18)](https://lgtm.com/projects/g/AlexRogalskiy/github-action-user-contribution/context:javascript)
 [![codecov](https://codecov.io/gh/AlexRogalskiy/github-action-user-contribution/branch/master/graph/badge.svg?token=sN03T2VTfV)](https://codecov.io/gh/AlexRogalskiy/github-action-user-contribution)
