@@ -1,0 +1,26 @@
+name: 'GitHub User Contribution'
+description: 'Automatically generates GitHub user contribution charts by provided parameters'
+author: 'AlexRogalskiy'
+
+inputs:
+  userName:
+    description: 'GitHub username'
+    required: true
+  startDate:
+    description: "Start period date"
+    required: false
+  endDate:
+    description: "End period date"
+    required: false
+  colorScheme:
+    description: "Chart color scheme"
+    required: false
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+# Ref: https://haya14busa.github.io/github-action-brandings/
+branding:
+  icon: 'image'
+  color: 'green'
