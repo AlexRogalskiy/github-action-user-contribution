@@ -91,44 +91,29 @@ Generates GitHub user contribution charts.
 
 ## *Inputs*
 
-### `sourceData`
+### `userName`
 
-**Optional** JSON data source file with action parameters:
+**Required** GitHub user name
 
-```json
-[
-    {
-        "styleOptions": {
-            "theme": "nightOwl",
-            "layout": "churchill"
-        },
-        "resourceOptions": {
-            "requestId": 10
-        }
-    },
-    {
-        "resourceOptions": {
-            "requestId": 9
-        }
-    }
-]
-```
+### `startDate`
 
-### `requestId`
+**Optional** Start period date
 
-**Optional** Request identifier
+### `endDate`
 
-### `theme`
+**Optional** End period date
 
-**Optional** Proverb image theme
+### `colorScheme`
 
-### `layout`
+**Optional** Chart color scheme (default `green`)
 
-**Optional** Proverb image layout
+### `fileName`
 
-### `GITHUB_TOKEN`
+**Optional** File name (default `chart.svg`)
 
-**Required** GitHub action token
+### `filePath`
+
+**Optional** File path (default `images`)
 
 ## *Examples*
 
@@ -151,6 +136,8 @@ Generates GitHub user contribution charts.
     startDate: '2017-12-03'
     endDate: '2018-12-03'
     colorScheme: 'green'
+    fileName: 'chart.svg'
+    filePath: 'images'
 ```
 
 Running locally:

@@ -9,16 +9,12 @@ import {
     mkdirSync,
     openSync,
     promises,
-    readFileSync,
     statSync,
     writeFile,
     WriteStream,
 } from 'fs'
 
-import { ConfigOptions } from '../../typings/domain-types'
-
 import { coreInfo } from './loggers'
-import { deserialize, serialize } from './serializers'
 
 // eslint-disable-next-line unicorn/no-object-as-default-parameter
 export const ensureDirExists = (dir: string, options: MakeDirectoryOptions = { recursive: true }): void => {
@@ -30,24 +26,20 @@ export const getFilesizeInBytes = (filename: string): number => {
     return statSync(filename).size
 }
 
-export const getConfigOptions = (fileName: string): Partial<ConfigOptions>[] => {
-    const fileData = readFileSync(fileName)
-
-    return deserialize(fileData.toString())
-}
-
-export const storeDataAsJson = (filePath: string, fileName: string, data: any): void => {
+export const storeData = (filePath: string, fileName: string, data: any): string => {
     ensureDirExists(filePath)
 
     const targetPath = path.join(filePath, fileName)
 
-    coreInfo(`Storing JSON data to target file: ${targetPath}`)
+    coreInfo(`Storing data to target file: ${targetPath}`)
 
-    writeFile(targetPath, serialize(data), err => {
+    writeFile(targetPath, data, err => {
         if (err) {
             throw err
         }
     })
+
+    return targetPath
 }
 
 export const isFileExists = (fileName: string, mode = constants.F_OK | constants.R_OK): boolean => {

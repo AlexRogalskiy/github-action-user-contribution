@@ -15,6 +15,15 @@ inputs:
   colorScheme:
     description: "Chart color scheme"
     required: false
+    default: 'green'
+  fileName:
+    description: "File name"
+    required: false
+    default: 'chart.svg'
+  filePath:
+    description: "File path"
+    required: false
+    default: 'images'
 
 runs:
   using: 'docker'

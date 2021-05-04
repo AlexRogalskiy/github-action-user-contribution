@@ -96,8 +96,9 @@ jobs:
 
       - uses: ./
         with:
-          requestId: 1
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          userName: AlexRogalskiy
+          startDate: '2021-04-01'
+          endDate: '2021-05-01'
 
   finish:
     needs: test

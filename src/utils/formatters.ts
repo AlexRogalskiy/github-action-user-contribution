@@ -1,5 +1,7 @@
 import { DateRange } from '../../typings/domain-types'
 
+import { valueError } from '../errors/value.error'
+
 export const formatParams = (dateRange: DateRange = {}): string => {
     const sp = new URLSearchParams()
 
@@ -24,8 +26,9 @@ export const formatParams = (dateRange: DateRange = {}): string => {
         if (o[s]) {
             const value = formatDate(o[s])
 
-            if (value >= formatDate(new Date()))
-                throw new Error('cannot get contribution for date in the future')
+            if (value >= formatDate(new Date())) {
+                throw valueError(`Cannot get contribution for date in the future, value=${value}`)
+            }
 
             sp.set(s, value)
         }

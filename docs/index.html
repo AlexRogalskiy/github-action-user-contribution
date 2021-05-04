@@ -151,43 +151,30 @@
 				<a href="#inputs" id="inputs" style="color: inherit; text-decoration: none;">
 					<h2><em>Inputs</em></h2>
 				</a>
-				<a href="#sourcedata" id="sourcedata" style="color: inherit; text-decoration: none;">
-					<h3><code>sourceData</code></h3>
+				<a href="#username" id="username" style="color: inherit; text-decoration: none;">
+					<h3><code>userName</code></h3>
 				</a>
-				<p><strong>Optional</strong> JSON data source file with action parameters:</p>
-				<pre><code class="language-json"><span style="color: #D4D4D4">[</span>
-<span style="color: #D4D4D4">    {</span>
-<span style="color: #D4D4D4">        </span><span style="color: #9CDCFE">&quot;styleOptions&quot;</span><span style="color: #D4D4D4">: {</span>
-<span style="color: #D4D4D4">            </span><span style="color: #9CDCFE">&quot;theme&quot;</span><span style="color: #D4D4D4">: </span><span style="color: #CE9178">&quot;nightOwl&quot;</span><span style="color: #D4D4D4">,</span>
-<span style="color: #D4D4D4">            </span><span style="color: #9CDCFE">&quot;layout&quot;</span><span style="color: #D4D4D4">: </span><span style="color: #CE9178">&quot;churchill&quot;</span>
-<span style="color: #D4D4D4">        },</span>
-<span style="color: #D4D4D4">        </span><span style="color: #9CDCFE">&quot;resourceOptions&quot;</span><span style="color: #D4D4D4">: {</span>
-<span style="color: #D4D4D4">            </span><span style="color: #9CDCFE">&quot;requestId&quot;</span><span style="color: #D4D4D4">: </span><span style="color: #B5CEA8">10</span>
-<span style="color: #D4D4D4">        }</span>
-<span style="color: #D4D4D4">    },</span>
-<span style="color: #D4D4D4">    {</span>
-<span style="color: #D4D4D4">        </span><span style="color: #9CDCFE">&quot;resourceOptions&quot;</span><span style="color: #D4D4D4">: {</span>
-<span style="color: #D4D4D4">            </span><span style="color: #9CDCFE">&quot;requestId&quot;</span><span style="color: #D4D4D4">: </span><span style="color: #B5CEA8">9</span>
-<span style="color: #D4D4D4">        }</span>
-<span style="color: #D4D4D4">    }</span>
-<span style="color: #D4D4D4">]</span>
-</code></pre>
-				<a href="#requestid" id="requestid" style="color: inherit; text-decoration: none;">
-					<h3><code>requestId</code></h3>
+				<p><strong>Required</strong> GitHub user name</p>
+				<a href="#startdate" id="startdate" style="color: inherit; text-decoration: none;">
+					<h3><code>startDate</code></h3>
 				</a>
-				<p><strong>Optional</strong> Request identifier</p>
-				<a href="#theme" id="theme" style="color: inherit; text-decoration: none;">
-					<h3><code>theme</code></h3>
+				<p><strong>Optional</strong> Start period date</p>
+				<a href="#enddate" id="enddate" style="color: inherit; text-decoration: none;">
+					<h3><code>endDate</code></h3>
 				</a>
-				<p><strong>Optional</strong> Proverb image theme</p>
-				<a href="#layout" id="layout" style="color: inherit; text-decoration: none;">
-					<h3><code>layout</code></h3>
+				<p><strong>Optional</strong> End period date</p>
+				<a href="#colorscheme" id="colorscheme" style="color: inherit; text-decoration: none;">
+					<h3><code>colorScheme</code></h3>
 				</a>
-				<p><strong>Optional</strong> Proverb image layout</p>
-				<a href="#github_token" id="github_token" style="color: inherit; text-decoration: none;">
-					<h3><code>GITHUB_TOKEN</code></h3>
+				<p><strong>Optional</strong> Chart color scheme (default <code>green</code>)</p>
+				<a href="#filename" id="filename" style="color: inherit; text-decoration: none;">
+					<h3><code>fileName</code></h3>
 				</a>
-				<p><strong>Required</strong> GitHub action token</p>
+				<p><strong>Optional</strong> File name (default <code>chart.svg</code>)</p>
+				<a href="#filepath" id="filepath" style="color: inherit; text-decoration: none;">
+					<h3><code>filePath</code></h3>
+				</a>
+				<p><strong>Optional</strong> File path (default <code>images</code>)</p>
 				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
 					<h2><em>Examples</em></h2>
 				</a>
@@ -209,6 +196,8 @@
     startDate: &#39;2017-12-03&#39;
     endDate: &#39;2018-12-03&#39;
     colorScheme: &#39;green&#39;
+    fileName: &#39;chart.svg&#39;
+    filePath: &#39;images&#39;
 </code></pre>
 				<p>Running locally:</p>
 				<ul>

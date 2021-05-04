@@ -12,6 +12,10 @@ export type ConfigOptions = {
      */
     readonly colorOptions: ColorOptions
     /**
+     * Resource configuration options
+     */
+    readonly resourceOptions: ResourceOptions
+    /**
      * Account configuration options
      */
     readonly accountOptions: AccountOptions
@@ -37,6 +41,22 @@ export type ColorScheme = Record<ColorSchemeType, ColorPalette>
  * @desc Type representing request options
  */
 export type RequestOptions = {
+    /**
+     * GitHub request info
+     */
+    readonly githubRequest: Readonly<RequestInfo>
+    /**
+     * Chart request info
+     */
+    readonly chartRequest: Readonly<RequestInfo>
+}
+
+//--------------------------------------------------------------------------------------------------
+/**
+ * RequestInfo
+ * @desc Type representing request info
+ */
+export type RequestInfo = {
     /**
      * Request url
      */
@@ -89,6 +109,22 @@ export type AccountOptions = {
 
 //--------------------------------------------------------------------------------------------------
 /**
+ * ResourceOptions
+ * @desc Type representing resource options
+ */
+export type ResourceOptions = {
+    /**
+     * File name
+     */
+    readonly fileName: string
+    /**
+     * File path
+     */
+    readonly filePath: string
+}
+
+//--------------------------------------------------------------------------------------------------
+/**
  * ProfileOptions
  * @desc Type representing profiles options
  */
@@ -101,6 +137,10 @@ export type ProfileOptions = {
      * Color configuration options
      */
     readonly colorOptions: ColorOptions
+    /**
+     * Resource configuration options
+     */
+    readonly resourceOptions: ResourceOptions
     /**
      * Output configuration options
      */
@@ -172,11 +212,10 @@ export type GraphDataItem = {
  * DateRange
  * @desc Type representing date range
  */
-export type DateRange =
-    | {
-          from?: string | Date
-          to?: string | Date
-      }
+export type DateRange = {
+        from?: string | Date
+        to?: string | Date
+    }
     | { year?: number }
 
 //--------------------------------------------------------------------------------------------------

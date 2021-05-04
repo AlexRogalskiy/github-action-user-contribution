@@ -1,7 +1,14 @@
 import { ProfileType } from '../../typings/enum-types'
 import { ProfileOptions } from '../../typings/domain-types'
 
-import { COLOR_OPTIONS, OUTPUT_OPTIONS, REQUEST_OPTIONS } from '../constants/constants'
+import { mergeProps } from '../utils/commons'
+
+import {
+    COLOR_OPTIONS,
+    OUTPUT_OPTIONS,
+    REQUEST_OPTIONS,
+    RESOURCE_OPTIONS
+} from '../constants/constants'
 
 /**
  * ProfileRecord
@@ -14,18 +21,21 @@ export type ProfileRecord = Record<ProfileType, Partial<ProfileOptions>>
  */
 export const CONFIG: Readonly<ProfileRecord> = {
     dev: {
-        requestOptions: REQUEST_OPTIONS,
+        requestOptions: mergeProps(REQUEST_OPTIONS, { chartRequest: { url: 'http://localhost:3000/api' } }),
         colorOptions: COLOR_OPTIONS,
+        resourceOptions: RESOURCE_OPTIONS,
         outputOptions: OUTPUT_OPTIONS,
     },
     prod: {
         requestOptions: REQUEST_OPTIONS,
         colorOptions: COLOR_OPTIONS,
+        resourceOptions: RESOURCE_OPTIONS,
         outputOptions: OUTPUT_OPTIONS,
     },
     test: {
-        requestOptions: REQUEST_OPTIONS,
+        requestOptions: mergeProps(REQUEST_OPTIONS, { chartRequest: { url: 'http://localhost:3000/api' } }),
         colorOptions: COLOR_OPTIONS,
+        resourceOptions: RESOURCE_OPTIONS,
         outputOptions: OUTPUT_OPTIONS,
     },
 }
