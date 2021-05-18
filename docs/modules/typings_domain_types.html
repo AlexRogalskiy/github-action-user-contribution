@@ -71,6 +71,7 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="typings_domain_types.html#accountoptions" class="tsd-kind-icon">Account<wbr>Options</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="typings_domain_types.html#chartoptions" class="tsd-kind-icon">Chart<wbr>Options</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="typings_domain_types.html#coloroptions" class="tsd-kind-icon">Color<wbr>Options</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="typings_domain_types.html#colorpalette" class="tsd-kind-icon">Color<wbr>Palette</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="typings_domain_types.html#colorscheme-1" class="tsd-kind-icon">Color<wbr>Scheme</a></li>
@@ -78,6 +79,7 @@
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="typings_domain_types.html#contributiongraphdata" class="tsd-kind-icon">Contribution<wbr>Graph<wbr>Data</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="typings_domain_types.html#daterange-1" class="tsd-kind-icon">Date<wbr>Range</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="typings_domain_types.html#graphdataitem" class="tsd-kind-icon">Graph<wbr>Data<wbr>Item</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="typings_domain_types.html#pair" class="tsd-kind-icon">Pair</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="typings_domain_types.html#position" class="tsd-kind-icon">Position</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="typings_domain_types.html#profileoptions" class="tsd-kind-icon">Profile<wbr>Options</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="typings_domain_types.html#requestinfo" class="tsd-kind-icon">Request<wbr>Info</a></li>
@@ -97,7 +99,7 @@
 					<div class="tsd-signature tsd-kind-icon">Account<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>dateRange<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#daterange-1" class="tsd-signature-type" data-tsd-kind="Type alias">DateRange</a><span class="tsd-signature-symbol">; </span>userName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L99">typings/domain-types.ts:99</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L115">typings/domain-types.ts:115</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -133,12 +135,45 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="chartoptions" class="tsd-anchor"></a>
+					<h3>Chart<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">Chart<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>chartType<span class="tsd-signature-symbol">: </span><a href="../enums/typings_enum_types.charttype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ChartType</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L87">typings/domain-types.ts:87</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>ChartOptions</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>desc</dt>
+							<dd><p>Type representing chart options</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> chart<wbr>Type<span class="tsd-signature-symbol">: </span><a href="../enums/typings_enum_types.charttype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ChartType</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Chart type options</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="coloroptions" class="tsd-anchor"></a>
 					<h3>Color<wbr>Options</h3>
 					<div class="tsd-signature tsd-kind-icon">Color<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>colorScheme<span class="tsd-signature-symbol">: </span><a href="../enums/typings_enum_types.colorschemetype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ColorSchemeType</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L71">typings/domain-types.ts:71</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L75">typings/domain-types.ts:75</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -171,7 +206,7 @@
 					<div class="tsd-signature tsd-kind-icon">Color<wbr>Palette<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L29">typings/domain-types.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L33">typings/domain-types.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -191,7 +226,7 @@
 					<div class="tsd-signature tsd-kind-icon">Color<wbr>Scheme<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/typings_enum_types.colorschemetype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ColorSchemeType</a><span class="tsd-signature-symbol">, </span><a href="typings_domain_types.html#colorpalette" class="tsd-signature-type" data-tsd-kind="Type alias">ColorPalette</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L36">typings/domain-types.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L40">typings/domain-types.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -208,10 +243,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="configoptions" class="tsd-anchor"></a>
 					<h3>Config<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">Config<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>accountOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#accountoptions" class="tsd-signature-type" data-tsd-kind="Type alias">AccountOptions</a><span class="tsd-signature-symbol">; </span>colorOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#coloroptions" class="tsd-signature-type" data-tsd-kind="Type alias">ColorOptions</a><span class="tsd-signature-symbol">; </span>resourceOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#resourceoptions-2" class="tsd-signature-type" data-tsd-kind="Type alias">ResourceOptions</a><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">Config<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>accountOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#accountoptions" class="tsd-signature-type" data-tsd-kind="Type alias">AccountOptions</a><span class="tsd-signature-symbol">; </span>chartOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#chartoptions" class="tsd-signature-type" data-tsd-kind="Type alias">ChartOptions</a><span class="tsd-signature-symbol">; </span>colorOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#coloroptions" class="tsd-signature-type" data-tsd-kind="Type alias">ColorOptions</a><span class="tsd-signature-symbol">; </span>resourceOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#resourceoptions-2" class="tsd-signature-type" data-tsd-kind="Type alias">ResourceOptions</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L9">typings/domain-types.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L9">typings/domain-types.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -232,6 +267,14 @@
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
 										<p>Account configuration options</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> chart<wbr>Options<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#chartoptions" class="tsd-signature-type" data-tsd-kind="Type alias">ChartOptions</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Chart configuration options</p>
 									</div>
 								</div>
 							</li>
@@ -260,7 +303,7 @@
 					<div class="tsd-signature tsd-kind-icon">Contribution<wbr>Graph<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>cells<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#graphdataitem" class="tsd-signature-type" data-tsd-kind="Type alias">GraphDataItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>colorPalette<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#colorpalette" class="tsd-signature-type" data-tsd-kind="Type alias">ColorPalette</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L171">typings/domain-types.ts:171</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L191">typings/domain-types.ts:191</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -301,7 +344,7 @@
 					<div class="tsd-signature tsd-kind-icon">Date<wbr>Range<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>from<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">; </span>to<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>year<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L215">typings/domain-types.ts:215</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L235">typings/domain-types.ts:235</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -321,7 +364,7 @@
 					<div class="tsd-signature tsd-kind-icon">Graph<wbr>Data<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>color<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L187">typings/domain-types.ts:187</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L207">typings/domain-types.ts:207</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -380,13 +423,53 @@
 						</ul>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="pair" class="tsd-anchor"></a>
+					<h3>Pair</h3>
+					<div class="tsd-signature tsd-kind-icon">Pair&lt;K, V&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L247">typings/domain-types.ts:247</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Pair</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>desc</dt>
+							<dd><p>Type representing pair</p>
+							</dd>
+						</dl>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>K</h4>
+						</li>
+						<li>
+							<h4>V</h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="position" class="tsd-anchor"></a>
 					<h3>Position</h3>
 					<div class="tsd-signature tsd-kind-icon">Position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L155">typings/domain-types.ts:155</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L175">typings/domain-types.ts:175</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -424,10 +507,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="profileoptions" class="tsd-anchor"></a>
 					<h3>Profile<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">Profile<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>colorOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#coloroptions" class="tsd-signature-type" data-tsd-kind="Type alias">ColorOptions</a><span class="tsd-signature-symbol">; </span>outputOptions<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boxen.Options</span><span class="tsd-signature-symbol">; </span>requestOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#requestoptions-1" class="tsd-signature-type" data-tsd-kind="Type alias">RequestOptions</a><span class="tsd-signature-symbol">; </span>resourceOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#resourceoptions-2" class="tsd-signature-type" data-tsd-kind="Type alias">ResourceOptions</a><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">Profile<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>chartOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#chartoptions" class="tsd-signature-type" data-tsd-kind="Type alias">ChartOptions</a><span class="tsd-signature-symbol">; </span>colorOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#coloroptions" class="tsd-signature-type" data-tsd-kind="Type alias">ColorOptions</a><span class="tsd-signature-symbol">; </span>outputOptions<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boxen.Options</span><span class="tsd-signature-symbol">; </span>requestOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#requestoptions-1" class="tsd-signature-type" data-tsd-kind="Type alias">RequestOptions</a><span class="tsd-signature-symbol">; </span>resourceOptions<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#resourceoptions-2" class="tsd-signature-type" data-tsd-kind="Type alias">ResourceOptions</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L131">typings/domain-types.ts:131</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L147">typings/domain-types.ts:147</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -443,6 +526,14 @@
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> chart<wbr>Options<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#chartoptions" class="tsd-signature-type" data-tsd-kind="Type alias">ChartOptions</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Chart configuration options</p>
+									</div>
+								</div>
+							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> color<wbr>Options<span class="tsd-signature-symbol">: </span><a href="typings_domain_types.html#coloroptions" class="tsd-signature-type" data-tsd-kind="Type alias">ColorOptions</a></h5>
 								<div class="tsd-comment tsd-typography">
@@ -484,7 +575,7 @@
 					<div class="tsd-signature tsd-kind-icon">Request<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L59">typings/domain-types.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L63">typings/domain-types.ts:63</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -517,7 +608,7 @@
 					<div class="tsd-signature tsd-kind-icon">Request<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>chartRequest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="typings_domain_types.html#requestinfo" class="tsd-signature-type" data-tsd-kind="Type alias">RequestInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>githubRequest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="typings_domain_types.html#requestinfo" class="tsd-signature-type" data-tsd-kind="Type alias">RequestInfo</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L43">typings/domain-types.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L47">typings/domain-types.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -558,7 +649,7 @@
 					<div class="tsd-signature tsd-kind-icon">Resource<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L115">typings/domain-types.ts:115</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L131">typings/domain-types.ts:131</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -599,7 +690,7 @@
 					<div class="tsd-signature tsd-kind-icon">Style<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>layout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>theme<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/2fd8571/typings/domain-types.ts#L83">typings/domain-types.ts:83</a></li>
+							<li>Defined in <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/cab4336/typings/domain-types.ts#L99">typings/domain-types.ts:99</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -710,6 +801,9 @@
 						<a href="typings_domain_types.html#accountoptions" class="tsd-kind-icon">Account<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="typings_domain_types.html#chartoptions" class="tsd-kind-icon">Chart<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="typings_domain_types.html#coloroptions" class="tsd-kind-icon">Color<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
@@ -729,6 +823,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="typings_domain_types.html#graphdataitem" class="tsd-kind-icon">Graph<wbr>Data<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="typings_domain_types.html#pair" class="tsd-kind-icon">Pair</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="typings_domain_types.html#position" class="tsd-kind-icon">Position</a>

@@ -1,26 +1,14 @@
 import boxen from 'boxen'
 
 import {
+    ChartOptions,
     ColorOptions,
     ColorScheme,
-    RequestOptions,
     RequestInfo,
-    ResourceOptions
+    RequestOptions,
+    ResourceOptions,
 } from '../../typings/domain-types'
-import { ColorSchemeType } from '../../typings/enum-types'
-
-/**
- * Days of week
- */
-export const DAYS_OF_WEEK = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-]
+import { ChartType, ColorSchemeType } from '../../typings/enum-types'
 
 /**
  * Supported color schemes
@@ -50,7 +38,7 @@ export const GITHUB_REQUEST_OPTIONS: Readonly<RequestInfo> = {
  */
 export const REQUEST_OPTIONS: Readonly<RequestOptions> = {
     githubRequest: GITHUB_REQUEST_OPTIONS,
-    chartRequest: CHART_REQUEST_OPTIONS
+    chartRequest: CHART_REQUEST_OPTIONS,
 }
 
 /**
@@ -68,6 +56,13 @@ export const OUTPUT_OPTIONS: Readonly<boxen.Options> = {
  */
 export const COLOR_OPTIONS: Readonly<ColorOptions> = {
     colorScheme: ColorSchemeType.green,
+}
+
+/**
+ * Chart configuration options
+ */
+export const CHART_OPTIONS: Readonly<ChartOptions> = {
+    chartType: ChartType.heatmap,
 }
 
 /**

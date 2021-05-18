@@ -3,13 +3,8 @@ import * as core from '@actions/core'
 import cheerio from 'cheerio'
 import moment from 'moment'
 
-import {
-    ColorPalette,
-    ConfigOptions,
-    ContributionGraphData,
-    Position
-} from '../typings/domain-types'
-import { ColorSchemeType } from '../typings/enum-types'
+import { ColorPalette, ConfigOptions, ContributionGraphData, Position } from '../typings/domain-types'
+import { ChartType, ColorSchemeType, DayOfWeekType } from '../typings/enum-types'
 
 import { getProperty, getRequiredProperty } from './utils/properties'
 import { serialize } from './utils/serializers'
@@ -20,7 +15,7 @@ import { storeData } from './utils/files'
 import { coreError } from './utils/loggers'
 import { profile } from './utils/profiles'
 
-import { COLOR_SCHEMES, DAYS_OF_WEEK } from './constants/constants'
+import { COLOR_SCHEMES } from './constants/constants'
 
 const parseUserContribution = (content: string, colorPalette: ColorPalette): ContributionGraphData => {
     const $ = cheerio.load(content)
@@ -101,10 +96,12 @@ const getContributions = async (options: ConfigOptions): Promise<ContributionGra
             colorOptions,
         } = options
 
+        const baseUrl = profile.requestOptions.githubRequest.url
+
         const dateParams = 'year' in dateRange || 'from' in dateRange || 'to' in dateRange
         const url = dateParams
-            ? `${profile.requestOptions.githubRequest.url}/users/${userName}/contributions?${formatParams(dateRange)}`
-            : `${profile.requestOptions.githubRequest.url}/${userName}`
+            ? `${baseUrl}/users/${userName}/contributions?${formatParams(dateRange)}`
+            : `${baseUrl}/${userName}`
 
         const resText = await fetchAsText(url)
 
@@ -121,19 +118,22 @@ const buildConfigOptions = (): ConfigOptions => {
     const userName = getRequiredProperty('userName')
 
     const colorScheme = ColorSchemeType[getProperty('colorScheme')] || profile.colorOptions.colorScheme
+    const chartType = ChartType[getProperty('chartType')] || profile.chartOptions.chartType
 
-    const from = getProperty('startDate')
-    const to = getProperty('endDate')
+    const from = getProperty('startDate') || moment().subtract(7, 'days').toDate()
+    const to = getProperty('endDate') || moment().subtract(1, 'days').toDate()
 
     const fileName = getProperty('name') || profile.resourceOptions.fileName
     const filePath = getProperty('path') || profile.resourceOptions.filePath
 
     const colorOptions = { colorScheme }
+    const chartOptions = { chartType }
     const resourceOptions = { fileName, filePath }
     const accountOptions = { userName, dateRange: { from, to } }
 
     return {
         colorOptions,
+        chartOptions,
         resourceOptions,
         accountOptions,
     }
@@ -145,7 +145,13 @@ const runOperation = async (): Promise<void> => {
     const result = await getContributions(options)
 
     const groupedDates = result.cells
-        .filter(c => c.date >= options.accountOptions.dateRange['from'] && c.date <= options.accountOptions.dateRange['to'])
+        .filter(c => {
+            const d = moment(c.date)
+            const from = moment(options.accountOptions.dateRange['from'])
+            const to = moment(options.accountOptions.dateRange['to'])
+
+            return d.isBetween(from, to, 'days', '[]')
+        })
         .reduce((acc, item) => {
             // create a composed key: 'year-week'
             const yearWeek = `#${moment(item.date).week()} [${moment(item.date).year()}]`
@@ -156,23 +162,29 @@ const runOperation = async (): Promise<void> => {
             }
 
             // push the current date that belongs to the year-week calculated before
-            acc[yearWeek].push(item.count)
+            acc[yearWeek].push([moment(item.date).weekday(), item.count])
 
             return acc
         }, {})
 
     const rows: number[][] = []
     const columns: string[] = []
-    for (const [key, value] of Object.entries<number[]>(groupedDates)) {
-        rows.push(value)
+    for (const [key, values] of Object.entries<number[][]>(groupedDates)) {
         columns.push(key)
+
+        const entries = Object.fromEntries(values)
+        const counts: number[] = Object.keys(DayOfWeekType)
+            .filter(x => Number.parseInt(x) >= 0)
+            .map(k => entries[k])
+
+        rows.push(counts)
     }
 
     const values = {
-        'z': rows,
-        'y': columns,
-        'x': DAYS_OF_WEEK,
-        'type': 'heatmap'
+        z: rows,
+        y: columns,
+        x: Object.keys(DayOfWeekType).filter(x => !(Number.parseInt(x) >= 0)),
+        type: options.chartOptions.chartType,
     }
 
     const url = `${profile.requestOptions.chartRequest.url}?mode=raw`
@@ -180,9 +192,9 @@ const runOperation = async (): Promise<void> => {
         body: `data=${Buffer.from(serialize({ data: [values] })).toString('base64')}`,
         headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Content-Type': 'application/x-www-form-urlencoded',
         },
-        method: 'post'
+        method: 'post',
     })
 
     const imagePath = storeData(options.resourceOptions.filePath, options.resourceOptions.fileName, fileData)

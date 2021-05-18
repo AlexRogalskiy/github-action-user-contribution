@@ -36,3 +36,27 @@ export enum ColorSchemeType {
 }
 
 //--------------------------------------------------------------------------------------------------
+/**
+ * ChartType
+ * @desc Type representing supported charts
+ */
+export enum ChartType {
+    heatmap = 'heatmap',
+}
+
+//--------------------------------------------------------------------------------------------------
+/**
+ * ChartType
+ * @desc Type representing supported charts
+ */
+export enum DayOfWeekType {
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+    'Sunday',
+}
+
+//--------------------------------------------------------------------------------------------------

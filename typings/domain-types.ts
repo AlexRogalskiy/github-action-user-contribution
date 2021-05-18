@@ -1,6 +1,6 @@
 import boxen from 'boxen'
 
-import { ColorSchemeType } from './enum-types'
+import { ChartType, ColorSchemeType } from './enum-types'
 
 /**
  * ConfigOptions
@@ -11,6 +11,10 @@ export type ConfigOptions = {
      * Color configuration options
      */
     readonly colorOptions: ColorOptions
+    /**
+     * Chart configuration options
+     */
+    readonly chartOptions: ChartOptions
     /**
      * Resource configuration options
      */
@@ -77,6 +81,18 @@ export type ColorOptions = {
 
 //--------------------------------------------------------------------------------------------------
 /**
+ * ChartOptions
+ * @desc Type representing chart options
+ */
+export type ChartOptions = {
+    /**
+     * Chart type options
+     */
+    readonly chartType: ChartType
+}
+
+//--------------------------------------------------------------------------------------------------
+/**
  * StyleOptions
  * @desc Type representing style options
  */
@@ -137,6 +153,10 @@ export type ProfileOptions = {
      * Color configuration options
      */
     readonly colorOptions: ColorOptions
+    /**
+     * Chart configuration options
+     */
+    readonly chartOptions: ChartOptions
     /**
      * Resource configuration options
      */
@@ -212,10 +232,21 @@ export type GraphDataItem = {
  * DateRange
  * @desc Type representing date range
  */
-export type DateRange = {
-        from?: string | Date
-        to?: string | Date
-    }
+export type DateRange =
+    | {
+          from?: string | Date
+          to?: string | Date
+      }
     | { year?: number }
+
+//--------------------------------------------------------------------------------------------------
+/**
+ * Pair
+ * @desc Type representing pair
+ */
+export type Pair<K, V> = {
+    key: K
+    value: V
+}
 
 //--------------------------------------------------------------------------------------------------

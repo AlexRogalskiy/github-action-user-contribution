@@ -23,11 +23,16 @@ export const strToEnum = <T extends string>(values: T[]): { [K in T]: K } => {
  * @param func
  */
 export const toEnum = <T extends string, V>(values: T[], func?: (v: T) => V): { [K in T]: V } => {
-    // eslint-disable-next-line unicorn/no-array-reduce
     return values.reduce((res, key) => {
         res[key] = (func && func(key)) || key
         return res
     }, Object.create(null))
+}
+
+export function getEnumKeyByEnumValue(myEnum: any, enumValue: number | string): string {
+    const keys = Object.keys(myEnum).filter(x => myEnum[x] == enumValue)
+
+    return keys.length > 0 ? keys[0] : ''
 }
 
 export const isInRange = (actual: number, min: number, max: number): boolean => {
