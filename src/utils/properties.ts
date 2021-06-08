@@ -13,7 +13,10 @@ export const getProperty = (property: string, options?: core.InputOptions): stri
 
 export const getProperties = (): any => {
     const input = Object.fromEntries(
-        Object.keys(schema.describe().keys).map(item => [item, getProperty(decamelize(item, '-'))])
+        Object.keys(schema.describe().keys).map(item => [
+            item,
+            getProperty(decamelize(item, { separator: '-' })),
+        ])
     )
 
     const { error, value } = schema.validate(input, { abortEarly: false })

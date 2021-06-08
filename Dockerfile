@@ -5,8 +5,6 @@ ARG IMAGE_TAG=lts-alpine
 
 FROM $IMAGE_SOURCE:$IMAGE_TAG
 
-MAINTAINER Alexander Rogalskiy <@AlexRogalskiy>
-
 ## Setting arguments
 ARG VERSION="0.0.0-dev"
 ARG VCS_REF="$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")"
@@ -18,6 +16,7 @@ LABEL version=$VERSION
 LABEL vcs-ref=$VCS_REF
 LABEL build-date=$BUILD_DATE
 
+LABEL name="github-action-user-contribution"
 LABEL repository="https://github.com/AlexRogalskiy/github-action-user-contribution"
 LABEL homepage="https://github.com/AlexRogalskiy/github-action-user-contribution"
 LABEL maintainer="Nullables, Inc. <hello@nullables.io> (https://nullables.io)"

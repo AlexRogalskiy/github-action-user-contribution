@@ -3,7 +3,7 @@ import { Optional } from '../../typings/standard-types'
 import { isFileExists } from './files'
 
 export const getType = (obj: any): Optional<string> => {
-    const value: string = {}.toString.call(obj)
+    const value: string = Object.prototype.toString.call(obj)
     const result = value.match(/\s(\w+)/)
 
     return result && result[1].toLowerCase()
@@ -69,7 +69,7 @@ export const hasProperty = (obj: any, prop: Optional<PropertyKey>): boolean => {
     if (isNullOrUndefined(obj)) return false
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    return isFunction(obj['hasOwnProperty']) ? Object.prototype.hasOwnProperty.call(obj, prop) : prop in obj
+    return isFunction(obj['hasOwnProperty']) ? Object.hasOwn(obj, prop) : prop in obj
 }
 
 export const isBlankString = (value: Optional<string>): boolean => {

@@ -24,9 +24,9 @@ const parseUserContribution = (content: string, colorPalette: ColorPalette): Con
     const rawCells = $('.js-calendar-graph rect[data-count]')
         .toArray()
         .map(x => {
-            const level = +x.attribs['data-level']
-            const count = +x.attribs['data-count']
-            const date = x.attribs['data-date']
+            const level = +x['attribs']['data-level']
+            const count = +x['attribs']['data-count']
+            const date = x['attribs']['data-date']
 
             const color = colorPalette[level]
 
@@ -68,17 +68,17 @@ const parseUserContribution = (content: string, colorPalette: ColorPalette): Con
 
 // returns the position of the svg elements, accounting for it's transform and it's parent transform
 const getSvgPosition = (elem: cheerio.Element): Position => {
-    if (!elem || elem.tagName === 'svg') {
+    if (!elem || elem['tagName'] === 'svg') {
         return { x: 0, y: 0 }
     }
 
     const position = getSvgPosition(elem.parent)
 
-    if (elem.attribs.x) position.x += +elem.attribs.x
-    if (elem.attribs.y) position.y += +elem.attribs.y
+    if (elem['attribs'].x) position.x += +elem['attribs'].x
+    if (elem['attribs'].y) position.y += +elem['attribs'].y
 
-    if (elem.attribs.transform) {
-        const match = elem.attribs.transform.match(/translate\( *([\d.]+) *, *([\d.]+) *\)/)
+    if (elem['attribs'].transform) {
+        const match = elem['attribs'].transform.match(/translate\( *([\d.]+) *, *([\d.]+) *\)/)
 
         if (match) {
             position.x += +match[1]

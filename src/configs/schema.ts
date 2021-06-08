@@ -62,7 +62,7 @@ const schema = Joi.object({
         )
         .default(''),
 
-    issueLockComment: Joi.string().trim().max(10000).allow('').default(''),
+    issueLockComment: Joi.string().trim().max(10_000).allow('').default(''),
 
     issueLockReason: Joi.string()
         .valid('resolved', 'off-topic', 'too heated', 'spam', '')
@@ -94,7 +94,7 @@ const schema = Joi.object({
         )
         .default(''),
 
-    prLockComment: Joi.string().trim().max(10000).allow('').default(''),
+    prLockComment: Joi.string().trim().max(10_000).allow('').default(''),
 
     prLockReason: Joi.string().valid('resolved', 'off-topic', 'too heated', 'spam', '').default('resolved'),
 
