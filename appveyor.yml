@@ -4,6 +4,7 @@ environment:
     - nodejs_version: 12
     - nodejs_version: 13
     - nodejs_version: 14
+    - nodejs_version: 15
 
 # Install scripts. (runs after repo cloning)
 install:
@@ -12,17 +13,19 @@ install:
   # install modules
   - npm install
 
+build_script:
+  - npm run -s build
+
 # Post-install test scripts.
 test_script:
   # Output useful info for debugging.
   - node --version
   # run tests
   - npm run all
-  - npm run test:all
+  - npm run lint:all
+  - npm run format:all
   - npm run check:all
-
-# Don't actually build.
-build: off
+  - npm run test:all
 
 matrix:
   fast_finish: true

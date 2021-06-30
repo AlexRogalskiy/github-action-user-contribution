@@ -25,6 +25,7 @@
         "remark": "remark -q -f .",
         "git:diff": "git --no-pager diff --exit-code --stat HEAD",
         "git:log": "git log -1 --format='format:%H' HEAD -- \"$@\"",
+        "git:clean": "git stash && git clean -fdX",
         "docs": "typedoc",
         "codecov": "codecov",
         "semantic-release": "semantic-release",
@@ -45,11 +46,11 @@
         "test:coverage": "env-cmd --silent -e test jest --collectCoverage --detectOpenHandles --coverage && coveralls < ./coverage/lcov.info",
         "test:watch": "env-cmd --silent -e test jest --watch",
         "test:license": "license-checker --production --summary --unknown --onlyAllow=\"Apache-2.0;BSD;ISC;MIT;UNLICENSED;\"",
-        "lint:all": "npm run lint:clean && npm run lint && npm run lint:md && npm run lint:json && npm run lint:docker",
+        "lint:all": "npm run lint:clean && npm run lint && npm run lint:md && npm run lint:json && npm run lint:docker && npm run pretty",
         "format:all": "npm run format && npm run format:md",
         "check:all": "npm run format:check",
         "test:all": "npm run test && npm run test:folio && npm run test:license",
-        "all": "npm run format:all && npm run lint:all && npm run pretty && npm run build"
+        "all": "npm run format:all && npm run lint:all && npm run build"
     },
     "dependencies": {
         "@actions/core": "^1.4.0",
