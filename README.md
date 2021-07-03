@@ -43,7 +43,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![ComVer](https://img.shields.io/badge/ComVer-compliant-brightgreen.svg)][repo]
 [![Public workflows that use this action.][total_usages]][search_results]
-[![Licence][license_id]][license_content]
+[![License][license_id]][license_content]
 
 [![Chat](https://img.shields.io/badge/chat-discussions-success.svg)](https://github.com/AlexRogalskiy/github-action-user-contribution/discussions)
 [![Open questions](https://img.shields.io/badge/Open-questions-blue.svg?style=flat-curved)](https://github.com/AlexRogalskiy/github-action-user-contribution/labels/question)
@@ -179,7 +179,7 @@ this repository][tags].
 [![Contributors Display](https://badges.pufler.dev/contributors/AlexRogalskiy/github-action-user-contribution?size=50\&padding=5\&bots=true)](https://badges.pufler.dev)
 
 Please read
-[CONTRIBUTING.md](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/master/.github/CONTRIBUTING.md)
+[contributing guide](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/master/.github/CONTRIBUTING.md) or [wiki guide][wiki]
 for details on our code of conduct, and the process for submitting pull requests to us
 ([emoji key](https://allcontributors.org/docs/en/emoji-key)).
 
@@ -189,7 +189,7 @@ specification. Contributions of any kind are welcome!
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![Github contributors](https://img.shields.io/github/all-contributors/AlexRogalskiy/github-action-user-contribution)
 
-See also the list of [contributors][contributors] who participated in this project.
+See also the list of [contributors page][contributors] who participated in this project.
 
 ## *Acknowledgement*
 
@@ -209,17 +209,19 @@ Like ***File Size*** ? Consider buying me a coffee :)
 
 ***
 
-[![forthebadge](https://img.shields.io/badge/made%20with-%20typescript-C1282D.svg?logo=typescript\&style=for-the-badge)](https://www.typescriptlang.org/)
-[![forthebadge](https://img.shields.io/badge/powered%20by-%20github-7116FB.svg?logo=github\&style=for-the-badge)](https://github.com/)
+[![typescriptlang](https://img.shields.io/badge/made%20with-%20typescript-C1282D.svg?logo=typescript\&style=for-the-badge)](https://www.typescriptlang.org/)
+[![github](https://img.shields.io/badge/powered%20by-%20github-7116FB.svg?logo=github\&style=for-the-badge)](https://github.com/)
 [![forthebadge](https://img.shields.io/badge/build%20with-%20%E2%9D%A4-B6FF9B.svg?logo=heart\&style=for-the-badge)](https://forthebadge.com/)
+
+<!--
+[issues]: https://github.com/AlexRogalskiy/github-action-user-contribution/issues
+
+[pulls]: https://github.com/AlexRogalskiy/github-action-user-contribution/pulls
+-->
 
 [repo]: https://github.com/AlexRogalskiy/github-action-user-contribution
 
 [tags]: https://github.com/AlexRogalskiy/github-action-user-contribution/tags
-
-[issues]: https://github.com/AlexRogalskiy/github-action-user-contribution/issues
-
-[pulls]: https://github.com/AlexRogalskiy/github-action-user-contribution/pulls
 
 [wiki]: https://github.com/AlexRogalskiy/github-action-user-contribution/wiki
 
