@@ -1,0 +1,27 @@
+name: Licensed CI
+
+# also works with pull_request event
+on:
+  push:
+    branches:
+      - '**'
+    tags-ignore:
+      - '**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Check licenses
+    steps:
+      # if using actions/checkout at major version 2 or greater,
+      # please set fetch-depth to a high number, or to 0.
+      # running this action can require access to more than just the latest commit on a branch
+      - uses: actions/checkout@v1
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.6.x
+      - run: bundle install
+      - uses: jonabc/licensed-ci@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          command: 'bundle exec licensed' # or bin/licensed when using binstubs
