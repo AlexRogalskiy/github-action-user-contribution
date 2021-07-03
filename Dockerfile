@@ -7,6 +7,7 @@ FROM $IMAGE_SOURCE:$IMAGE_TAG
 
 ## Setting arguments
 ARG VERSION="0.0.0-dev"
+ARG LANG=en_US.UTF-8
 ARG VCS_REF="$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")"
 ARG BUILD_DATE="$(git rev-parse --short HEAD)"
 ARG HOME_DIR="/usr/src/app"
@@ -28,8 +29,8 @@ LABEL "com.github.actions.color"="yellow"
 
 ## Setting environment variables
 ENV APP_DIR $HOME_DIR
-ENV LC_ALL en_US.UTF-8
-ENV LANG $LC_ALL
+ENV LC_ALL $LANG
+ENV LANG $LANG
 
 ## Installing dependencies
 RUN apk add --no-cache git
