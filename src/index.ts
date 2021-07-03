@@ -12,7 +12,7 @@ import { formatParams } from './utils/formatters'
 import { fetchAsText } from './utils/requests'
 import { storeData } from './utils/files'
 
-import { coreError } from './utils/loggers'
+import { coreError, handleError } from './utils/loggers'
 import { profile } from './utils/profiles'
 
 import { COLOR_SCHEMES } from './constants/constants'
@@ -209,5 +209,7 @@ export default async function run(): Promise<void> {
         coreError(`Cannot process input data, message: ${error.message}`)
     }
 }
+
+process.on('unhandledRejection', handleError)
 
 run()

@@ -101,3 +101,8 @@ export const coreDebug = createLogger(core.debug, message => boxen(message.toStr
 export const logArrayElements = <T>(index: number, array: T[]): void => {
     logs(`array[${index}] = ${array[index]}`)
 }
+
+export const handleError = (err: any): void => {
+    boxenErrorLogs(err)
+    core.setFailed(`Unhandled error: ${err}`)
+}
