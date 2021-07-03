@@ -20,6 +20,7 @@ build_script:
 test_script:
   # Output useful info for debugging.
   - node --version
+  - npm --version
   # run tests
   - npm run all
   - npm run lint:all

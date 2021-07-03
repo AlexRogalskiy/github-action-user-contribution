@@ -1,0 +1,6 @@
+GET https://mockend.com/AlexRogalskiy/github-action-user-contribution
+GET https://mockend.com/AlexRogalskiy/github-action-user-contribution/posts/<id>
+GET https://mockend.com/AlexRogalskiy/github-action-user-contribution/comments
+GET https://mockend.com/AlexRogalskiy/github-action-user-contribution/comments/<id>
+
+https://mockend.com/AlexRogalskiy/github-action-user-contribution/tree/master/graphql
