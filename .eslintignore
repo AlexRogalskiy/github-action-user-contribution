@@ -4,3 +4,5 @@ node_modules/
 coverage/
 tests/
 docs/
+
+pr-lint.config.js
