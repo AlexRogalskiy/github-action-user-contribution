@@ -36,7 +36,7 @@
         "postpublish": "npm run clean",
         "clean": "del-cli --dot=true dist coverage",
         "precommit": "npm run lint:staged",
-        "postinstall": "husky install",
+        "postinstall": "[ -f node_modules/.bin/husky ] && husky install || echo no husky installed.",
         "prebuild": "del-cli --dot=true dist coverage",
         "build": "ncc build src/index.ts -m -o dist",
         "package": "ncc build src/index.ts --source-map --license licenses.txt",
