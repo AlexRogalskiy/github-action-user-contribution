@@ -46,6 +46,7 @@
     "files": ["./src/index.ts"],
     "include": [
         "./src",
+        "./scripts",
         "./typings",
         "./jest.config.js",
         "./wallaby.js",
