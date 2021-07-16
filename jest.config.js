@@ -2,6 +2,8 @@ module.exports = {
     roots: ['<rootDir>/tests/'],
     verbose: true,
     clearMocks: true,
+    globalSetup: './tests/jest-global-setup.js',
+    globalTeardown: './tests/jest-global-teardown.js',
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
     testEnvironment: 'node',
     testMatch: ['**/*.test.(ts|js)', '**/__tests__/**/?(*.)+(spec|test).ts'],
@@ -24,6 +26,7 @@ module.exports = {
         '!**/scenarios/**',
         '!**/redirects/**',
     ],
+    coveragePathIgnorePatterns: ['/node_modules/'],
     coverageThreshold: {
         global: {
             branches: 4,
@@ -34,4 +37,5 @@ module.exports = {
     },
     coverageDirectory: './coverage',
     coverageReporters: ['json', 'lcov', 'text', 'clover', 'html'],
+    setupFilesAfterEnv: ['jest-extended', './tests/jest-default-timeout.js'],
 }

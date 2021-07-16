@@ -1,8 +1,24 @@
 'use strict';
 
+import sleep from 'await-sleep'
+
+import 'jest-extended'
+
 const expect = require('expect');
 
 describe('my suite', () => {
+    beforeAll(async () => {
+        console.log('Waiting for 1 sec');
+
+        await sleep(1000);
+
+        console.log("Test Suite: >>> before all");
+    });
+
+    afterAll(async () => {
+        console.log("Test Suite: >>> after all");
+    });
+
     test.only('one of my .only test', () => {
         expect(1 + 1).toEqual(2);
     });
