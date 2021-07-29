@@ -52,7 +52,7 @@
         "postversion": "git push && git push --tags",
         "version:new": "yarn version --no-git-tag-version",
         "test:folio": "env-cmd --silent -e test folio tests/spec/",
-        "test": "env-cmd --silent -e test jest --verbose --passWithNoTests --no-cache",
+        "test": "env-cmd --silent -e test jest --verbose --maxWorkers=50% --passWithNoTests --no-cache",
         "test:coverage": "env-cmd --silent -e test jest --forceExit --runInBand --collectCoverage --detectOpenHandles --coverage && coveralls < ./coverage/lcov.info",
         "test:watch": "env-cmd --silent -e test jest --watch --notify --notifyMode=change",
         "test:license": "license-checker --production --summary --unknown --onlyAllow=\"Apache-2.0;BSD;ISC;MIT;UNLICENSED;\"",
