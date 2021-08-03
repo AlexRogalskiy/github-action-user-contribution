@@ -123,6 +123,7 @@
         "jest-circus": "^27.0.5",
         "jest-extended": "^0.11.5",
         "jest-fetch-mock": "^3.0.3",
+        "jest-watch-typeahead": "^0.6.4",
         "joi": "^17.4.0",
         "jsonlint": "^1.6.3",
         "license-checker": "^25.0.1",

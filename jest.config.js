@@ -38,4 +38,5 @@ module.exports = {
     coverageDirectory: './coverage',
     coverageReporters: ['json', 'lcov', 'text', 'clover', 'html'],
     setupFilesAfterEnv: ['jest-extended', './tests/jest-default-timeout.js'],
+    watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
 }
