@@ -114,7 +114,7 @@
         "eslint-plugin-node": "11.1.0",
         "eslint-plugin-prettier": "^3.4.0",
         "eslint-plugin-spellcheck": "0.0.17",
-        "eslint-plugin-unicorn": "^33.0.1",
+        "eslint-plugin-unicorn": "34.0.1",
         "expect": "^27.0.2",
         "folio": "^0.3.18",
         "git-cz": "^4.1.0",
