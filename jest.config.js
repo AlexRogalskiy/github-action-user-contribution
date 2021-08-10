@@ -36,7 +36,9 @@ module.exports = {
         },
     },
     coverageDirectory: './coverage',
+    testResultsProcessor: 'jest-sonar-reporter',
     coverageReporters: ['json', 'lcov', 'text', 'clover', 'html'],
+    reporters: ['jest-junit'],
     setupFilesAfterEnv: ['jest-extended', './tests/jest-default-timeout.js'],
     watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
 }

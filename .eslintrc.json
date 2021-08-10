@@ -5,6 +5,7 @@
         "spellcheck",
         "eslint-comments",
         "eslint-plugin-import-helpers",
+        "cypress",
         "unicorn"
     ],
     "settings": {
@@ -18,6 +19,7 @@
     "extends": [
         "eslint:recommended",
         "plugin:github/recommended",
+        "plugin:cypress/recommended",
         "plugin:eslint-comments/recommended",
         "plugin:unicorn/recommended",
         "plugin:@typescript-eslint/recommended",

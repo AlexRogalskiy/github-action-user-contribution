@@ -10,4 +10,4 @@ process.on("unhandledRejection", (err) => {
     fail(err);
 });
 
-module.exports = async () => console.log(">>> JEST global setup >>>");
+module.exports = async () => console.log("\n\n>>> JEST global setup >>>\n\n");

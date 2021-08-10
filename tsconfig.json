@@ -42,15 +42,7 @@
         "strictPropertyInitialization": true,
         "suppressImplicitAnyIndexErrors": true
     },
-    "exclude": ["node_modules", "**/*.test.ts", "**/*.test.js", "tmp", "dist", "docs"],
+    "exclude": ["node_modules", "**/*.test.ts", "**/*.test.js", "**/*.config.js", "tmp", "dist", "docs"],
     "files": ["./src/index.ts"],
-    "include": [
-        "./src",
-        "./scripts",
-        "./typings",
-        "./jest.config.js",
-        "./wallaby.js",
-        "./changelog.config.js",
-        "./pr-lint.config.js"
-    ]
+    "include": ["./src", "./scripts", "./typings"]
 }

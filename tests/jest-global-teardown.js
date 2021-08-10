@@ -1,1 +1,1 @@
-module.exports = async () => console.log(">>> JEST global teardown >>>");
+module.exports = async () => console.log("\n\n>>> JEST global teardown >>>\n\n");

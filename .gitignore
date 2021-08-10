@@ -61,6 +61,7 @@ site/
 .cache
 node_modules
 .vercel
+reports
 
 # Build files
 !dist/index.js
