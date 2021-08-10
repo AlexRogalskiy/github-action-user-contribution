@@ -43,6 +43,9 @@
         "suppressImplicitAnyIndexErrors": true
     },
     "exclude": ["node_modules", "**/*.test.ts", "**/*.test.js", "**/*.config.js", "tmp", "dist", "docs"],
+    "linterOptions": {
+        "exclude": ["node_modules/**"]
+    },
     "files": ["./src/index.ts"],
     "include": ["./src", "./scripts", "./typings"]
 }
