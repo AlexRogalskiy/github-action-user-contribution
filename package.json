@@ -174,13 +174,6 @@
         "typescript": "^4.3.2",
         "unified": "^9.2.1"
     },
-    "jest-junit": {
-        "usePathForSuiteName": true,
-        "suiteNameTemplate": "{filename}",
-        "outputName": "coverage/jest-junit/junit.xml",
-        "titleTemplate": "{classname} - {title}",
-        "ancestorSeparator": " - "
-    },
     "jestSonar": {
         "reportPath": "reports",
         "reportFile": "test-report.xml",

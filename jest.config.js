@@ -1,7 +1,16 @@
+const path = require('path');
+
+const ROOT = path.resolve(__dirname);
+const SRC = path.resolve(ROOT, 'src');
+const LOCAL_PACKAGES = path.resolve(ROOT, 'packages');
+const COVERAGE_DIR = '<rootDir>/build2/reports/coverage/jest';
+const REPORT_DIR = '<rootDir>/build2/reports/unit';
+
 module.exports = {
     roots: ['<rootDir>/tests/'],
     verbose: true,
     clearMocks: true,
+    restoreMocks: true,
     globalSetup: './tests/jest-global-setup.js',
     globalTeardown: './tests/jest-global-teardown.js',
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
@@ -38,7 +47,16 @@ module.exports = {
     coverageDirectory: './coverage',
     testResultsProcessor: 'jest-sonar-reporter',
     coverageReporters: ['json', 'lcov', 'text', 'clover', 'html'],
-    reporters: ['jest-junit'],
+    reporters: [
+        'default',
+        ['jest-junit', {
+            usePathForSuiteName: true,
+            suiteNameTemplate: "{filename}",
+            outputName: "coverage/jest-junit/junit.xml",
+            titleTemplate: "{classname} - {title}",
+            ancestorSeparator: " - "
+        }]
+    ],
     setupFilesAfterEnv: ['jest-extended', './tests/jest-default-timeout.js'],
     watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
 }
