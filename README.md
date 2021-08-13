@@ -155,9 +155,8 @@ Running locally:
 
 ## *Licensing*
 
-***File Size*** is distributed under LGPL version 3 or later,
-\[[License](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/master/LICENSE)]. LGPLv3 is additional
-permissions on top of GPLv3.
+***File Size*** is distributed under LGPL version 3 or later, \[[License](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/master/LICENSE)]
+. LGPLv3 is additional permissions on top of GPLv3.
 
 ![license](https://user-images.githubusercontent.com/19885116/48661948-6cf97e80-ea7a-11e8-97e7-b45332a13e49.png)
 
@@ -171,8 +170,7 @@ with community support please contact with us if you have some question or propo
 
 ## *Versioning*
 
-The project uses [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on
-this repository][tags].
+The project uses [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository][tags].
 
 ## *Contribution*
 
