@@ -57,6 +57,6 @@ module.exports = {
             ancestorSeparator: " - "
         }]
     ],
-    setupFilesAfterEnv: ['jest-extended', './tests/jest-default-timeout.js'],
+    setupFilesAfterEnv: ['jest-extended', '<rootDir>/tests/jest-default-timeout.js', '<rootDir>/tests/setupTests.js'],
     watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
 }
