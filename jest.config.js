@@ -21,6 +21,9 @@ module.exports = {
     transform: {
         '^.+\\.(js|ts)$': 'ts-jest',
     },
+    snapshotSerializers: [
+        '<rootDir>/node_modules/jest-html'
+    ],
     collectCoverage: true,
     collectCoverageFrom: [
         '**/*.(ts|js)',
