@@ -129,7 +129,7 @@
         "expect": "^27.0.2",
         "folio": "^0.3.18",
         "git-cz": "^4.1.0",
-        "husky": "^5.0.8",
+        "husky": "^7.0.2",
         "jest": "^27.0.5",
         "jest-circus": "^27.0.5",
         "jest-environment-node-debug": "^2.0.0",
