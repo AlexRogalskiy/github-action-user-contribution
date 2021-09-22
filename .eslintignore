@@ -8,3 +8,4 @@ scripts/
 reports/
 
 **/*.config.js
+index.d.ts
