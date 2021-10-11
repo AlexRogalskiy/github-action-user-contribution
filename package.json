@@ -1,6 +1,6 @@
 {
     "name": "github-action-user-contribution",
-    "version": "0.0.0-dev",
+    "version": "0.0.0-next-2021911214737",
     "description": "Automatically generates GitHub user contribution charts by provided parameters",
     "main": "dist/index.js",
     "license": "GPL-3.0",
