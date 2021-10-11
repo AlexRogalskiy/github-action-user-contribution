@@ -112,7 +112,7 @@
         "dockerfile_lint": "0.3.4",
         "dtslint": "^4.1.6",
         "editorconfig-checker": "4.0.2",
-        "eslint": "^7.28.0",
+        "eslint": "^8.0.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-friendly-formatter": "^4.0.1",
         "eslint-import-resolver-typescript": "^2.4.0",
