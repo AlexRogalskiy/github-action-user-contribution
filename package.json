@@ -64,6 +64,7 @@
         "version-update": "npm run version-checkout && git add package.json && npm run version-commit",
         "test:folio": "env-cmd --silent -e test folio tests/spec/",
         "jest-html": "jest-html",
+        "test:CI": "CI=true npm test  -- --coverage --ci --testResultsProcessor=\"jest-sonar-reporter\" --watchAll=false",
         "test:coverage": "env-cmd --silent -e test jest --forceExit --runInBand --collectCoverage --detectOpenHandles --coverage && coveralls < ./coverage/lcov.info",
         "test:watch": "env-cmd --silent -e test jest --watch --notify --notifyMode=change",
         "test": "env-cmd --silent -e test jest --verbose --maxWorkers=50% --passWithNoTests --no-cache --detectOpenHandles --testPathIgnorePatterns integration local-integration disconnection",
