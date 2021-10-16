@@ -80,7 +80,7 @@
     },
     "dependencies": {
         "@actions/core": "^1.4.0",
-        "cheerio": "^1.0.0-rc.9",
+        "cheerio": "1.0.0-rc.10",
         "env-cmd": "^10.1.0",
         "lodash": "^4.17.20",
         "node-fetch": "2.6.1"
