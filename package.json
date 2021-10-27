@@ -9,9 +9,9 @@
         "nodemon": "nodemon --exec \"npm run dev\"",
         "start:action": "npm run build && node dist/index.js",
         "dev": "env-cmd --silent -e dev npm run start:action",
-        "format": "prettier --config .prettierrc.yaml --ignore-unknown --loglevel warn --single-quote --write **/*.ts",
+        "format": "prettier --config .prettierrc.yaml --ignore-unknown --loglevel warn --single-quote --write ${npm_package_config_prettierTarget}",
         "format:md": "remark-preset-davidtheclark --format",
-        "format:check": "prettier --config .prettierrc.yaml --ignore-unknown --loglevel warn --check **/*.ts",
+        "format:check": "prettier --config .prettierrc.yaml --ignore-unknown --loglevel warn --check ${npm_package_config_prettierTarget}",
         "bundlesize:check": "bundlesize --config bundlesize.config.json",
         "lint": "eslint --format './node_modules/eslint-friendly-formatter/index.js' --color --cache --fix --quiet --max-warnings=100 --cache-location ./node_modules/.cache/ --format codeframe --ext js,ts .",
         "lint:md": "remark-preset-davidtheclark",
@@ -36,6 +36,8 @@
         "git:clean": "git stash && git clean -fdX",
         "docs": "typedoc",
         "docs:md": "md-magic --path '**/*.md' --ignore 'node_modules' --config ./markdown.config.js",
+        "compodocs": "compodoc -p tsconfig.doc.json -d docs",
+        "compodocs:serve": "compodoc -p tsconfig.doc.json -d docs -s",
         "codecov": "codecov",
         "sonar": "node sonar-project.config.js",
         "semantic-release": "semantic-release",
@@ -72,7 +74,7 @@
         "test:local": "jest --runInBand --verbose true --detectOpenHandles local-integration",
         "test:disconnect": "jest --runInBand --verbose true --detectOpenHandles disconnection",
         "test:license": "license-checker --production --summary --unknown --onlyAllow=\"Apache-2.0;BSD;ISC;MIT;UNLICENSED;\"",
-        "lint:all": "npm run lint:clean && npm run lint && npm run remark && npm run lint:json && npm run lint:dts && npm run lint:docker && npm run pretty",
+        "lint:all": "npm run lint:clean && npm run lint && npm run remark && npm run lint:json && npm run lint:docker && npm run pretty",
         "format:all": "npm run format && npm run format:md",
         "check:all": "npm run format:check",
         "test:all": "npm run test && npm run test:folio && npm run test:license",
@@ -107,6 +109,7 @@
         "await-sleep": "^0.0.1",
         "boxen": "^5.0.1",
         "codecov": "^3.8.2",
+        "@compodoc/compodoc": "^1.1.15",
         "conventional-changelog-cli": "^2.1.1",
         "coveralls": "^3.1.0",
         "cz-conventional-changelog": "^3.3.0",
@@ -261,6 +264,7 @@
     },
     "funding": "https://github.com/sponsors/AlexRogalskiy",
     "config": {
+        "prettierTarget": "**/*.ts",
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
         }
