@@ -60,14 +60,24 @@ engines:
     config:
       ignore_warnings: true
       config: .eslintrc.json
+  csslint:
+    enabled: false
   stylelint:
     enabled: false
+  fixme:
+    enabled: true
   duplication:
     enabled: true
     config:
       languages:
-        javascript:
-          mass_threshold: 75
+        - typescript
+        - javascript:
+            mass_threshold: 75
+
+ratings:
+  paths:
+  - "**.css"
+  - "**.ts"
 
 exclude_patterns:
   - "**/*.test.js"
