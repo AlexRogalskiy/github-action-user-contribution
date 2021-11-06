@@ -150,7 +150,7 @@
         "joi": "^17.4.0",
         "jsonlint": "^1.6.3",
         "license-checker": "^25.0.1",
-        "lint-staged": "^10.1.6",
+        "lint-staged": "11.2.6",
         "loglevel": "^1.7.1",
         "markdown-link-check": "^3.8.6",
         "markdown-magic": "^2.5.2",
