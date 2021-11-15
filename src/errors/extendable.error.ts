@@ -4,13 +4,13 @@ import { hasProperty } from '../utils/validators'
 
 /**
  * ExtendableError
- * @desc Class representing extendable error
+ * @description Class representing extendable error
  */
 export class ExtendableError extends Error {
     /**
      * Extendable error constructor by input parameters
-     * @param type initial input {@link ErrorType}
-     * @param message initial input {@link string} message
+     * @param type - initial input {@link ErrorType}
+     * @param message - initial input {@link string} message
      */
     constructor(readonly type: ErrorType, readonly message: string) {
         super(message)

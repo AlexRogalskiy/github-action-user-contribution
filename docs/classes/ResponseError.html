@@ -159,15 +159,15 @@
                                         <tbody>
                                                 <tr>
                                                         <td>message</td>
-                                                  
+
                                                         <td>
                                                                         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                                         </td>
-                                                  
+
                                                     <td>
                                                             No
                                                     </td>
-                                                    
+
                                                         <td>
                                                                 <p>initial input <a href="string">string</a> message</p>
 
@@ -175,15 +175,15 @@
                                                 </tr>
                                                 <tr>
                                                         <td>args</td>
-                                                  
+
                                                         <td>
                                                                     <code>any[]</code>
                                                         </td>
-                                                  
+
                                                     <td>
                                                             No
                                                     </td>
-                                                    
+
                                                         <td>
                                                                 <p>initial input <a href="Array">Array</a> of arguments</p>
 
@@ -199,7 +199,7 @@
 </section>
 
             <section>
-    
+
     <h3 id="inputs">
         Properties
     </h3>
@@ -251,7 +251,7 @@
 </section>
 
             <section>
-    
+
     <h3 id="methods">
         Methods
     </h3>
@@ -317,13 +317,13 @@ import { ErrorType } from &#x27;../../typings/enum-types&#x27;
 
 /**
  * ResponseError
- * @desc Class representing request error
+ * @description Class representing request error
  */
 export class ResponseError extends GeneralError {
     /**
      * Response error constructor by input parameters
-     * @param message initial input {@link string} message
-     * @param args initial input {@link Array} of arguments
+     * @param message - initial input {@link string} message
+     * @param args - initial input {@link Array} of arguments
      */
     constructor(readonly message: string, ...args: any[]) {
         super(ErrorType.response_error, message, args)

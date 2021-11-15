@@ -13,7 +13,7 @@ import {
 
 /**
  * ProfileRecord
- * @desc Type representing image profiles configuration options
+ * @description Type representing image profiles configuration options
  */
 export type ProfileRecord = Record<ProfileType, Partial<ProfileOptions>>
 

@@ -159,15 +159,15 @@
                                         <tbody>
                                                 <tr>
                                                         <td>type</td>
-                                                  
+
                                                         <td>
                                                                         <code><a href="../miscellaneous/enumerations.html#ErrorType" target="_self" >ErrorType</a></code>
                                                         </td>
-                                                  
+
                                                     <td>
                                                             No
                                                     </td>
-                                                    
+
                                                         <td>
                                                                 <p>initial input <a href="../miscellaneous/enumerations.html#ErrorType">ErrorType</a></p>
 
@@ -175,15 +175,15 @@
                                                 </tr>
                                                 <tr>
                                                         <td>message</td>
-                                                  
+
                                                         <td>
                                                                         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                                         </td>
-                                                  
+
                                                     <td>
                                                             No
                                                     </td>
-                                                    
+
                                                         <td>
                                                                 <p>initial input <a href="string">string</a> message</p>
 
@@ -191,15 +191,15 @@
                                                 </tr>
                                                 <tr>
                                                         <td>args</td>
-                                                  
+
                                                         <td>
                                                                     <code>any[]</code>
                                                         </td>
-                                                  
+
                                                     <td>
                                                             No
                                                     </td>
-                                                    
+
                                                         <td>
                                                                 <p>initial input <a href="Array">Array</a> of arguments</p>
 
@@ -215,7 +215,7 @@
 </section>
 
             <section>
-    
+
     <h3 id="inputs">
         Properties
     </h3>
@@ -260,7 +260,7 @@
 </section>
 
             <section>
-    
+
     <h3 id="methods">
         Methods
     </h3>
@@ -321,7 +321,7 @@ import { ExtendableError } from &#x27;./extendable.error&#x27;
 
 /**
  * GeneralError
- * @desc Class representing general error
+ * @description Class representing general error
  */
 export class GeneralError extends ExtendableError {
     /**
@@ -331,9 +331,9 @@ export class GeneralError extends ExtendableError {
 
     /**
      * General error constructor by input parameters
-     * @param type initial input {@link ErrorType}
-     * @param message initial input {@link string} message
-     * @param args initial input {@link Array} of arguments
+     * @param type - initial input {@link ErrorType}
+     * @param message - initial input {@link string} message
+     * @param args - initial input {@link Array} of arguments
      */
     constructor(readonly type: ErrorType, readonly message: string, ...args: any[]) {
         super(type, message)

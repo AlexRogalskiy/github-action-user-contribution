@@ -1,6 +1,6 @@
 /**
  * ProfileType
- * @desc Type representing supported profiles
+ * @description Type representing supported profiles
  */
 export enum ProfileType {
     dev = 'dev',
@@ -11,7 +11,7 @@ export enum ProfileType {
 //--------------------------------------------------------------------------------------------------
 /**
  * ErrorType
- * @desc Type representing supported errors
+ * @description Type representing supported errors
  */
 export enum ErrorType {
     general_error = 'GeneralError',
@@ -27,7 +27,7 @@ export enum ErrorType {
 //--------------------------------------------------------------------------------------------------
 /**
  * ColorSchemeType
- * @desc Type representing supported color schemes
+ * @description Type representing supported color schemes
  */
 export enum ColorSchemeType {
     red = 'red',
@@ -38,7 +38,7 @@ export enum ColorSchemeType {
 //--------------------------------------------------------------------------------------------------
 /**
  * ChartType
- * @desc Type representing supported charts
+ * @description Type representing supported charts
  */
 export enum ChartType {
     heatmap = 'heatmap',
@@ -47,7 +47,7 @@ export enum ChartType {
 //--------------------------------------------------------------------------------------------------
 /**
  * ChartType
- * @desc Type representing supported charts
+ * @description Type representing supported charts
  */
 export enum DayOfWeekType {
     'Monday',

@@ -4,7 +4,7 @@ import { ChartType, ColorSchemeType } from './enum-types'
 
 /**
  * ConfigOptions
- * @desc Type representing configuration options
+ * @description Type representing configuration options
  */
 export type ConfigOptions = {
     /**
@@ -28,21 +28,21 @@ export type ConfigOptions = {
 //--------------------------------------------------------------------------------------------------
 /**
  * ColorPalette
- * @desc Type representing color palette
+ * @description Type representing color palette
  */
 export type ColorPalette = string[]
 
 //--------------------------------------------------------------------------------------------------
 /**
  * ColorScheme
- * @desc Type representing color scheme
+ * @description Type representing color scheme
  */
 export type ColorScheme = Record<ColorSchemeType, ColorPalette>
 
 //--------------------------------------------------------------------------------------------------
 /**
  * RequestOptions
- * @desc Type representing request options
+ * @description Type representing request options
  */
 export type RequestOptions = {
     /**
@@ -58,7 +58,7 @@ export type RequestOptions = {
 //--------------------------------------------------------------------------------------------------
 /**
  * RequestInfo
- * @desc Type representing request info
+ * @description Type representing request info
  */
 export type RequestInfo = {
     /**
@@ -70,7 +70,7 @@ export type RequestInfo = {
 //--------------------------------------------------------------------------------------------------
 /**
  * ColorOptions
- * @desc Type representing color options
+ * @description Type representing color options
  */
 export type ColorOptions = {
     /**
@@ -82,7 +82,7 @@ export type ColorOptions = {
 //--------------------------------------------------------------------------------------------------
 /**
  * ChartOptions
- * @desc Type representing chart options
+ * @description Type representing chart options
  */
 export type ChartOptions = {
     /**
@@ -94,7 +94,7 @@ export type ChartOptions = {
 //--------------------------------------------------------------------------------------------------
 /**
  * StyleOptions
- * @desc Type representing style options
+ * @description Type representing style options
  */
 export type StyleOptions = {
     /**
@@ -110,7 +110,7 @@ export type StyleOptions = {
 //--------------------------------------------------------------------------------------------------
 /**
  * RepoOptions
- * @desc Type representing repository options
+ * @description Type representing repository options
  */
 export type AccountOptions = {
     /**
@@ -126,7 +126,7 @@ export type AccountOptions = {
 //--------------------------------------------------------------------------------------------------
 /**
  * ResourceOptions
- * @desc Type representing resource options
+ * @description Type representing resource options
  */
 export type ResourceOptions = {
     /**
@@ -142,7 +142,7 @@ export type ResourceOptions = {
 //--------------------------------------------------------------------------------------------------
 /**
  * ProfileOptions
- * @desc Type representing profiles options
+ * @description Type representing profiles options
  */
 export type ProfileOptions = {
     /**
@@ -170,7 +170,7 @@ export type ProfileOptions = {
 //--------------------------------------------------------------------------------------------------
 /**
  * Position
- * @desc Type representing position
+ * @description Type representing position
  */
 export type Position = {
     /**
@@ -186,7 +186,7 @@ export type Position = {
 //--------------------------------------------------------------------------------------------------
 /**
  * ContributionGraphData
- * @desc Type representing user contribution graph data
+ * @description Type representing user contribution graph data
  */
 export type ContributionGraphData = {
     /**
@@ -202,7 +202,7 @@ export type ContributionGraphData = {
 //--------------------------------------------------------------------------------------------------
 /**
  * GraphDataItem
- * @desc Type representing contribution graph data item
+ * @description Type representing contribution graph data item
  */
 export type GraphDataItem = {
     /**
@@ -230,7 +230,7 @@ export type GraphDataItem = {
 //--------------------------------------------------------------------------------------------------
 /**
  * DateRange
- * @desc Type representing date range
+ * @description Type representing date range
  */
 export type DateRange =
     | {
@@ -242,7 +242,7 @@ export type DateRange =
 //--------------------------------------------------------------------------------------------------
 /**
  * Pair
- * @desc Type representing pair
+ * @description Type representing pair
  */
 export type Pair<K, V> = {
     key: K

@@ -4,13 +4,13 @@ import { GeneralError } from './general.error'
 
 /**
  * ValueError
- * @desc Class representing value error
+ * @description Class representing value error
  */
 export class ValueError extends GeneralError {
     /**
      * Value error constructor by input parameters
-     * @param message initial input {@link string} message
-     * @param args initial input {@link Array} of arguments
+     * @param message - initial input {@link string} message
+     * @param args - initial input {@link Array} of arguments
      */
     constructor(readonly message: string, ...args: any[]) {
         super(ErrorType.value_error, message, args)

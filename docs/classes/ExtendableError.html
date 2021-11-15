@@ -116,15 +116,15 @@
                                         <tbody>
                                                 <tr>
                                                         <td>type</td>
-                                                  
+
                                                         <td>
                                                                         <code><a href="../miscellaneous/enumerations.html#ErrorType" target="_self" >ErrorType</a></code>
                                                         </td>
-                                                  
+
                                                     <td>
                                                             No
                                                     </td>
-                                                    
+
                                                         <td>
                                                                 <p>initial input <a href="../miscellaneous/enumerations.html#ErrorType">ErrorType</a></p>
 
@@ -132,15 +132,15 @@
                                                 </tr>
                                                 <tr>
                                                         <td>message</td>
-                                                  
+
                                                         <td>
                                                                         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                                         </td>
-                                                  
+
                                                     <td>
                                                             No
                                                     </td>
-                                                    
+
                                                         <td>
                                                                 <p>initial input <a href="string">string</a> message</p>
 
@@ -172,13 +172,13 @@ import { hasProperty } from &#x27;../utils/validators&#x27;
 
 /**
  * ExtendableError
- * @desc Class representing extendable error
+ * @description Class representing extendable error
  */
 export class ExtendableError extends Error {
     /**
      * Extendable error constructor by input parameters
-     * @param type initial input {@link ErrorType}
-     * @param message initial input {@link string} message
+     * @param type - initial input {@link ErrorType}
+     * @param message - initial input {@link string} message
      */
     constructor(readonly type: ErrorType, readonly message: string) {
         super(message)

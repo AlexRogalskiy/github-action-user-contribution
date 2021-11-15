@@ -11,7 +11,7 @@ import { mergeProps } from './commons'
 
 /**
  * Logger
- * @desc Type representing logging function
+ * @description Type representing logging function
  */
 type Logger<T, V> = (message: T, ...args: V[]) => void
 

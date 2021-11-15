@@ -5,6 +5,7 @@
         "spellcheck",
         "eslint-comments",
         "eslint-plugin-import-helpers",
+        "eslint-plugin-tsdoc",
         "cypress",
         "unicorn"
     ],
@@ -32,6 +33,7 @@
         "project": "./tsconfig.json"
     },
     "rules": {
+        "tsdoc/syntax": "off",
         "indent": ["error", 4],
         "linebreak-style": ["error", "unix"],
         "jsx-quotes": ["error", "prefer-double"],

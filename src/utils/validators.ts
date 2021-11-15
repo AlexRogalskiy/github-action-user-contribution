@@ -61,8 +61,8 @@ export const isNumber = (value: any): boolean => {
 
 /**
  * Returns a boolean indicating whether the object has the specified property.
- * @param {Object} obj An object.
- * @param {String} prop A property name.
+ * @param obj - n object.
+ * @param prop - A property name.
  * @returns {Boolean}
  */
 export const hasProperty = (obj: any, prop: Optional<PropertyKey>): boolean => {

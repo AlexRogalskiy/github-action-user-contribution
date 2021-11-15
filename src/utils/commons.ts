@@ -11,7 +11,7 @@ export const mergeProps = <T>(...obj: unknown[]): T =>
 
 /**
  * Utility function to create a K:V from a list of strings
- * @param values initial input array to operate by
+ * @param values - initial input array to operate by
  */
 export const strToEnum = <T extends string>(values: T[]): { [K in T]: K } => {
     return toEnum(values)
@@ -19,8 +19,8 @@ export const strToEnum = <T extends string>(values: T[]): { [K in T]: K } => {
 
 /**
  * Utility function to create a K:V from a list of strings
- * @param values initial input array to operate by
- * @param func
+ * @param values - initial input array to operate by
+ * @param func - initial input function
  */
 export const toEnum = <T extends string, V>(values: T[], func?: (v: T) => V): { [K in T]: V } => {
     return values.reduce((res, key) => {
