@@ -6,6 +6,7 @@
     "license": "GPL-3.0",
     "private": true,
     "scripts": {
+        "authors": "git shortlog -s | cut -c8- | sort -f > AUTHORS",
         "nodemon": "nodemon --exec \"npm run dev\"",
         "start:action": "npm run build && node dist/index.js",
         "dev": "env-cmd --silent -e dev npm run start:action",
