@@ -67,6 +67,7 @@
         "version-update": "npm run version-checkout && git add package.json && npm run version-commit",
         "test:folio": "env-cmd --silent -e test folio tests/spec/",
         "jest-html": "jest-html",
+        "install-if-package-changed": "git diff-tree -r --name-only --no-commit-id HEAD | grep --quiet package-lock.json && npm install || exit 0",
         "test:CI": "CI=true npm test  -- --coverage --ci --testResultsProcessor=\"jest-sonar-reporter\" --watchAll=false",
         "test:coverage": "env-cmd --silent -e test jest --forceExit --runInBand --collectCoverage --detectOpenHandles --coverage && coveralls < ./coverage/lcov.info",
         "test:watch": "env-cmd --silent -e test jest --watch --notify --notifyMode=change",
@@ -251,9 +252,11 @@
     },
     "husky": {
         "hooks": {
+            "pre-commit": "npm run lint:staged && npm run all && npm run test:all",
             "pre-push": "npm run check:all",
+            "post-checkout": "yarn install-if-package-changed",
+            "post-merge": "npm run install-if-package-changed",
             "prepare-commit-msg": "git cz --hook --non-interactive --type=feat --subject=\"added new features\" || true",
-            "pre-commit": "npm run lint:staged && npm run all && npm run test:all"
         }
     },
     "bugs": {
