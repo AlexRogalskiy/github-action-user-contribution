@@ -1,82 +1,55 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>github-action-user-contribution documentation</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-	   <link rel="stylesheet" href="./styles/style.css">
-        <link rel="stylesheet" href="./styles/dark.css" media="(prefers-color-scheme: dark)">
-    </head>
-    <body>
-
-        <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="./" class="navbar-brand">github-action-user-contribution documentation</a>
-            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
-        </div>
-
-        <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
-        </div>
-
-        <div class="container-fluid main">
-           <div class="row main">
-               <div class="hidden-xs menu">
-                   <compodoc-menu mode="normal"></compodoc-menu>
-               </div>
-               <!-- START CONTENT -->
-               <div class="content getting-started">
-                   <div class="content-data">
-
-<h1 id="github-user-contribution-charts"><em>GitHub user contribution charts</em></h1>
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>GitHub action for GitHub user contribution charts</title><meta name="description" content="Documentation for GitHub action for GitHub user contribution charts"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">GitHub action for GitHub user contribution charts</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>GitHub action for GitHub user contribution charts</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#github-user-contribution-charts" id="github-user-contribution-charts" style="color: inherit; text-decoration: none;">
+  <h1><em>GitHub user contribution charts</em></h1>
+</a>
 <blockquote>
 <p>GitHub Action to provide GitHub user contribution charts</p>
 </blockquote>
-<p><a href="https://github.com/marketplace/actions/styled-user-contribution"><img src="https://img.shields.io/badge/marketplacegithub-styled--user--contribution-blue?logo=github" alt="GitHub marketplace" class="img-responsive"></a></p>
-<p><a href="https://github.com/lekterable/perfekt"><img src="https://img.shields.io/badge/management-perfekt👌-red.svg" alt="management: perfekt👌" class="img-responsive"></a>
-<a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" alt="code style: prettier" class="img-responsive"></a>
-<img src="https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/AlexRogalskiy/github-action-user-contribution" alt="Mergify Status" class="img-responsive">
-<a href="https://houndci.com"><img src="https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg" alt="Reviewed by Hound" class="img-responsive"></a>
-<a href="https://github.com/AlexRogalskiy/github-action-user-contribution/discussions"><img src="https://img.shields.io/badge/chat-discussions-success.svg" alt="Chat" class="img-responsive"></a></p>
-<p><a href="https://deepsource.io/gh/AlexRogalskiy/github-action-user-contribution/?ref=repository-badge"><img src="https://deepsource.io/gh/AlexRogalskiy/github-action-user-contribution.svg/?label=active+issues&show_trend=true" alt="DeepSource" class="img-responsive"></a>
-<a href="https://deepscan.io/dashboard#view=project&amp;tid=11946&amp;pid=17041&amp;bid=375447"><img src="https://deepscan.io/api/teams/11946/projects/17041/branches/375447/badge/grade.svg" alt="DeepScan grade" class="img-responsive"></a></p>
-<p><img src="https://img.shields.io/github/v/tag/AlexRogalskiy/github-action-user-contribution" alt="GitHub tag (latest by date)" class="img-responsive">
-<img src="https://img.shields.io/github/release-date/AlexRogalskiy/github-action-user-contribution" alt="GitHub Release Date" class="img-responsive">
-<img src="https://tokei.rs/b1/github/AlexRogalskiy/github-action-user-contribution?category=lines" alt="Lines of code" class="img-responsive">
-<img src="https://img.shields.io/github/issues-closed/AlexRogalskiy/github-action-user-contribution" alt="GitHub closed issues" class="img-responsive">
-<img src="https://img.shields.io/github/issues-pr-closed/AlexRogalskiy/github-action-user-contribution" alt="GitHub closed pull requests" class="img-responsive">
-<img src="https://img.shields.io/github/repo-size/AlexRogalskiy/github-action-user-contribution" alt="GitHub repo size" class="img-responsive">
-<img src="https://img.shields.io/github/last-commit/AlexRogalskiy/github-action-user-contribution" alt="GitHub last commit" class="img-responsive">
-<img src="https://img.shields.io/github/languages/count/AlexRogalskiy/github-action-user-contribution" alt="GitHub language count" class="img-responsive">
-<img src="https://img.shields.io/github/search/AlexRogalskiy/github-action-user-contribution/goto" alt="GitHub search hit counter" class="img-responsive">
-<img src="https://badgen.net/github/branches/AlexRogalskiy/github-action-user-contribution" alt="GitHub Repository branches" class="img-responsive">
-<img src="https://badgen.net/github/dependents-repo/AlexRogalskiy/github-action-user-contribution" alt="GitHub Repository dependents" class="img-responsive">
-<a href="https://renovatebot.com/"><img src="https://badgen.net/badge/renovate/enabled/green?cache=300" alt="Renovatebot" class="img-responsive"></a>
-<a href="https://dependabot.com/"><img src="https://img.shields.io/badge/dependabot-enabled-1f8ceb.svg?style=flat-square" alt="Dependabot" class="img-responsive"></a>
-<a href="https://newreleases.io/github/AlexRogalskiy/github-action-user-contribution"><img src="https://newreleases.io/badge.svg" alt="NewReleases" class="img-responsive"></a>
-<a href="https://hitsofcode.com/github/alexrogalskiy/github-action-user-contribution?branch=master/view?branch=master"><img src="https://hitsofcode.com/github/alexrogalskiy/github-action-user-contribution?branch=master" alt="Hits-of-Code" class="img-responsive"></a>
-<a href="https://david-dm.org/AlexRogalskiy/github-action-user-contribution"><img src="https://status.david-dm.org/gh/AlexRogalskiy/github-action-user-contribution.svg" alt="dependencies Status" class="img-responsive"></a>
-<a href="https://david-dm.org/AlexRogalskiy/github-action-user-contribution?type=dev"><img src="https://status.david-dm.org/gh/AlexRogalskiy/github-action-user-contribution.svg" alt="devDependencies Status" class="img-responsive"></a></p>
-<p><a href="https://app.codeac.io/github/AlexRogalskiy/github-action-user-contribution"><img src="https://static.codeac.io/badges/2-364233123.svg" alt="Codeac" class="img-responsive" title="Codeac"></a>
-<a href="https://coveralls.io/github/AlexRogalskiy/github-action-user-contribution?branch=master"><img src="https://coveralls.io/repos/github/AlexRogalskiy/github-action-user-contribution/badge.svg?branch=master" alt="Coverage Status" class="img-responsive"></a>
-<a href="https://codebeat.co/projects/github-com-alexrogalskiy-github-action-user-contribution-master"><img src="https://codebeat.co/badges/43096f7e-887a-436c-b372-dd6667f1ae8c" alt="codebeat badge" class="img-responsive"></a>
-<a href="https://lgtm.com/projects/g/AlexRogalskiy/github-action-user-contribution/alerts/"><img src="https://img.shields.io/lgtm/alerts/g/AlexRogalskiy/github-action-user-contribution.svg?logo=lgtm&logoWidth=18" alt="Total alerts" class="img-responsive"></a>
-<a href="https://lgtm.com/projects/g/AlexRogalskiy/github-action-user-contribution/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/g/AlexRogalskiy/github-action-user-contribution.svg?logo=lgtm&logoWidth=18" alt="Language grade: JavaScript" class="img-responsive"></a>
-<a href="https://codecov.io/gh/AlexRogalskiy/github-action-user-contribution"><img src="https://codecov.io/gh/AlexRogalskiy/github-action-user-contribution/branch/master/graph/badge.svg?token=sN03T2VTfV" alt="codecov" class="img-responsive"></a>
-<a href="https://github.com/AlexRogalskiy/github-action-user-contribution/actions/workflows/build.yml"><img src="https://github.com/AlexRogalskiy/github-action-user-contribution/workflows/CI/badge.svg" alt="CI" class="img-responsive"></a>
-<a href="https://circleci.com/gh/AlexRogalskiy/github-action-user-contribution"><img src="https://circleci.com/gh/AlexRogalskiy/github-action-user-contribution.svg?style=shield" alt="CircleCI" class="img-responsive"></a>
-<a href="https://github.com/marketplace/actions/super-linter"><img src="https://github.com/AlexRogalskiy/github-action-user-contribution/workflows/Lint%20Code%20Base/badge.svg" alt="GitHub Super-Linter" class="img-responsive"></a>
-<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly" class="img-responsive"></a>
-<a href="https://github.com/AlexRogalskiy/github-action-user-contribution"><img src="https://img.shields.io/badge/ComVer-compliant-brightgreen.svg" alt="ComVer" class="img-responsive"></a>
-<a href="https://github.com/search?o=desc&amp;q=AlexRogalskiy/github-action-user-contribution+path%3A.github%2Fworkflows+language%3AYAML&amp;s=&amp;type=Code"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-git-master.endbug.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3DAlexRogalskiy%2Fgithub-action-user-contribution%26badge%3Dtrue" alt="Public workflows that use this action." class="img-responsive"></a>
-<a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/master/LICENSE"><img src="https://img.shields.io/github/license/AlexRogalskiy/github-action-user-contribution" alt="License" class="img-responsive"></a></p>
-<p><a href="https://github.com/AlexRogalskiy/github-action-user-contribution/discussions"><img src="https://img.shields.io/badge/chat-discussions-success.svg" alt="Chat" class="img-responsive"></a>
-<a href="https://github.com/AlexRogalskiy/github-action-user-contribution/labels/question"><img src="https://img.shields.io/badge/Open-questions-blue.svg?style=flat-curved" alt="Open questions" class="img-responsive"></a>
-<a href="https://github.com/AlexRogalskiy/github-action-user-contribution/labels/bug"><img src="https://img.shields.io/badge/Open-bugs-red.svg?style=flat-curved" alt="Open bugs" class="img-responsive"></a></p>
-<h2 id="table-of-contents"><em>Table of contents</em></h2>
+<p><a href="https://github.com/marketplace/actions/styled-user-contribution"><img src="https://img.shields.io/badge/marketplacegithub-styled--user--contribution-blue?logo=github" alt="GitHub marketplace"></a></p>
+<p><a href="https://github.com/lekterable/perfekt"><img src="https://img.shields.io/badge/management-perfekt%F0%9F%91%8C-red.svg" alt="management: perfekt👌"></a>
+<a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" alt="code style: prettier"></a>
+<img src="https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/AlexRogalskiy/github-action-user-contribution" alt="Mergify Status">
+<a href="https://houndci.com"><img src="https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg" alt="Reviewed by Hound"></a>
+<a href="https://github.com/AlexRogalskiy/github-action-user-contribution/discussions"><img src="https://img.shields.io/badge/chat-discussions-success.svg" alt="Chat"></a></p>
+<p><a href="https://deepsource.io/gh/AlexRogalskiy/github-action-user-contribution/?ref=repository-badge"><img src="https://deepsource.io/gh/AlexRogalskiy/github-action-user-contribution.svg/?label=active+issues&show_trend=true" alt="DeepSource"></a>
+<a href="https://deepscan.io/dashboard#view=project&amp;tid=11946&amp;pid=17041&amp;bid=375447"><img src="https://deepscan.io/api/teams/11946/projects/17041/branches/375447/badge/grade.svg" alt="DeepScan grade"></a></p>
+<p><img src="https://img.shields.io/github/v/tag/AlexRogalskiy/github-action-user-contribution" alt="GitHub tag (latest by date)">
+<img src="https://img.shields.io/github/release-date/AlexRogalskiy/github-action-user-contribution" alt="GitHub Release Date">
+<img src="https://tokei.rs/b1/github/AlexRogalskiy/github-action-user-contribution?category=lines" alt="Lines of code">
+<img src="https://img.shields.io/github/issues-closed/AlexRogalskiy/github-action-user-contribution" alt="GitHub closed issues">
+<img src="https://img.shields.io/github/issues-pr-closed/AlexRogalskiy/github-action-user-contribution" alt="GitHub closed pull requests">
+<img src="https://img.shields.io/github/repo-size/AlexRogalskiy/github-action-user-contribution" alt="GitHub repo size">
+<img src="https://img.shields.io/github/last-commit/AlexRogalskiy/github-action-user-contribution" alt="GitHub last commit">
+<img src="https://img.shields.io/github/languages/count/AlexRogalskiy/github-action-user-contribution" alt="GitHub language count">
+<img src="https://img.shields.io/github/search/AlexRogalskiy/github-action-user-contribution/goto" alt="GitHub search hit counter">
+<img src="https://badgen.net/github/branches/AlexRogalskiy/github-action-user-contribution" alt="GitHub Repository branches">
+<img src="https://badgen.net/github/dependents-repo/AlexRogalskiy/github-action-user-contribution" alt="GitHub Repository dependents">
+<a href="https://renovatebot.com/"><img src="https://badgen.net/badge/renovate/enabled/green?cache=300" alt="Renovatebot"></a>
+<a href="https://dependabot.com/"><img src="https://img.shields.io/badge/dependabot-enabled-1f8ceb.svg?style=flat-square" alt="Dependabot"></a>
+<a href="https://newreleases.io/github/AlexRogalskiy/github-action-user-contribution"><img src="https://newreleases.io/badge.svg" alt="NewReleases"></a>
+<a href="https://hitsofcode.com/github/alexrogalskiy/github-action-user-contribution?branch=master/view?branch=master"><img src="https://hitsofcode.com/github/alexrogalskiy/github-action-user-contribution?branch=master" alt="Hits-of-Code"></a>
+<a href="https://david-dm.org/AlexRogalskiy/github-action-user-contribution"><img src="https://status.david-dm.org/gh/AlexRogalskiy/github-action-user-contribution.svg" alt="dependencies Status"></a>
+<a href="https://david-dm.org/AlexRogalskiy/github-action-user-contribution?type=dev"><img src="https://status.david-dm.org/gh/AlexRogalskiy/github-action-user-contribution.svg" alt="devDependencies Status"></a></p>
+<p><a href="https://app.codeac.io/github/AlexRogalskiy/github-action-user-contribution"><img src="https://static.codeac.io/badges/2-364233123.svg" alt="Codeac" title="Codeac"></a>
+<a href="https://coveralls.io/github/AlexRogalskiy/github-action-user-contribution?branch=master"><img src="https://coveralls.io/repos/github/AlexRogalskiy/github-action-user-contribution/badge.svg?branch=master" alt="Coverage Status"></a>
+<a href="https://codebeat.co/projects/github-com-alexrogalskiy-github-action-user-contribution-master"><img src="https://codebeat.co/badges/43096f7e-887a-436c-b372-dd6667f1ae8c" alt="codebeat badge"></a>
+<a href="https://lgtm.com/projects/g/AlexRogalskiy/github-action-user-contribution/alerts/"><img src="https://img.shields.io/lgtm/alerts/g/AlexRogalskiy/github-action-user-contribution.svg?logo=lgtm&logoWidth=18" alt="Total alerts"></a>
+<a href="https://lgtm.com/projects/g/AlexRogalskiy/github-action-user-contribution/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/g/AlexRogalskiy/github-action-user-contribution.svg?logo=lgtm&logoWidth=18" alt="Language grade: JavaScript"></a>
+<a href="https://codecov.io/gh/AlexRogalskiy/github-action-user-contribution"><img src="https://codecov.io/gh/AlexRogalskiy/github-action-user-contribution/branch/master/graph/badge.svg?token=sN03T2VTfV" alt="codecov"></a>
+<a href="https://github.com/AlexRogalskiy/github-action-user-contribution/actions/workflows/build.yml"><img src="https://github.com/AlexRogalskiy/github-action-user-contribution/workflows/CI/badge.svg" alt="CI"></a>
+<a href="https://circleci.com/gh/AlexRogalskiy/github-action-user-contribution"><img src="https://circleci.com/gh/AlexRogalskiy/github-action-user-contribution.svg?style=shield" alt="CircleCI"></a>
+<a href="https://github.com/marketplace/actions/super-linter"><img src="https://github.com/AlexRogalskiy/github-action-user-contribution/workflows/Lint%20Code%20Base/badge.svg" alt="GitHub Super-Linter"></a>
+<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly"></a>
+<a href="https://github.com/AlexRogalskiy/github-action-user-contribution"><img src="https://img.shields.io/badge/ComVer-compliant-brightgreen.svg" alt="ComVer"></a>
+<a href="https://github.com/search?o=desc&amp;q=AlexRogalskiy/github-action-user-contribution+path%3A.github%2Fworkflows+language%3AYAML&amp;s=&amp;type=Code"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-git-master.endbug.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3DAlexRogalskiy%2Fgithub-action-user-contribution%26badge%3Dtrue" alt="Public workflows that use this action."></a>
+<a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/master/LICENSE"><img src="https://img.shields.io/github/license/AlexRogalskiy/github-action-user-contribution" alt="License"></a></p>
+<p><a href="https://github.com/AlexRogalskiy/github-action-user-contribution/discussions"><img src="https://img.shields.io/badge/chat-discussions-success.svg" alt="Chat"></a>
+<a href="https://github.com/AlexRogalskiy/github-action-user-contribution/labels/question"><img src="https://img.shields.io/badge/Open-questions-blue.svg?style=flat-curved" alt="Open questions"></a>
+<a href="https://github.com/AlexRogalskiy/github-action-user-contribution/labels/bug"><img src="https://img.shields.io/badge/Open-bugs-red.svg?style=flat-curved" alt="Open bugs"></a></p>
+
+<a href="#table-of-contents" id="table-of-contents" style="color: inherit; text-decoration: none;">
+  <h2><em>Table of contents</em></h2>
+</a>
 <ul>
 <li><a href="#description"><em>Description</em></a></li>
 <li><a href="#inputs"><em>Inputs</em></a><ul>
@@ -102,7 +75,10 @@
 <li><a href="#forks"><em>Forks</em></a></li>
 <li><a href="#development-support"><em>Development Support</em></a></li>
 </ul>
-<h2 id="description"><em>Description</em></h2>
+
+<a href="#description" id="description" style="color: inherit; text-decoration: none;">
+  <h2><em>Description</em></h2>
+</a>
 <p align="center" style="text-align:center;">
     <a href="https://www.typescriptlang.org/">
         <img src="https://img.shields.io/badge/typescript%20-%23323330.svg?&logo=typescript&logoColor=%23F7DF1E" alt="Typescript" />
@@ -119,150 +95,140 @@
 </p>
 
 <p>Generates GitHub user contribution charts.</p>
-<h2 id="inputs"><em>Inputs</em></h2>
-<h3 id="username"><code>userName</code></h3>
+
+<a href="#inputs" id="inputs" style="color: inherit; text-decoration: none;">
+  <h2><em>Inputs</em></h2>
+</a>
+
+<a href="#username" id="username" style="color: inherit; text-decoration: none;">
+  <h3><code>userName</code></h3>
+</a>
 <p><strong>Required</strong> GitHub user name</p>
-<h3 id="startdate"><code>startDate</code></h3>
+
+<a href="#startdate" id="startdate" style="color: inherit; text-decoration: none;">
+  <h3><code>startDate</code></h3>
+</a>
 <p><strong>Optional</strong> Start period date</p>
-<h3 id="enddate"><code>endDate</code></h3>
+
+<a href="#enddate" id="enddate" style="color: inherit; text-decoration: none;">
+  <h3><code>endDate</code></h3>
+</a>
 <p><strong>Optional</strong> End period date</p>
-<h3 id="colorscheme"><code>colorScheme</code></h3>
+
+<a href="#colorscheme" id="colorscheme" style="color: inherit; text-decoration: none;">
+  <h3><code>colorScheme</code></h3>
+</a>
 <p><strong>Optional</strong> Chart color scheme (default <code>green</code>)</p>
-<h3 id="filename"><code>fileName</code></h3>
+
+<a href="#filename" id="filename" style="color: inherit; text-decoration: none;">
+  <h3><code>fileName</code></h3>
+</a>
 <p><strong>Optional</strong> File name (default <code>chart.svg</code>)</p>
-<h3 id="filepath"><code>filePath</code></h3>
+
+<a href="#filepath" id="filepath" style="color: inherit; text-decoration: none;">
+  <h3><code>filePath</code></h3>
+</a>
 <p><strong>Optional</strong> File path (default <code>images</code>)</p>
-<h2 id="examples"><em>Examples</em></h2>
-<h3 id="basic-configuration">Basic configuration</h3>
-<div><pre class="line-numbers"><code class="language-yml">- name: Create GitHub user contribution chart
-  uses: alexrogalskiy/github-action-user-contribution&#64;master
+
+<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+  <h2><em>Examples</em></h2>
+</a>
+
+<a href="#basic-configuration" id="basic-configuration" style="color: inherit; text-decoration: none;">
+  <h3>Basic configuration</h3>
+</a>
+<pre><code class="language-yml">- name: Create GitHub user contribution chart
+  uses: alexrogalskiy/github-action-user-contribution@master
   with:
-    userName: AlexRogalskiy</code></pre></div><h3 id="complete-configuration">Complete configuration</h3>
-<div><pre class="line-numbers"><code class="language-yml">- name: Create GitHub user contribution chart
-  uses: alexrogalskiy/github-action-user-contribution&#64;master
+    userName: AlexRogalskiy
+</code></pre>
+
+<a href="#complete-configuration" id="complete-configuration" style="color: inherit; text-decoration: none;">
+  <h3>Complete configuration</h3>
+</a>
+<pre><code class="language-yml">- name: Create GitHub user contribution chart
+  uses: alexrogalskiy/github-action-user-contribution@master
   with:
     userName: &#39;AlexRogalskiy&#39;
     startDate: &#39;2017-12-03&#39;
     endDate: &#39;2018-12-03&#39;
     colorScheme: &#39;green&#39;
     fileName: &#39;chart.svg&#39;
-    filePath: &#39;images&#39;</code></pre></div><p>Running locally:</p>
+    filePath: &#39;images&#39;
+</code></pre>
+<p>Running locally:</p>
 <ul>
 <li><code>npm run start:action --action github-action-user-contribution --userName AlexRogalskiy</code></li>
 </ul>
-<h2 id="visitor-stats"><em>Visitor stats</em></h2>
-<p><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAlexRogalskiy%2Fgithub-action-user-contribution&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true" alt="GitHub page hits" class="img-responsive"></a></p>
-<p><img src="https://img.shields.io/github/stars/AlexRogalskiy/github-action-user-contribution?style=social" alt="GitHub stars" class="img-responsive">
-<img src="https://img.shields.io/github/forks/AlexRogalskiy/github-action-user-contribution?style=social" alt="GitHub forks" class="img-responsive">
-<img src="https://img.shields.io/github/watchers/AlexRogalskiy/github-action-user-contribution?style=social" alt="GitHub watchers" class="img-responsive"></p>
-<h2 id="licensing"><em>Licensing</em></h2>
+
+<a href="#visitor-stats" id="visitor-stats" style="color: inherit; text-decoration: none;">
+  <h2><em>Visitor stats</em></h2>
+</a>
+<p><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAlexRogalskiy%2Fgithub-action-user-contribution&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true" alt="GitHub page hits"></a></p>
+<p><img src="https://img.shields.io/github/stars/AlexRogalskiy/github-action-user-contribution?style=social" alt="GitHub stars">
+<img src="https://img.shields.io/github/forks/AlexRogalskiy/github-action-user-contribution?style=social" alt="GitHub forks">
+<img src="https://img.shields.io/github/watchers/AlexRogalskiy/github-action-user-contribution?style=social" alt="GitHub watchers"></p>
+
+<a href="#licensing" id="licensing" style="color: inherit; text-decoration: none;">
+  <h2><em>Licensing</em></h2>
+</a>
 <p><em><strong>File Size</strong></em> is distributed under LGPL version 3 or later, [<a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/master/LICENSE">License</a>]
 . LGPLv3 is additional permissions on top of GPLv3.</p>
-<p><img src="https://user-images.githubusercontent.com/19885116/48661948-6cf97e80-ea7a-11e8-97e7-b45332a13e49.png" alt="license" class="img-responsive"></p>
-<h2 id="authors"><em>Authors</em></h2>
+<p><img src="https://user-images.githubusercontent.com/19885116/48661948-6cf97e80-ea7a-11e8-97e7-b45332a13e49.png" alt="license"></p>
+
+<a href="#authors" id="authors" style="color: inherit; text-decoration: none;">
+  <h2><em>Authors</em></h2>
+</a>
 <p><em><strong>File Size</strong></em> is maintained by the following GitHub team-members:</p>
 <ul>
-<li><a href="https://github.com/AlexRogalskiy"><img src="https://img.shields.io/badge/author-AlexRogalskiy-FB8F0A" alt="Author" class="img-responsive"></a></li>
+<li><a href="https://github.com/AlexRogalskiy"><img src="https://img.shields.io/badge/author-AlexRogalskiy-FB8F0A" alt="Author"></a></li>
 </ul>
 <p>with community support please contact with us if you have some question or proposition.</p>
-<h2 id="versioning"><em>Versioning</em></h2>
+
+<a href="#versioning" id="versioning" style="color: inherit; text-decoration: none;">
+  <h2><em>Versioning</em></h2>
+</a>
 <p>The project uses <a href="http://semver.org/">SemVer</a> for versioning. For the versions available, see the <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/tags">tags on this repository</a>.</p>
-<h2 id="contribution"><em>Contribution</em></h2>
-<p><a href="https://badges.pufler.dev"><img src="https://badges.pufler.dev/contributors/AlexRogalskiy/github-action-user-contribution?size=50&padding=5&bots=true" alt="Contributors Display" class="img-responsive"></a></p>
+
+<a href="#contribution" id="contribution" style="color: inherit; text-decoration: none;">
+  <h2><em>Contribution</em></h2>
+</a>
+<p><a href="https://badges.pufler.dev"><img src="https://badges.pufler.dev/contributors/AlexRogalskiy/github-action-user-contribution?size=50&padding=5&bots=true" alt="Contributors Display"></a></p>
 <p>Please read
 <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/blob/master/.github/CONTRIBUTING.md">contributing guide</a> or <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/wiki">wiki guide</a>
 for details on our code of conduct, and the process for submitting pull requests to us
 (<a href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>).</p>
 <p>This project follows the <a href="https://github.com/all-contributors/all-contributors">all-contributors</a>
 specification. Contributions of any kind are welcome!</p>
-<p><a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" class="img-responsive"></a>
-<img src="https://img.shields.io/github/all-contributors/AlexRogalskiy/github-action-user-contribution" alt="Github contributors" class="img-responsive"></p>
+<p><a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a>
+<img src="https://img.shields.io/github/all-contributors/AlexRogalskiy/github-action-user-contribution" alt="Github contributors"></p>
 <p>See also the list of <a href="https://github.com/AlexRogalskiy/github-action-user-contribution/graphs/contributors">contributors page</a> who participated in this project.</p>
-<h2 id="acknowledgement"><em>Acknowledgement</em></h2>
-<p><a href="https://github.com/AlexRogalskiy/github-action-user-contribution/stargazers"><img src="https://reporoster.com/stars/AlexRogalskiy/github-action-user-contribution" alt="Stargazers repo roster for @AlexRogalskiy/github-action-user-contribution" class="img-responsive"></a></p>
-<h2 id="forks"><em>Forks</em></h2>
-<p><a href="https://github.com/AlexRogalskiy/github-action-user-contribution/network/members"><img src="https://reporoster.com/forks/AlexRogalskiy/github-action-user-contribution" alt="Forkers repo roster for @AlexRogalskiy/github-action-user-contribution" class="img-responsive"></a></p>
-<h2 id="development-support"><em>Development Support</em></h2>
+
+<a href="#acknowledgement" id="acknowledgement" style="color: inherit; text-decoration: none;">
+  <h2><em>Acknowledgement</em></h2>
+</a>
+<p><a href="https://github.com/AlexRogalskiy/github-action-user-contribution/stargazers"><img src="https://reporoster.com/stars/AlexRogalskiy/github-action-user-contribution" alt="Stargazers repo roster for @AlexRogalskiy/github-action-user-contribution"></a></p>
+
+<a href="#forks" id="forks" style="color: inherit; text-decoration: none;">
+  <h2><em>Forks</em></h2>
+</a>
+<p><a href="https://github.com/AlexRogalskiy/github-action-user-contribution/network/members"><img src="https://reporoster.com/forks/AlexRogalskiy/github-action-user-contribution" alt="Forkers repo roster for @AlexRogalskiy/github-action-user-contribution"></a></p>
+
+<a href="#development-support" id="development-support" style="color: inherit; text-decoration: none;">
+  <h2><em>Development Support</em></h2>
+</a>
 <p>Like <em><strong>File Size</strong></em> ? Consider buying me a coffee :)</p>
-<p><a href="https://www.patreon.com/alexrogalskiy"><img src="https://img.shields.io/badge/Become_Patron-Support_me_on_Patreon-blue.svg?style=flat-square&logo=patreon&color=e64413" alt="Become a Patron" class="img-responsive"></a>
-<a href="https://www.buymeacoffee.com/AlexRogalskiy"><img src="https://img.shields.io/badge/Donate-Buy%20me%20a%20coffee-yellow.svg?logo=buy%20me%20a%20coffee" alt="Buy Me A Coffee" class="img-responsive"></a>
-<a href="https://ko-fi.com/alexrogalskiy"><img src="https://img.shields.io/badge/Donate-Buy%20me%20a%20coffee-yellow.svg?logo=ko-fi" alt="KoFi" class="img-responsive"></a></p>
+<p><a href="https://www.patreon.com/alexrogalskiy"><img src="https://img.shields.io/badge/Become_Patron-Support_me_on_Patreon-blue.svg?style=flat-square&logo=patreon&color=e64413" alt="Become a Patron"></a>
+<a href="https://www.buymeacoffee.com/AlexRogalskiy"><img src="https://img.shields.io/badge/Donate-Buy%20me%20a%20coffee-yellow.svg?logo=buy%20me%20a%20coffee" alt="Buy Me A Coffee"></a>
+<a href="https://ko-fi.com/alexrogalskiy"><img src="https://img.shields.io/badge/Donate-Buy%20me%20a%20coffee-yellow.svg?logo=ko-fi" alt="KoFi"></a></p>
 <hr>
-<p><a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/made%20with-%20typescript-C1282D.svg?logo=typescript&style=for-the-badge" alt="typescriptlang" class="img-responsive"></a>
-<a href="https://github.com/"><img src="https://img.shields.io/badge/powered%20by-%20github-7116FB.svg?logo=github&style=for-the-badge" alt="github" class="img-responsive"></a>
-<a href="https://forthebadge.com/"><img src="https://img.shields.io/badge/build%20with-%20%E2%9D%A4-B6FF9B.svg?logo=heart&style=for-the-badge" alt="forthebadge" class="img-responsive"></a></p>
+<p><a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/made%20with-%20typescript-C1282D.svg?logo=typescript&style=for-the-badge" alt="typescriptlang"></a>
+<a href="https://github.com/"><img src="https://img.shields.io/badge/powered%20by-%20github-7116FB.svg?logo=github&style=for-the-badge" alt="github"></a>
+<a href="https://forthebadge.com/"><img src="https://img.shields.io/badge/build%20with-%20%E2%9D%A4-B6FF9B.svg?logo=heart&style=for-the-badge" alt="forthebadge"></a></p>
 <!--
 [issues]: https://github.com/AlexRogalskiy/github-action-user-contribution/issues
 
 [pulls]: https://github.com/AlexRogalskiy/github-action-user-contribution/pulls
 -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                   </div><div class="search-results">
-    <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-        <ul class="search-results-list"></ul>
-    </div>
-    <div class="no-results">
-        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-    </div>
-</div>
-</div>
-               <!-- END CONTENT -->
-           </div>
-       </div>
-
-       <script>
-            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
-            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
-            var MAX_SEARCH_RESULTS = 15;
-       </script>
-
-       <script src="./js/libs/custom-elements.min.js"></script>
-       <script src="./js/libs/lit-html.js"></script>
-
-       <script src="./js/menu-wc.js" defer></script>
-       <script nomodule src="./js/menu-wc_es5.js" defer></script>
-
-       <script src="./js/libs/bootstrap-native.js"></script>
-
-       <script src="./js/libs/es6-shim.min.js"></script>
-       <script src="./js/libs/EventDispatcher.js"></script>
-       <script src="./js/libs/promise.min.js"></script>
-       <script src="./js/libs/zepto.min.js"></script>
-
-       <script src="./js/compodoc.js"></script>
-
-       <script src="./js/tabs.js"></script>
-       <script src="./js/menu.js"></script>
-       <script src="./js/libs/clipboard.min.js"></script>
-       <script src="./js/libs/prism.js"></script>
-       <script src="./js/sourceCode.js"></script>
-          <script src="./js/search/search.js"></script>
-          <script src="./js/search/lunr.min.js"></script>
-          <script src="./js/search/search-lunr.js"></script>
-          <script src="./js/search/search_index.js"></script>
-       <script src="./js/lazy-load-graphs.js"></script>
-
-
-    </body>
-</html>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-function"><a href="modules.html#default" class="tsd-kind-icon">default</a></li></ul></nav></div></div></div><footer class=""><div class="container"><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="overlay"></div><script src="assets/main.js"></script></body></html>

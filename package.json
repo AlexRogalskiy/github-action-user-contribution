@@ -194,7 +194,7 @@
         "source-map-explorer": "^2.5.2",
         "ts-jest": "^27.0.3",
         "ts-node": "^10.0.0",
-        "typedoc": "^0.20.36",
+        "typedoc": "^0.22.10",
         "typescript": "^4.3.2",
         "unified": "^9.2.1"
     },
@@ -256,7 +256,7 @@
             "pre-push": "npm run check:all",
             "post-checkout": "yarn install-if-package-changed",
             "post-merge": "npm run install-if-package-changed",
-            "prepare-commit-msg": "git cz --hook --non-interactive --type=feat --subject=\"added new features\" || true",
+            "prepare-commit-msg": "git cz --hook --non-interactive --type=feat --subject=\"added new features\" || true"
         }
     },
     "bugs": {

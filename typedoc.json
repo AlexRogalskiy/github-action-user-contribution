@@ -1,16 +1,20 @@
 {
     "name": "GitHub action for GitHub user contribution charts",
-    "entryPoints": ["./src", "./typings"],
-    "externalPattern": ["./data"],
+    "entryPoints": [
+        "./src",
+        "./typings"
+    ],
+    "externalPattern": [
+        "./data"
+    ],
     "exclude": [
         "**/__tests__/**/*",
         "**/__test_utils__/**/*",
-        "**/__fixtures__/**/*",
-        "**/*+(.spec|.e2e).ts"
+        "**/__fixtures__/**/*"
     ],
+    "theme": "default",
     "excludeExternals": true,
     "hideGenerator": true,
     "readme": "README.md",
-    "highlightTheme": "dark-plus",
     "out": "docs"
 }
