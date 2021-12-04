@@ -151,7 +151,7 @@
         "jest-html": "^1.5.0",
         "jest-junit": "^12.2.0",
         "jest-sonar-reporter": "^2.0.0",
-        "jest-watch-typeahead": "^0.6.4",
+        "jest-watch-typeahead": "0.6.5",
         "joi": "^17.4.0",
         "jsonlint": "^1.6.3",
         "license-checker": "^25.0.1",
