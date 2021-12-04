@@ -92,7 +92,7 @@
     },
     "devDependencies": {
         "@changesets/cli": "^2.16.0",
-        "@compodoc/compodoc": "^1.1.15",
+        "@compodoc/compodoc": "1.1.16",
         "@hyperjumptech/monika": "^1.6.8",
         "@semantic-release/changelog": "^5.0.1",
         "@semantic-release/commit-analyzer": "^8.0.1",
