@@ -157,7 +157,7 @@
         "license-checker": "^25.0.1",
         "lint-staged": "^10.1.6",
         "loglevel": "^1.7.1",
-        "markdown-link-check": "^3.8.6",
+        "markdown-link-check": "3.9.0",
         "markdown-magic": "^2.5.2",
         "markdownlint-cli": "^0.27.1",
         "mockdate": "^3.0.5",
