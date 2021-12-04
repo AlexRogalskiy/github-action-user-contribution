@@ -1,0 +1,18 @@
+notifications: []
+probes:
+  - id: 58b9f825-88a9-41a8-85c3-7e1e1e4a191e
+    name: github_page_check
+    description: GitHub pages availability
+    interval: 10000
+    incidentThreshold: 5
+    recoveryThreshold: 5
+    requests:
+      - url: http://github.com/AlexRogalskiy/github-action-user-contribution
+        body: {}
+        timeout: 10000
+        alerts:
+          - query: response.size >= 10000
+            message: Response size is {{ response.size }}, expecting less than 10000
+    alerts:
+      - query: response.status != 200
+        message: HTTP Status code is {{ response.status }}, expecting 200
