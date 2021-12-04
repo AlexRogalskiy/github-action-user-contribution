@@ -91,7 +91,7 @@
         "node-fetch": "2.6.1"
     },
     "devDependencies": {
-        "@changesets/cli": "^2.16.0",
+        "@changesets/cli": "2.18.1",
         "@compodoc/compodoc": "^1.1.15",
         "@hyperjumptech/monika": "^1.6.8",
         "@semantic-release/changelog": "^5.0.1",
