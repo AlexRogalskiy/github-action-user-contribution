@@ -159,7 +159,7 @@
         "jsonlint": "^1.6.3",
         "license-checker": "^25.0.1",
         "license-check-and-add": "^4.0.3",
-        "lint-staged": "^10.1.6",
+        "lint-staged": "^12.1.4",
         "loglevel": "^1.7.1",
         "markdown-link-check": "^3.8.6",
         "markdown-magic": "^2.5.2",
