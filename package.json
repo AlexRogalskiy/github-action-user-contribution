@@ -151,7 +151,7 @@
         "jest": "^27.0.5",
         "jest-circus": "^27.0.5",
         "jest-environment-node-debug": "^2.0.0",
-        "jest-extended": "^0.11.5",
+        "jest-extended": "^1.0.0",
         "jest-fetch-mock": "^3.0.3",
         "jest-html": "^1.5.0",
         "jest-junit": "^12.2.0",
