@@ -7,6 +7,7 @@
     "externalPattern": [
         "./data"
     ],
+    "entryPointStrategy": "Expand",
     "exclude": [
         "**/__tests__/**/*",
         "**/__test_utils__/**/*",
@@ -15,6 +16,9 @@
     "theme": "default",
     "excludeExternals": true,
     "hideGenerator": true,
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "includeVersion": false,
     "readme": "README.md",
     "out": "docs"
 }

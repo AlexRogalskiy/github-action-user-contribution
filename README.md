@@ -120,7 +120,7 @@ Generates GitHub user contribution charts.
 
 ### Basic configuration
 
-```yml
+```yaml
 - name: Create GitHub user contribution chart
   uses: alexrogalskiy/github-action-user-contribution@master
   with:
@@ -129,7 +129,7 @@ Generates GitHub user contribution charts.
 
 ### Complete configuration
 
-```yml
+```yaml
 - name: Create GitHub user contribution chart
   uses: alexrogalskiy/github-action-user-contribution@master
   with:
