@@ -9,6 +9,8 @@ const plugins = [
     "remark-toc",
     "remark-gfm",
     "remark-preset-wooorm",
+    "lint-fenced-code-flag",
+    "lint-no-shell-dollars",
     ["remark-lint-no-html", false],
     "remark-preset-davidtheclark",
     "remark-comment-config",
@@ -25,20 +27,20 @@ const plugins = [
     [
         "remark-retext",
         unified()
-        .use(require("retext-english"))
-        .use(require("retext-syntax-urls"))
-        .use(require("retext-syntax-mentions"))
-        .use(require("retext-emoji"))
-        .use(require("retext-spell"), {
-            dictionary: require("dictionary-en"),
-            personal: dictionary,
-        })
-        .use(require("retext-diacritics"))
-        .use(require("retext-indefinite-article"))
-        .use(require("retext-redundant-acronyms"))
-        .use(require("retext-sentence-spacing"), {
-            preferred: 1
-        })
+            .use(require("retext-english"))
+            .use(require("retext-syntax-urls"))
+            .use(require("retext-syntax-mentions"))
+            .use(require("retext-emoji"))
+            .use(require("retext-spell"), {
+                dictionary: require("dictionary-en"),
+                personal: dictionary,
+            })
+            .use(require("retext-diacritics"))
+            .use(require("retext-indefinite-article"))
+            .use(require("retext-redundant-acronyms"))
+            .use(require("retext-sentence-spacing"), {
+                preferred: 1
+            })
     ]
 ];
 
@@ -55,8 +57,13 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const settings = {
-    "emphasis": "*",
-    "strong": "*"
+    bullet: '-',
+    commonmark: true,
+    emphasis: '_',
+    fence: '`',
+    incrementListMarker: true,
+    listItemIndent: 1,
+    strong: '*'
 }
 
 module.exports = {
