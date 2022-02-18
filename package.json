@@ -163,7 +163,7 @@
         "jsonlint": "^1.6.3",
         "license-check-and-add": "^4.0.3",
         "license-checker": "^25.0.1",
-        "lint-staged": "^10.1.6",
+        "lint-staged": "^12.3.4",
         "lit-analyzer": "^1.2.1",
         "loglevel": "^1.7.1",
         "markdown-link-check": "^3.8.6",
