@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1646150143651,
+  "startTime": 1646150859435,
   "success": true,
   "testResults": [
     {
@@ -37,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1646150145323,
-        "runtime": 1572,
+        "end": 1646150861156,
+        "runtime": 1626,
         "slow": false,
-        "start": 1646150143751
+        "start": 1646150859530
       },
       "skipped": false,
       "snapshot": {
@@ -58,7 +58,7 @@
           "ancestorTitles": [
             "Format Date test suite"
           ],
-          "duration": 3,
+          "duration": 12,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Format Date test suite should format {}",
@@ -72,7 +72,7 @@
           "ancestorTitles": [
             "Format Date test suite"
           ],
-          "duration": 2,
+          "duration": 4,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Format Date test suite should format {\"year\":2017}",
@@ -128,7 +128,7 @@
           "ancestorTitles": [
             "Format Date test suite"
           ],
-          "duration": 4,
+          "duration": 9,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Format Date test suite should fail if the date is in the future",
@@ -149,10 +149,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1646150146733,
-        "runtime": 1375,
+        "end": 1646150862529,
+        "runtime": 1342,
         "slow": false,
-        "start": 1646150145358
+        "start": 1646150861187
       },
       "skipped": false,
       "snapshot": {
@@ -170,7 +170,7 @@
           "ancestorTitles": [
             "my suite"
           ],
-          "duration": 8,
+          "duration": 2,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "my suite one of my .only test",
@@ -184,7 +184,7 @@
           "ancestorTitles": [
             "my suite"
           ],
-          "duration": 4,
+          "duration": 1,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "my suite other of my .only test",
