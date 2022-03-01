@@ -28,6 +28,8 @@ module.exports = {
     testPathIgnorePatterns: ['/node_modules/', '/__fixtures__/', '/spec/'],
     transform: {
         '^.+\\.(js|ts)$': 'ts-jest',
+        '^.+\\.html$': './jest/htmlLoader.js',
+        '^.+\\.css$': './jest/cssLoader.js'
     },
     snapshotSerializers: [
         '<rootDir>/node_modules/jest-html'
@@ -62,12 +64,12 @@ module.exports = {
         'default',
         ['jest-junit', {
             usePathForSuiteName: true,
-            suiteNameTemplate: "{filename}",
-            outputName: "coverage/jest-junit/junit.xml",
-            titleTemplate: "{classname} - {title}",
-            ancestorSeparator: " - "
+            suiteNameTemplate: '{filename}',
+            outputName: 'coverage/jest-junit/junit.xml',
+            titleTemplate: '{classname} - {title}',
+            ancestorSeparator: ' - '
         }]
     ],
     setupFilesAfterEnv: ['jest-extended', '<rootDir>/tests/jest-default-timeout.js', '<rootDir>/tests/setup-tests.js', '<rootDir>/tests/jest-test-framework.js'],
-    watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
+    watchPlugins: ['jest-watch-select-projects', 'jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
 }
