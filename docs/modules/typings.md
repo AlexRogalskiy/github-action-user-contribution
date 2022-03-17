@@ -4,17 +4,16 @@
 
 ## Table of contents
 
-### Functions
-
-- [charset](typings.md#charset)
-- [charsets](typings.md#charsets)
-- [encoding](typings.md#encoding)
-- [encodings](typings.md#encodings)
-- [language](typings.md#language)
-- [languages](typings.md#languages)
-- [mediaType](typings.md#mediatype)
-- [mediaTypes](typings.md#mediatypes)
-- [parseAll](typings.md#parseall)
+- [Functions](#functions-1)
+  - [charset](#charset)
+  - [charsets](#charsets)
+  - [encoding](#encoding)
+  - [encodings](#encodings)
+  - [language](#language)
+  - [languages](#languages)
+  - [mediaType](#mediatype)
+  - [mediaTypes](#mediatypes)
+  - [parseAll](#parseall)
 
 ## Functions
 
@@ -24,10 +23,10 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `charsetHeader?` | `string` |
-| `preferences?` | `string`[] |
+| Name             | Type       |
+| :--------------- | :--------- |
+| `charsetHeader?` | `string`   |
+| `preferences?`   | `string`[] |
 
 #### Returns
 
@@ -37,27 +36,27 @@
 
 [typings/index.d.ts:31](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/index.d.ts#L31)
 
-___
+***
 
 ### charsets
 
-▸ **charsets**(`charsetHeader?`): `string`[]
+▸ **charsets**(`charsetHeader?`): `string`\[]
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name             | Type     |
+| :--------------- | :------- |
 | `charsetHeader?` | `string` |
 
 #### Returns
 
-`string`[]
+`string`\[]
 
 #### Defined in
 
 [typings/index.d.ts:33](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/index.d.ts#L33)
 
-___
+***
 
 ### encoding
 
@@ -65,10 +64,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `encodingHeader?` | `string` |
-| `preferences?` | `string`[] |
+| Name              | Type       |
+| :---------------- | :--------- |
+| `encodingHeader?` | `string`   |
+| `preferences?`    | `string`[] |
 
 #### Returns
 
@@ -78,27 +77,27 @@ ___
 
 [typings/index.d.ts:35](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/index.d.ts#L35)
 
-___
+***
 
 ### encodings
 
-▸ **encodings**(`encodingHeader?`): `string`[]
+▸ **encodings**(`encodingHeader?`): `string`\[]
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type     |
+| :---------------- | :------- |
 | `encodingHeader?` | `string` |
 
 #### Returns
 
-`string`[]
+`string`\[]
 
 #### Defined in
 
 [typings/index.d.ts:37](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/index.d.ts#L37)
 
-___
+***
 
 ### language
 
@@ -106,10 +105,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `languageHeader?` | `string` |
-| `preferences?` | `string`[] |
+| Name              | Type       |
+| :---------------- | :--------- |
+| `languageHeader?` | `string`   |
+| `preferences?`    | `string`[] |
 
 #### Returns
 
@@ -119,27 +118,27 @@ ___
 
 [typings/index.d.ts:39](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/index.d.ts#L39)
 
-___
+***
 
 ### languages
 
-▸ **languages**(`languageHeader?`): `string`[]
+▸ **languages**(`languageHeader?`): `string`\[]
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type     |
+| :---------------- | :------- |
 | `languageHeader?` | `string` |
 
 #### Returns
 
-`string`[]
+`string`\[]
 
 #### Defined in
 
 [typings/index.d.ts:41](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/index.d.ts#L41)
 
-___
+***
 
 ### mediaType
 
@@ -147,10 +146,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `mediaTypeHeader?` | `string` |
-| `preferences?` | `string`[] |
+| Name               | Type       |
+| :----------------- | :--------- |
+| `mediaTypeHeader?` | `string`   |
+| `preferences?`     | `string`[] |
 
 #### Returns
 
@@ -160,27 +159,27 @@ ___
 
 [typings/index.d.ts:43](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/index.d.ts#L43)
 
-___
+***
 
 ### mediaTypes
 
-▸ **mediaTypes**(`mediaTypeHeader?`): `string`[]
+▸ **mediaTypes**(`mediaTypeHeader?`): `string`\[]
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name               | Type     |
+| :----------------- | :------- |
 | `mediaTypeHeader?` | `string` |
 
 #### Returns
 
-`string`[]
+`string`\[]
 
 #### Defined in
 
 [typings/index.d.ts:45](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/index.d.ts#L45)
 
-___
+***
 
 ### parseAll
 
@@ -188,19 +187,19 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `headers` | `Record`<`string`, `undefined` \| `string` \| `string`[]\> |
+| Name      | Type                                                      |
+| :-------- | :-------------------------------------------------------- |
+| `headers` | `Record`<`string`, `undefined` \| `string` \| `string`[]> |
 
 #### Returns
 
 `Object`
 
-| Name | Type |
-| :------ | :------ |
-| `charsets` | `string`[] |
-| `encodings` | `string`[] |
-| `languages` | `string`[] |
+| Name         | Type       |
+| :----------- | :--------- |
+| `charsets`   | `string`[] |
+| `encodings`  | `string`[] |
+| `languages`  | `string`[] |
 | `mediaTypes` | `string`[] |
 
 #### Defined in

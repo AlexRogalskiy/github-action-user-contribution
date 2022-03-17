@@ -59,7 +59,7 @@ engines:
     channel: "eslint-3"
     config:
       ignore_warnings: true
-      config: .eslintrc.json
+      config: .eslintrc.js
   csslint:
     enabled: false
   stylelint:

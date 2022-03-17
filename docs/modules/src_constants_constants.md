@@ -4,22 +4,21 @@
 
 ## Table of contents
 
-### Variables
-
-- [CHART\_OPTIONS](src_constants_constants.md#chart_options)
-- [CHART\_REQUEST\_OPTIONS](src_constants_constants.md#chart_request_options)
-- [COLOR\_OPTIONS](src_constants_constants.md#color_options)
-- [COLOR\_SCHEMES](src_constants_constants.md#color_schemes)
-- [GITHUB\_REQUEST\_OPTIONS](src_constants_constants.md#github_request_options)
-- [OUTPUT\_OPTIONS](src_constants_constants.md#output_options)
-- [REQUEST\_OPTIONS](src_constants_constants.md#request_options)
-- [RESOURCE\_OPTIONS](src_constants_constants.md#resource_options)
+- [Variables](#variables-1)
+  - [CHART_OPTIONS](#chart_options)
+  - [CHART_REQUEST_OPTIONS](#chart_request_options)
+  - [COLOR_OPTIONS](#color_options)
+  - [COLOR_SCHEMES](#color_schemes)
+  - [GITHUB_REQUEST_OPTIONS](#github_request_options)
+  - [OUTPUT_OPTIONS](#output_options)
+  - [REQUEST_OPTIONS](#request_options)
+  - [RESOURCE_OPTIONS](#resource_options)
 
 ## Variables
 
-### CHART\_OPTIONS
+### CHART_OPTIONS
 
-• **CHART\_OPTIONS**: `Readonly`<[`ChartOptions`](typings_domain_types.md#chartoptions)\>
+• **CHART_OPTIONS**: `Readonly`<[`ChartOptions`](typings_domain_types.md#chartoptions)>
 
 Chart configuration options
 
@@ -27,11 +26,11 @@ Chart configuration options
 
 [src/constants/constants.ts:94](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/constants/constants.ts#L94)
 
-___
+***
 
-### CHART\_REQUEST\_OPTIONS
+### CHART_REQUEST_OPTIONS
 
-• **CHART\_REQUEST\_OPTIONS**: `Readonly`<[`RequestInfo`](typings_domain_types.md#requestinfo)\>
+• **CHART_REQUEST_OPTIONS**: `Readonly`<[`RequestInfo`](typings_domain_types.md#requestinfo)>
 
 Chart request configuration options
 
@@ -39,11 +38,11 @@ Chart request configuration options
 
 [src/constants/constants.ts:55](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/constants/constants.ts#L55)
 
-___
+***
 
-### COLOR\_OPTIONS
+### COLOR_OPTIONS
 
-• **COLOR\_OPTIONS**: `Readonly`<[`ColorOptions`](typings_domain_types.md#coloroptions)\>
+• **COLOR_OPTIONS**: `Readonly`<[`ColorOptions`](typings_domain_types.md#coloroptions)>
 
 Color configuration options
 
@@ -51,11 +50,11 @@ Color configuration options
 
 [src/constants/constants.ts:87](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/constants/constants.ts#L87)
 
-___
+***
 
-### COLOR\_SCHEMES
+### COLOR_SCHEMES
 
-• **COLOR\_SCHEMES**: `Readonly`<[`ColorScheme`](typings_domain_types.md#colorscheme)\>
+• **COLOR_SCHEMES**: `Readonly`<[`ColorScheme`](typings_domain_types.md#colorscheme)>
 
 Supported color schemes
 
@@ -63,11 +62,11 @@ Supported color schemes
 
 [src/constants/constants.ts:46](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/constants/constants.ts#L46)
 
-___
+***
 
-### GITHUB\_REQUEST\_OPTIONS
+### GITHUB_REQUEST_OPTIONS
 
-• **GITHUB\_REQUEST\_OPTIONS**: `Readonly`<[`RequestInfo`](typings_domain_types.md#requestinfo)\>
+• **GITHUB_REQUEST_OPTIONS**: `Readonly`<[`RequestInfo`](typings_domain_types.md#requestinfo)>
 
 GitHub request configuration options
 
@@ -75,11 +74,11 @@ GitHub request configuration options
 
 [src/constants/constants.ts:62](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/constants/constants.ts#L62)
 
-___
+***
 
-### OUTPUT\_OPTIONS
+### OUTPUT_OPTIONS
 
-• **OUTPUT\_OPTIONS**: `Readonly`<`boxen.Options`\>
+• **OUTPUT_OPTIONS**: `Readonly`<`boxen.Options`>
 
 Output configuration options
 
@@ -87,11 +86,11 @@ Output configuration options
 
 [src/constants/constants.ts:77](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/constants/constants.ts#L77)
 
-___
+***
 
-### REQUEST\_OPTIONS
+### REQUEST_OPTIONS
 
-• **REQUEST\_OPTIONS**: `Readonly`<[`RequestOptions`](typings_domain_types.md#requestoptions)\>
+• **REQUEST_OPTIONS**: `Readonly`<[`RequestOptions`](typings_domain_types.md#requestoptions)>
 
 Request configuration options
 
@@ -99,11 +98,11 @@ Request configuration options
 
 [src/constants/constants.ts:69](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/constants/constants.ts#L69)
 
-___
+***
 
-### RESOURCE\_OPTIONS
+### RESOURCE_OPTIONS
 
-• **RESOURCE\_OPTIONS**: `Readonly`<[`ResourceOptions`](typings_domain_types.md#resourceoptions)\>
+• **RESOURCE_OPTIONS**: `Readonly`<[`ResourceOptions`](typings_domain_types.md#resourceoptions)>
 
 Resource configuration options
 

@@ -10,15 +10,14 @@ ChartType
 
 ## Table of contents
 
-### Enumeration members
-
-- [Friday](typings_enum_types.DayOfWeekType.md#friday)
-- [Monday](typings_enum_types.DayOfWeekType.md#monday)
-- [Saturday](typings_enum_types.DayOfWeekType.md#saturday)
-- [Sunday](typings_enum_types.DayOfWeekType.md#sunday)
-- [Thursday](typings_enum_types.DayOfWeekType.md#thursday)
-- [Tuesday](typings_enum_types.DayOfWeekType.md#tuesday)
-- [Wednesday](typings_enum_types.DayOfWeekType.md#wednesday)
+- [Enumeration members](#enumeration-members-1)
+  - [Friday](#friday)
+  - [Monday](#monday)
+  - [Saturday](#saturday)
+  - [Sunday](#sunday)
+  - [Thursday](#thursday)
+  - [Tuesday](#tuesday)
+  - [Wednesday](#wednesday)
 
 ## Enumeration members
 
@@ -30,7 +29,7 @@ ChartType
 
 [typings/enum-types.ts:87](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L87)
 
-___
+***
 
 ### Monday
 
@@ -40,7 +39,7 @@ ___
 
 [typings/enum-types.ts:83](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L83)
 
-___
+***
 
 ### Saturday
 
@@ -50,7 +49,7 @@ ___
 
 [typings/enum-types.ts:88](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L88)
 
-___
+***
 
 ### Sunday
 
@@ -60,7 +59,7 @@ ___
 
 [typings/enum-types.ts:89](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L89)
 
-___
+***
 
 ### Thursday
 
@@ -70,7 +69,7 @@ ___
 
 [typings/enum-types.ts:86](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L86)
 
-___
+***
 
 ### Tuesday
 
@@ -80,7 +79,7 @@ ___
 
 [typings/enum-types.ts:84](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L84)
 
-___
+***
 
 ### Wednesday
 

@@ -4,16 +4,15 @@
 
 ## Table of contents
 
-### Functions
-
-- [getEnumKeyByEnumValue](src_utils_commons.md#getenumkeybyenumvalue)
-- [getUrlName](src_utils_commons.md#geturlname)
-- [isInRange](src_utils_commons.md#isinrange)
-- [mergeProps](src_utils_commons.md#mergeprops)
-- [strToEnum](src_utils_commons.md#strtoenum)
-- [toEnum](src_utils_commons.md#toenum)
-- [toInt](src_utils_commons.md#toint)
-- [toString](src_utils_commons.md#tostring)
+- [Functions](#functions-1)
+  - [getEnumKeyByEnumValue](#getenumkeybyenumvalue)
+  - [getUrlName](#geturlname)
+  - [isInRange](#isinrange)
+  - [mergeProps](#mergeprops)
+  - [strToEnum](#strtoenum)
+  - [toEnum](#toenum)
+  - [toInt](#toint)
+  - [toString](#tostring)
 
 ## Functions
 
@@ -23,9 +22,9 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `myEnum` | `any` |
+| Name        | Type                 |
+| :---------- | :------------------- |
+| `myEnum`    | `any`                |
 | `enumValue` | `string` \| `number` |
 
 #### Returns
@@ -36,27 +35,27 @@
 
 [src/utils/commons.ts:62](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/commons.ts#L62)
 
-___
+***
 
 ### getUrlName
 
-▸ `Const` **getUrlName**(`url`): [`Optional`](typings_standard_types.md#optional)<`string`\>
+▸ `Const` **getUrlName**(`url`): [`Optional`](typings_standard_types.md#optional)<`string`>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| :---- | :------- |
 | `url` | `string` |
 
 #### Returns
 
-[`Optional`](typings_standard_types.md#optional)<`string`\>
+[`Optional`](typings_standard_types.md#optional)<`string`>
 
 #### Defined in
 
 [src/utils/commons.ts:76](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/commons.ts#L76)
 
-___
+***
 
 ### isInRange
 
@@ -64,11 +63,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type     |
+| :------- | :------- |
 | `actual` | `number` |
-| `min` | `number` |
-| `max` | `number` |
+| `min`    | `number` |
+| `max`    | `number` |
 
 #### Returns
 
@@ -78,22 +77,22 @@ ___
 
 [src/utils/commons.ts:68](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/commons.ts#L68)
 
-___
+***
 
 ### mergeProps
 
-▸ `Const` **mergeProps**<`T`\>(...`obj`): `T`
+▸ `Const` **mergeProps**<`T`>(...`obj`): `T`
 
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type        |
+| :------- | :---------- |
 | `...obj` | `unknown`[] |
 
 #### Returns
@@ -104,65 +103,65 @@ ___
 
 [src/utils/commons.ts:37](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/commons.ts#L37)
 
-___
+***
 
 ### strToEnum
 
-▸ `Const` **strToEnum**<`T`\>(`values`): { [K in string]: K }
+▸ `Const` **strToEnum**<`T`>(`values`): { \[K in string]: K }
 
 Utility function to create a K:V from a list of strings
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `string` |
+| Name | Type             |
+| :--- | :--------------- |
+| `T`  | extends `string` |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type  | Description                       |
+| :------- | :---- | :-------------------------------- |
 | `values` | `T`[] | initial input array to operate by |
 
 #### Returns
 
-{ [K in string]: K }
+{ \[K in string]: K }
 
 #### Defined in
 
 [src/utils/commons.ts:46](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/commons.ts#L46)
 
-___
+***
 
 ### toEnum
 
-▸ `Const` **toEnum**<`T`, `V`\>(`values`, `func?`): { [K in string]: V }
+▸ `Const` **toEnum**<`T`, `V`>(`values`, `func?`): { \[K in string]: V }
 
 Utility function to create a K:V from a list of strings
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `string` |
-| `V` | `V` |
+| Name | Type             |
+| :--- | :--------------- |
+| `T`  | extends `string` |
+| `V`  | `V`              |
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `values` | `T`[] | initial input array to operate by |
-| `func?` | (`v`: `T`) => `V` | initial input function |
+| Name     | Type              | Description                       |
+| :------- | :---------------- | :-------------------------------- |
+| `values` | `T`[]             | initial input array to operate by |
+| `func?`  | (`v`: `T`) => `V` | initial input function            |
 
 #### Returns
 
-{ [K in string]: V }
+{ \[K in string]: V }
 
 #### Defined in
 
 [src/utils/commons.ts:55](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/commons.ts#L55)
 
-___
+***
 
 ### toInt
 
@@ -170,8 +169,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| :---- | :------- |
 | `str` | `string` |
 
 #### Returns
@@ -182,7 +181,7 @@ ___
 
 [src/utils/commons.ts:72](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/commons.ts#L72)
 
-___
+***
 
 ### toString
 
@@ -190,8 +189,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                   |
+| :------ | :--------------------- |
 | `value` | `string` \| `string`[] |
 
 #### Returns

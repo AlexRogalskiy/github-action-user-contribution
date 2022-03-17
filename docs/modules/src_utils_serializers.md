@@ -4,10 +4,9 @@
 
 ## Table of contents
 
-### Functions
-
-- [deserialize](src_utils_serializers.md#deserialize)
-- [serialize](src_utils_serializers.md#serialize)
+- [Functions](#functions-1)
+  - [deserialize](#deserialize)
+  - [serialize](#serialize)
 
 ## Functions
 
@@ -17,9 +16,9 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `obj` | `string` |
+| Name        | Type                                       |
+| :---------- | :----------------------------------------- |
+| `obj`       | `string`                                   |
 | `callback?` | (`key`: `string`, `value`: `any`) => `any` |
 
 #### Returns
@@ -30,7 +29,7 @@
 
 [src/utils/serializers.ts:39](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/serializers.ts#L39)
 
-___
+***
 
 ### serialize
 
@@ -38,11 +37,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `obj` | `any` | `undefined` |
-| `space` | `number` | `4` |
-| `callback?` | (`key`: `string`, `value`: `any`) => `any` | `undefined` |
+| Name        | Type                                       | Default value |
+| :---------- | :----------------------------------------- | :------------ |
+| `obj`       | `any`                                      | `undefined`   |
+| `space`     | `number`                                   | `4`           |
+| `callback?` | (`key`: `string`, `value`: `any`) => `any` | `undefined`   |
 
 #### Returns
 

@@ -10,11 +10,10 @@ ColorSchemeType
 
 ## Table of contents
 
-### Enumeration members
-
-- [blue](typings_enum_types.ColorSchemeType.md#blue)
-- [green](typings_enum_types.ColorSchemeType.md#green)
-- [red](typings_enum_types.ColorSchemeType.md#red)
+- [Enumeration members](#enumeration-members-1)
+  - [blue](#blue)
+  - [green](#green)
+  - [red](#red)
 
 ## Enumeration members
 
@@ -26,7 +25,7 @@ ColorSchemeType
 
 [typings/enum-types.ts:65](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L65)
 
-___
+***
 
 ### green
 
@@ -36,7 +35,7 @@ ___
 
 [typings/enum-types.ts:64](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L64)
 
-___
+***
 
 ### red
 

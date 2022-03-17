@@ -4,15 +4,14 @@
 
 ## Table of contents
 
-### Variables
-
-- [default](src_configs_schema.md#default)
+- [Variables](#variables-1)
+  - [default](#default)
 
 ## Variables
 
 ### default
 
-• **default**: `ObjectSchema`<`any`\>
+• **default**: `ObjectSchema`<`any`>
 
 #### Defined in
 

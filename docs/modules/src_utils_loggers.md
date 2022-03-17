@@ -4,25 +4,24 @@
 
 ## Table of contents
 
-### Functions
-
-- [boxenDebugLogs](src_utils_loggers.md#boxendebuglogs)
-- [boxenErrorLogs](src_utils_loggers.md#boxenerrorlogs)
-- [boxenLogs](src_utils_loggers.md#boxenlogs)
-- [boxenTraceLogs](src_utils_loggers.md#boxentracelogs)
-- [boxenWarnLogs](src_utils_loggers.md#boxenwarnlogs)
-- [coreDebug](src_utils_loggers.md#coredebug)
-- [coreError](src_utils_loggers.md#coreerror)
-- [coreInfo](src_utils_loggers.md#coreinfo)
-- [createLogger](src_utils_loggers.md#createlogger)
-- [debugLogs](src_utils_loggers.md#debuglogs)
-- [errorLogs](src_utils_loggers.md#errorlogs)
-- [handleError](src_utils_loggers.md#handleerror)
-- [logArrayElements](src_utils_loggers.md#logarrayelements)
-- [logs](src_utils_loggers.md#logs)
-- [toLog](src_utils_loggers.md#tolog)
-- [traceLogs](src_utils_loggers.md#tracelogs)
-- [warnLogs](src_utils_loggers.md#warnlogs)
+- [Functions](#functions-1)
+  - [boxenDebugLogs](#boxendebuglogs)
+  - [boxenErrorLogs](#boxenerrorlogs)
+  - [boxenLogs](#boxenlogs)
+  - [boxenTraceLogs](#boxentracelogs)
+  - [boxenWarnLogs](#boxenwarnlogs)
+  - [coreDebug](#coredebug)
+  - [coreError](#coreerror)
+  - [coreInfo](#coreinfo)
+  - [createLogger](#createlogger)
+  - [debugLogs](#debuglogs)
+  - [errorLogs](#errorlogs)
+  - [handleError](#handleerror)
+  - [logArrayElements](#logarrayelements)
+  - [logs](#logs)
+  - [toLog](#tolog)
+  - [traceLogs](#tracelogs)
+  - [warnLogs](#warnlogs)
 
 ## Functions
 
@@ -32,9 +31,9 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `message` | `any` |
+| Name      | Type    |
+| :-------- | :------ |
+| `message` | `any`   |
 | `...args` | `any`[] |
 
 #### Returns
@@ -45,7 +44,7 @@
 
 [src/utils/loggers.ts:118](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L118)
 
-___
+***
 
 ### boxenErrorLogs
 
@@ -53,9 +52,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `message` | `any` |
+| Name      | Type    |
+| :-------- | :------ |
+| `message` | `any`   |
 | `...args` | `any`[] |
 
 #### Returns
@@ -66,7 +65,7 @@ ___
 
 [src/utils/loggers.ts:106](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L106)
 
-___
+***
 
 ### boxenLogs
 
@@ -74,9 +73,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `message` | `any` |
+| Name      | Type    |
+| :-------- | :------ |
+| `message` | `any`   |
 | `...args` | `any`[] |
 
 #### Returns
@@ -87,7 +86,7 @@ ___
 
 [src/utils/loggers.ts:104](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L104)
 
-___
+***
 
 ### boxenTraceLogs
 
@@ -95,9 +94,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `message` | `any` |
+| Name      | Type    |
+| :-------- | :------ |
+| `message` | `any`   |
 | `...args` | `any`[] |
 
 #### Returns
@@ -108,7 +107,7 @@ ___
 
 [src/utils/loggers.ts:121](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L121)
 
-___
+***
 
 ### boxenWarnLogs
 
@@ -116,9 +115,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `message` | `any` |
+| Name      | Type    |
+| :-------- | :------ |
+| `message` | `any`   |
 | `...args` | `any`[] |
 
 #### Returns
@@ -129,7 +128,7 @@ ___
 
 [src/utils/loggers.ts:115](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L115)
 
-___
+***
 
 ### coreDebug
 
@@ -137,10 +136,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `message` | `string` |
-| `...args` | `any`[] |
+| `...args` | `any`[]  |
 
 #### Returns
 
@@ -150,7 +149,7 @@ ___
 
 [src/utils/loggers.ts:129](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L129)
 
-___
+***
 
 ### coreError
 
@@ -158,10 +157,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                |
+| :-------- | :------------------ |
 | `message` | `string` \| `Error` |
-| `...args` | `any`[] |
+| `...args` | `any`[]             |
 
 #### Returns
 
@@ -171,7 +170,7 @@ ___
 
 [src/utils/loggers.ts:127](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L127)
 
-___
+***
 
 ### coreInfo
 
@@ -179,10 +178,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `message` | `string` |
-| `...args` | `any`[] |
+| `...args` | `any`[]  |
 
 #### Returns
 
@@ -192,34 +191,34 @@ ___
 
 [src/utils/loggers.ts:125](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L125)
 
-___
+***
 
 ### createLogger
 
-▸ `Const` **createLogger**<`T`\>(`logger`, `processor?`): `Logger`<`T`, `any`\>
+▸ `Const` **createLogger**<`T`>(`logger`, `processor?`): `Logger`<`T`, `any`>
 
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `logger` | `Logger`<`T`, `any`\> |
-| `processor?` | [`Processor`](typings_standard_types.md#processor)<`T`, `T`\> |
+| Name         | Type                                                         |
+| :----------- | :----------------------------------------------------------- |
+| `logger`     | `Logger`<`T`, `any`>                                         |
+| `processor?` | [`Processor`](typings_standard_types.md#processor)<`T`, `T`> |
 
 #### Returns
 
-`Logger`<`T`, `any`\>
+`Logger`<`T`, `any`>
 
 #### Defined in
 
 [src/utils/loggers.ts:82](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L82)
 
-___
+***
 
 ### debugLogs
 
@@ -227,10 +226,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `message` | `unknown` |
-| `...args` | `any`[] |
+| `...args` | `any`[]   |
 
 #### Returns
 
@@ -240,7 +239,7 @@ ___
 
 [src/utils/loggers.ts:97](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L97)
 
-___
+***
 
 ### errorLogs
 
@@ -248,10 +247,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `message` | `unknown` |
-| `...args` | `any`[] |
+| `...args` | `any`[]   |
 
 #### Returns
 
@@ -261,7 +260,7 @@ ___
 
 [src/utils/loggers.ts:91](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L91)
 
-___
+***
 
 ### handleError
 
@@ -269,8 +268,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type  |
+| :---- | :---- |
 | `err` | `any` |
 
 #### Returns
@@ -281,24 +280,24 @@ ___
 
 [src/utils/loggers.ts:135](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L135)
 
-___
+***
 
 ### logArrayElements
 
-▸ `Const` **logArrayElements**<`T`\>(`index`, `array`): `void`
+▸ `Const` **logArrayElements**<`T`>(`index`, `array`): `void`
 
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| :------ | :------- |
 | `index` | `number` |
-| `array` | `T`[] |
+| `array` | `T`[]    |
 
 #### Returns
 
@@ -308,7 +307,7 @@ ___
 
 [src/utils/loggers.ts:131](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L131)
 
-___
+***
 
 ### logs
 
@@ -316,10 +315,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `message` | `unknown` |
-| `...args` | `any`[] |
+| `...args` | `any`[]   |
 
 #### Returns
 
@@ -329,7 +328,7 @@ ___
 
 [src/utils/loggers.ts:88](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L88)
 
-___
+***
 
 ### toLog
 
@@ -337,10 +336,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `message` | `string` |
-| `...args` | `any`[] |
+| `...args` | `any`[]  |
 
 #### Returns
 
@@ -350,7 +349,7 @@ ___
 
 [src/utils/loggers.ts:76](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L76)
 
-___
+***
 
 ### traceLogs
 
@@ -358,10 +357,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `message` | `unknown` |
-| `...args` | `any`[] |
+| `...args` | `any`[]   |
 
 #### Returns
 
@@ -371,7 +370,7 @@ ___
 
 [src/utils/loggers.ts:100](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/loggers.ts#L100)
 
-___
+***
 
 ### warnLogs
 
@@ -379,10 +378,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| :-------- | :-------- |
 | `message` | `unknown` |
-| `...args` | `any`[] |
+| `...args` | `any`[]   |
 
 #### Returns
 

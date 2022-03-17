@@ -6,6 +6,8 @@ tests/
 docs/
 scripts/
 reports/
+jest/
 
-**/*.config.js
+**/*.eslintrc*.js
+**/*.config*.js
 index.d.ts

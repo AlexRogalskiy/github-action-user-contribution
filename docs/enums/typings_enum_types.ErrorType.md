@@ -10,92 +10,91 @@ ErrorType
 
 ## Table of contents
 
-### Enumeration members
-
-- [general\_error](typings_enum_types.ErrorType.md#general_error)
-- [parameter\_error](typings_enum_types.ErrorType.md#parameter_error)
-- [parser\_error](typings_enum_types.ErrorType.md#parser_error)
-- [request\_error](typings_enum_types.ErrorType.md#request_error)
-- [response\_error](typings_enum_types.ErrorType.md#response_error)
-- [type\_error](typings_enum_types.ErrorType.md#type_error)
-- [validation\_error](typings_enum_types.ErrorType.md#validation_error)
-- [value\_error](typings_enum_types.ErrorType.md#value_error)
+- [Enumeration members](#enumeration-members-1)
+  - [general_error](#general_error)
+  - [parameter_error](#parameter_error)
+  - [parser_error](#parser_error)
+  - [request_error](#request_error)
+  - [response_error](#response_error)
+  - [type_error](#type_error)
+  - [validation_error](#validation_error)
+  - [value_error](#value_error)
 
 ## Enumeration members
 
-### general\_error
+### general_error
 
-• **general\_error** = `"GeneralError"`
+• **general_error** = `"GeneralError"`
 
 #### Defined in
 
 [typings/enum-types.ts:47](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L47)
 
-___
+***
 
-### parameter\_error
+### parameter_error
 
-• **parameter\_error** = `"ParameterError"`
+• **parameter_error** = `"ParameterError"`
 
 #### Defined in
 
 [typings/enum-types.ts:52](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L52)
 
-___
+***
 
-### parser\_error
+### parser_error
 
-• **parser\_error** = `"ParserError"`
+• **parser_error** = `"ParserError"`
 
 #### Defined in
 
 [typings/enum-types.ts:48](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L48)
 
-___
+***
 
-### request\_error
+### request_error
 
-• **request\_error** = `"RequestError"`
+• **request_error** = `"RequestError"`
 
 #### Defined in
 
 [typings/enum-types.ts:50](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L50)
 
-___
+***
 
-### response\_error
+### response_error
 
-• **response\_error** = `"ResponseError"`
+• **response_error** = `"ResponseError"`
 
 #### Defined in
 
 [typings/enum-types.ts:51](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L51)
 
-___
+***
 
-### type\_error
+### type_error
 
-• **type\_error** = `"TypeError"`
+• **type_error** = `"TypeError"`
 
 #### Defined in
 
 [typings/enum-types.ts:53](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L53)
 
-___
+***
 
-### validation\_error
+### validation_error
 
-• **validation\_error** = `"ValidationError"`
+• **validation_error** = `"ValidationError"`
 
 #### Defined in
 
 [typings/enum-types.ts:49](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L49)
 
-___
+***
 
-### value\_error
+### value_error
 
-• **value\_error** = `"ValueError"`
+• **value_error** = `"ValueError"`
 
 #### Defined in
 

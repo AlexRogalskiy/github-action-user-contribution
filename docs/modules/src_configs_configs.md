@@ -4,19 +4,16 @@
 
 ## Table of contents
 
-### Type aliases
-
-- [ProfileRecord](src_configs_configs.md#profilerecord)
-
-### Variables
-
-- [CONFIG](src_configs_configs.md#config)
+- [Type aliases](#type-aliases-1)
+  - [ProfileRecord](#profilerecord)
+- [Variables](#variables-1)
+  - [CONFIG](#config)
 
 ## Type aliases
 
 ### ProfileRecord
 
-Ƭ **ProfileRecord**: `Record`<[`ProfileType`](../enums/typings_enum_types.ProfileType.md), `Partial`<[`ProfileOptions`](typings_domain_types.md#profileoptions)\>\>
+Ƭ **ProfileRecord**: `Record`<[`ProfileType`](../enums/typings_enum_types.ProfileType.md), `Partial`<[`ProfileOptions`](typings_domain_types.md#profileoptions)>>
 
 ProfileRecord
 
@@ -30,7 +27,7 @@ ProfileRecord
 
 ### CONFIG
 
-• **CONFIG**: `Readonly`<[`ProfileRecord`](src_configs_configs.md#profilerecord)\>
+• **CONFIG**: `Readonly`<[`ProfileRecord`](src_configs_configs.md#profilerecord)>
 
 Configuration options
 

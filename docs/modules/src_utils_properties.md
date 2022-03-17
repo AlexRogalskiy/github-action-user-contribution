@@ -4,11 +4,10 @@
 
 ## Table of contents
 
-### Functions
-
-- [getProperties](src_utils_properties.md#getproperties)
-- [getProperty](src_utils_properties.md#getproperty)
-- [getRequiredProperty](src_utils_properties.md#getrequiredproperty)
+- [Functions](#functions-1)
+  - [getProperties](#getproperties)
+  - [getProperty](#getproperty)
+  - [getRequiredProperty](#getrequiredproperty)
 
 ## Functions
 
@@ -24,7 +23,7 @@
 
 [src/utils/properties.ts:44](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/properties.ts#L44)
 
-___
+***
 
 ### getProperty
 
@@ -32,9 +31,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `property` | `string` |
+| Name       | Type           |
+| :--------- | :------------- |
+| `property` | `string`       |
 | `options?` | `InputOptions` |
 
 #### Returns
@@ -45,7 +44,7 @@ ___
 
 [src/utils/properties.ts:40](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/properties.ts#L40)
 
-___
+***
 
 ### getRequiredProperty
 
@@ -53,8 +52,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `property` | `string` |
 
 #### Returns

@@ -4,4 +4,4 @@
 
 ### Patch Changes
 
--   b024ff6: Added changeset tool
+- [`b024ff6`](https://github.com/AlexRogalskiy/github-action-user-contribution/commit/b024ff6): Added changeset tool

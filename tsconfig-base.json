@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compileOnSave": false,
+    "compilerOptions": {
+        "allowJs": false,
+        "declaration": true,
+        "esModuleInterop": true,
+        "incremental": true,
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true
+    }
+}

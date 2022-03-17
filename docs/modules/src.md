@@ -4,19 +4,18 @@
 
 ## Table of contents
 
-### Functions
-
-- [default](src.md#default)
+- [Functions](#functions-1)
+  - [default](#default)
 
 ## Functions
 
 ### default
 
-▸ **default**(): `Promise`<`void`\>
+▸ **default**(): `Promise`<`void`>
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`<`void`>
 
 #### Defined in
 

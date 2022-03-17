@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1646150859435,
+  "startTime": 1647509590373,
   "success": true,
   "testResults": [
     {
@@ -37,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1646150861156,
-        "runtime": 1626,
+        "end": 1647509592096,
+        "runtime": 1616,
         "slow": false,
-        "start": 1646150859530
+        "start": 1647509590480
       },
       "skipped": false,
       "snapshot": {
@@ -58,7 +58,7 @@
           "ancestorTitles": [
             "Format Date test suite"
           ],
-          "duration": 12,
+          "duration": 4,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Format Date test suite should format {}",
@@ -72,7 +72,7 @@
           "ancestorTitles": [
             "Format Date test suite"
           ],
-          "duration": 4,
+          "duration": 7,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Format Date test suite should format {\"year\":2017}",
@@ -86,7 +86,7 @@
           "ancestorTitles": [
             "Format Date test suite"
           ],
-          "duration": 1,
+          "duration": 0,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Format Date test suite should format {\"from\":\"2017-12-03T00:00:00.000Z\"}",
@@ -100,7 +100,7 @@
           "ancestorTitles": [
             "Format Date test suite"
           ],
-          "duration": 1,
+          "duration": 0,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Format Date test suite should format {\"from\":\"2017-12-03\"}",
@@ -128,7 +128,7 @@
           "ancestorTitles": [
             "Format Date test suite"
           ],
-          "duration": 9,
+          "duration": 5,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Format Date test suite should fail if the date is in the future",
@@ -149,10 +149,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1646150862529,
-        "runtime": 1342,
+        "end": 1647509593481,
+        "runtime": 1361,
         "slow": false,
-        "start": 1646150861187
+        "start": 1647509592120
       },
       "skipped": false,
       "snapshot": {
@@ -170,7 +170,7 @@
           "ancestorTitles": [
             "my suite"
           ],
-          "duration": 2,
+          "duration": 8,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "my suite one of my .only test",
@@ -184,7 +184,7 @@
           "ancestorTitles": [
             "my suite"
           ],
-          "duration": 1,
+          "duration": 2,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "my suite other of my .only test",

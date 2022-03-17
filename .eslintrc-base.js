@@ -1,7 +1,10 @@
-{
+// # https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md
+module.exports = {
+    "parser": "@typescript-eslint/parser",
     "plugins": [
         "jest",
         "@typescript-eslint",
+        "prettier",
         "spellcheck",
         "eslint-comments",
         "eslint-plugin-import-helpers",
@@ -23,15 +26,17 @@
         "plugin:cypress/recommended",
         "plugin:eslint-comments/recommended",
         "plugin:unicorn/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "prettier"
     ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": 9,
-        "sourceType": "module",
-        "project": "./tsconfig.json"
-    },
+    "ignorePatterns": [
+        "node_modules/**",
+        "lib/**",
+        "built-tests/**",
+        "coverage/**",
+    ],
     "rules": {
         "tsdoc/syntax": "off",
         "indent": ["error", 4],
@@ -314,6 +319,11 @@
         "@typescript-eslint/require-array-sort-compare": "error",
         "@typescript-eslint/restrict-plus-operands": "off",
         "semi": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/semi": ["error", "never"],
         "@typescript-eslint/type-annotation-spacing": "error",
         "@typescript-eslint/unbound-method": "off",
@@ -329,7 +339,7 @@
         "@typescript-eslint/generic-type-naming": ["off", "^[A-Z][A-Za-z]*$"],
         "@typescript-eslint/space-before-function-paren": [
             "error",
-            { "anonymous": "always", "named": "never", "asyncArrow": "always" }
+            {"anonymous": "always", "named": "never", "asyncArrow": "always"}
         ],
         "@typescript-eslint/member-delimiter-style": [
             "warn",

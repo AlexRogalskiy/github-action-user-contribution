@@ -10,11 +10,10 @@ ProfileType
 
 ## Table of contents
 
-### Enumeration members
-
-- [dev](typings_enum_types.ProfileType.md#dev)
-- [prod](typings_enum_types.ProfileType.md#prod)
-- [test](typings_enum_types.ProfileType.md#test)
+- [Enumeration members](#enumeration-members-1)
+  - [dev](#dev)
+  - [prod](#prod)
+  - [test](#test)
 
 ## Enumeration members
 
@@ -26,7 +25,7 @@ ProfileType
 
 [typings/enum-types.ts:36](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L36)
 
-___
+***
 
 ### prod
 
@@ -36,7 +35,7 @@ ___
 
 [typings/enum-types.ts:37](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/typings/enum-types.ts#L37)
 
-___
+***
 
 ### test
 

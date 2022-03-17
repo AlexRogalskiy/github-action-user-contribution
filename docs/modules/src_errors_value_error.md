@@ -4,13 +4,8 @@
 
 ## Table of contents
 
-### Classes
-
-- [ValueError](../classes/src_errors_value_error.ValueError.md)
-
-### Functions
-
-- [valueError](src_errors_value_error.md#valueerror)
+- [Functions](#functions-1)
+  - [valueError](#valueerror)
 
 ## Functions
 
@@ -20,10 +15,10 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type     |
+| :-------- | :------- |
 | `message` | `string` |
-| `...args` | `any`[] |
+| `...args` | `any`[]  |
 
 #### Returns
 

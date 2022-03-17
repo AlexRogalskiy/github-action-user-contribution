@@ -10,9 +10,8 @@ ChartType
 
 ## Table of contents
 
-### Enumeration members
-
-- [heatmap](typings_enum_types.ChartType.md#heatmap)
+- [Enumeration members](#enumeration-members-1)
+  - [heatmap](#heatmap)
 
 ## Enumeration members
 

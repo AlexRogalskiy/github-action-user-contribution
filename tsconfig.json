@@ -1,6 +1,5 @@
 {
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "compileOnSave": false,
+    "extends": "./tsconfig-base.json",
     "compilerOptions": {
         "strict": false,
         "allowJs": true,

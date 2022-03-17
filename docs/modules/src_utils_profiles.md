@@ -4,13 +4,10 @@
 
 ## Table of contents
 
-### Variables
-
-- [profile](src_utils_profiles.md#profile)
-
-### Functions
-
-- [getProfileByEnv](src_utils_profiles.md#getprofilebyenv)
+- [Variables](#variables-1)
+  - [profile](#profile)
+- [Functions](#functions-1)
+  - [getProfileByEnv](#getprofilebyenv)
 
 ## Variables
 
@@ -30,9 +27,9 @@
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `env` | [`Optional`](typings_standard_types.md#optional)<`string`\> | `NODE_ENV` |
+| Name  | Type                                                       | Default value |
+| :---- | :--------------------------------------------------------- | :------------ |
+| `env` | [`Optional`](typings_standard_types.md#optional)<`string`> | `NODE_ENV`    |
 
 #### Returns
 

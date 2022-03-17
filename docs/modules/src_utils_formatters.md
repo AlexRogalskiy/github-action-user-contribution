@@ -4,10 +4,9 @@
 
 ## Table of contents
 
-### Functions
-
-- [formatDate](src_utils_formatters.md#formatdate)
-- [formatParams](src_utils_formatters.md#formatparams)
+- [Functions](#functions-1)
+  - [formatDate](#formatdate)
+  - [formatParams](#formatparams)
 
 ## Functions
 
@@ -17,8 +16,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type               |
+| :------ | :----------------- |
 | `input` | `string` \| `Date` |
 
 #### Returns
@@ -29,7 +28,7 @@
 
 [src/utils/formatters.ts:69](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/formatters.ts#L69)
 
-___
+***
 
 ### formatParams
 
@@ -37,8 +36,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type                                             |
+| :---------- | :----------------------------------------------- |
 | `dateRange` | [`DateRange`](typings_domain_types.md#daterange) |
 
 #### Returns

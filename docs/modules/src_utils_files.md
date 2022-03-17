@@ -4,15 +4,14 @@
 
 ## Table of contents
 
-### Functions
-
-- [createWritableStream](src_utils_files.md#createwritablestream)
-- [ensureDirExists](src_utils_files.md#ensuredirexists)
-- [getFilesizeInBytes](src_utils_files.md#getfilesizeinbytes)
-- [getSizeInBytes](src_utils_files.md#getsizeinbytes)
-- [getSizeInBytesAsync](src_utils_files.md#getsizeinbytesasync)
-- [isFileExists](src_utils_files.md#isfileexists)
-- [storeData](src_utils_files.md#storedata)
+- [Functions](#functions-1)
+  - [createWritableStream](#createwritablestream)
+  - [ensureDirExists](#ensuredirexists)
+  - [getFilesizeInBytes](#getfilesizeinbytes)
+  - [getSizeInBytes](#getsizeinbytes)
+  - [getSizeInBytesAsync](#getsizeinbytesasync)
+  - [isFileExists](#isfileexists)
+  - [storeData](#storedata)
 
 ## Functions
 
@@ -22,8 +21,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `filename` | `string` |
 
 #### Returns
@@ -34,7 +33,7 @@
 
 [src/utils/files.ts:93](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/files.ts#L93)
 
-___
+***
 
 ### ensureDirExists
 
@@ -42,9 +41,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dir` | `string` |
+| Name      | Type                   |
+| :-------- | :--------------------- |
+| `dir`     | `string`               |
 | `options` | `MakeDirectoryOptions` |
 
 #### Returns
@@ -55,7 +54,7 @@ ___
 
 [src/utils/files.ts:50](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/files.ts#L50)
 
-___
+***
 
 ### getFilesizeInBytes
 
@@ -63,8 +62,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `filename` | `string` |
 
 #### Returns
@@ -75,7 +74,7 @@ ___
 
 [src/utils/files.ts:54](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/files.ts#L54)
 
-___
+***
 
 ### getSizeInBytes
 
@@ -83,8 +82,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `filename` | `string` |
 
 #### Returns
@@ -95,27 +94,27 @@ ___
 
 [src/utils/files.ts:89](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/files.ts#L89)
 
-___
+***
 
 ### getSizeInBytesAsync
 
-▸ `Const` **getSizeInBytesAsync**(`filename`): `Promise`<`number`\>
+▸ `Const` **getSizeInBytesAsync**(`filename`): `Promise`<`number`>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `filename` | `string` |
 
 #### Returns
 
-`Promise`<`number`\>
+`Promise`<`number`>
 
 #### Defined in
 
 [src/utils/files.ts:85](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/files.ts#L85)
 
-___
+***
 
 ### isFileExists
 
@@ -123,10 +122,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `fileName` | `string` |
-| `mode` | `number` |
+| `mode`     | `number` |
 
 #### Returns
 
@@ -136,7 +135,7 @@ ___
 
 [src/utils/files.ts:75](https://github.com/AlexRogalskiy/github-action-user-contribution/blob/8736815/src/utils/files.ts#L75)
 
-___
+***
 
 ### storeData
 
@@ -144,11 +143,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `filePath` | `string` |
 | `fileName` | `string` |
-| `data` | `any` |
+| `data`     | `any`    |
 
 #### Returns
 
