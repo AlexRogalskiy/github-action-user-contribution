@@ -184,7 +184,7 @@
         "remark-frontmatter": "^3.0.0",
         "remark-gfm": "^1.0.0",
         "remark-github": "^10.1.0",
-        "remark-html": "^13.0.1",
+        "remark-html": "^15.0.1",
         "remark-lint": "^7.0.1",
         "remark-lint-fenced-code-flag": "^3.1.1",
         "remark-lint-no-html": "^2.0.1",
