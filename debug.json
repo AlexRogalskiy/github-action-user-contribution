@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1647509590373,
+  "startTime": 1647799594575,
   "success": true,
   "testResults": [
     {
@@ -37,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1647509592096,
-        "runtime": 1616,
+        "end": 1647799596044,
+        "runtime": 1390,
         "slow": false,
-        "start": 1647509590480
+        "start": 1647799594654
       },
       "skipped": false,
       "snapshot": {
@@ -72,7 +72,7 @@
           "ancestorTitles": [
             "Format Date test suite"
           ],
-          "duration": 7,
+          "duration": 3,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Format Date test suite should format {\"year\":2017}",
@@ -86,7 +86,7 @@
           "ancestorTitles": [
             "Format Date test suite"
           ],
-          "duration": 0,
+          "duration": 1,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Format Date test suite should format {\"from\":\"2017-12-03T00:00:00.000Z\"}",
@@ -100,7 +100,7 @@
           "ancestorTitles": [
             "Format Date test suite"
           ],
-          "duration": 0,
+          "duration": 1,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Format Date test suite should format {\"from\":\"2017-12-03\"}",
@@ -128,7 +128,7 @@
           "ancestorTitles": [
             "Format Date test suite"
           ],
-          "duration": 5,
+          "duration": 7,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Format Date test suite should fail if the date is in the future",
@@ -149,10 +149,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1647509593481,
-        "runtime": 1361,
+        "end": 1647799597479,
+        "runtime": 1398,
         "slow": false,
-        "start": 1647509592120
+        "start": 1647799596081
       },
       "skipped": false,
       "snapshot": {
@@ -170,7 +170,7 @@
           "ancestorTitles": [
             "my suite"
           ],
-          "duration": 8,
+          "duration": 7,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "my suite one of my .only test",
@@ -184,7 +184,7 @@
           "ancestorTitles": [
             "my suite"
           ],
-          "duration": 2,
+          "duration": 4,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "my suite other of my .only test",
@@ -2268,7 +2268,7 @@
           },
           "end": {
             "line": 38,
-            "column": 41
+            "column": 40
           }
         },
         "7": {
@@ -3769,7 +3769,7 @@
       },
       "inputSourceMap": null,
       "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-      "hash": "579fb7d2d36944bd8679fce9b01a41a4031423a4"
+      "hash": "a3fe1df7c69911641c9b5087984ddd1ecc66ccc1"
     },
     "/Users/user/repo/github-action-user-contribution/typings/standard-types.ts": {
       "path": "/Users/user/repo/github-action-user-contribution/typings/standard-types.ts",
@@ -7419,523 +7419,6 @@
       "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
       "hash": "b6503ed3b1c1f50d3d484467df0bbab55cbbd37b"
     },
-    "/Users/user/repo/github-action-user-contribution/tests/log.message.js": {
-      "path": "/Users/user/repo/github-action-user-contribution/tests/log.message.js",
-      "statementMap": {
-        "0": {
-          "start": {
-            "line": 32,
-            "column": 0
-          },
-          "end": {
-            "line": 70,
-            "column": 5
-          }
-        },
-        "1": {
-          "start": {
-            "line": 34,
-            "column": 14
-          },
-          "end": {
-            "line": 34,
-            "column": 31
-          }
-        },
-        "2": {
-          "start": {
-            "line": 35,
-            "column": 24
-          },
-          "end": {
-            "line": 44,
-            "column": 5
-          }
-        },
-        "3": {
-          "start": {
-            "line": 37,
-            "column": 8
-          },
-          "end": {
-            "line": 42,
-            "column": 9
-          }
-        },
-        "4": {
-          "start": {
-            "line": 38,
-            "column": 12
-          },
-          "end": {
-            "line": 38,
-            "column": 89
-          }
-        },
-        "5": {
-          "start": {
-            "line": 41,
-            "column": 12
-          },
-          "end": {
-            "line": 41,
-            "column": 75
-          }
-        },
-        "6": {
-          "start": {
-            "line": 45,
-            "column": 18
-          },
-          "end": {
-            "line": 52,
-            "column": 5
-          }
-        },
-        "7": {
-          "start": {
-            "line": 46,
-            "column": 8
-          },
-          "end": {
-            "line": 51,
-            "column": 9
-          }
-        },
-        "8": {
-          "start": {
-            "line": 47,
-            "column": 12
-          },
-          "end": {
-            "line": 47,
-            "column": 79
-          }
-        },
-        "9": {
-          "start": {
-            "line": 50,
-            "column": 12
-          },
-          "end": {
-            "line": 50,
-            "column": 65
-          }
-        },
-        "10": {
-          "start": {
-            "line": 54,
-            "column": 8
-          },
-          "end": {
-            "line": 62,
-            "column": 9
-          }
-        },
-        "11": {
-          "start": {
-            "line": 55,
-            "column": 25
-          },
-          "end": {
-            "line": 55,
-            "column": 65
-          }
-        },
-        "12": {
-          "start": {
-            "line": 56,
-            "column": 24
-          },
-          "end": {
-            "line": 56,
-            "column": 26
-          }
-        },
-        "13": {
-          "start": {
-            "line": 57,
-            "column": 12
-          },
-          "end": {
-            "line": 59,
-            "column": 15
-          }
-        },
-        "14": {
-          "start": {
-            "line": 58,
-            "column": 16
-          },
-          "end": {
-            "line": 58,
-            "column": 65
-          }
-        },
-        "15": {
-          "start": {
-            "line": 60,
-            "column": 12
-          },
-          "end": {
-            "line": 60,
-            "column": 28
-          }
-        },
-        "16": {
-          "start": {
-            "line": 61,
-            "column": 12
-          },
-          "end": {
-            "line": 61,
-            "column": 26
-          }
-        },
-        "17": {
-          "start": {
-            "line": 63,
-            "column": 8
-          },
-          "end": {
-            "line": 63,
-            "column": 22
-          }
-        },
-        "18": {
-          "start": {
-            "line": 66,
-            "column": 19
-          },
-          "end": {
-            "line": 66,
-            "column": 29
-          }
-        },
-        "19": {
-          "start": {
-            "line": 67,
-            "column": 8
-          },
-          "end": {
-            "line": 67,
-            "column": 83
-          }
-        },
-        "20": {
-          "start": {
-            "line": 69,
-            "column": 4
-          },
-          "end": {
-            "line": 69,
-            "column": 44
-          }
-        }
-      },
-      "fnMap": {
-        "0": {
-          "name": "(anonymous_0)",
-          "decl": {
-            "start": {
-              "line": 32,
-              "column": 1
-            },
-            "end": {
-              "line": 32,
-              "column": 2
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 32,
-              "column": 13
-            },
-            "end": {
-              "line": 70,
-              "column": 1
-            }
-          },
-          "line": 32
-        },
-        "1": {
-          "name": "(anonymous_1)",
-          "decl": {
-            "start": {
-              "line": 35,
-              "column": 24
-            },
-            "end": {
-              "line": 35,
-              "column": 25
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 35,
-              "column": 36
-            },
-            "end": {
-              "line": 44,
-              "column": 5
-            }
-          },
-          "line": 35
-        },
-        "2": {
-          "name": "(anonymous_2)",
-          "decl": {
-            "start": {
-              "line": 45,
-              "column": 18
-            },
-            "end": {
-              "line": 45,
-              "column": 19
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 45,
-              "column": 30
-            },
-            "end": {
-              "line": 52,
-              "column": 5
-            }
-          },
-          "line": 45
-        },
-        "3": {
-          "name": "filterObject",
-          "decl": {
-            "start": {
-              "line": 53,
-              "column": 13
-            },
-            "end": {
-              "line": 53,
-              "column": 25
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 53,
-              "column": 34
-            },
-            "end": {
-              "line": 64,
-              "column": 5
-            }
-          },
-          "line": 53
-        },
-        "4": {
-          "name": "(anonymous_4)",
-          "decl": {
-            "start": {
-              "line": 57,
-              "column": 27
-            },
-            "end": {
-              "line": 57,
-              "column": 28
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 57,
-              "column": 34
-            },
-            "end": {
-              "line": 59,
-              "column": 13
-            }
-          },
-          "line": 57
-        },
-        "5": {
-          "name": "getLogDate",
-          "decl": {
-            "start": {
-              "line": 65,
-              "column": 13
-            },
-            "end": {
-              "line": 65,
-              "column": 23
-            }
-          },
-          "loc": {
-            "start": {
-              "line": 65,
-              "column": 26
-            },
-            "end": {
-              "line": 68,
-              "column": 5
-            }
-          },
-          "line": 65
-        }
-      },
-      "branchMap": {
-        "0": {
-          "loc": {
-            "start": {
-              "line": 37,
-              "column": 8
-            },
-            "end": {
-              "line": 42,
-              "column": 9
-            }
-          },
-          "type": "if",
-          "locations": [
-            {
-              "start": {
-                "line": 37,
-                "column": 8
-              },
-              "end": {
-                "line": 42,
-                "column": 9
-              }
-            },
-            {
-              "start": {
-                "line": 37,
-                "column": 8
-              },
-              "end": {
-                "line": 42,
-                "column": 9
-              }
-            }
-          ],
-          "line": 37
-        },
-        "1": {
-          "loc": {
-            "start": {
-              "line": 46,
-              "column": 8
-            },
-            "end": {
-              "line": 51,
-              "column": 9
-            }
-          },
-          "type": "if",
-          "locations": [
-            {
-              "start": {
-                "line": 46,
-                "column": 8
-              },
-              "end": {
-                "line": 51,
-                "column": 9
-              }
-            },
-            {
-              "start": {
-                "line": 46,
-                "column": 8
-              },
-              "end": {
-                "line": 51,
-                "column": 9
-              }
-            }
-          ],
-          "line": 46
-        },
-        "2": {
-          "loc": {
-            "start": {
-              "line": 54,
-              "column": 8
-            },
-            "end": {
-              "line": 62,
-              "column": 9
-            }
-          },
-          "type": "if",
-          "locations": [
-            {
-              "start": {
-                "line": 54,
-                "column": 8
-              },
-              "end": {
-                "line": 62,
-                "column": 9
-              }
-            },
-            {
-              "start": {
-                "line": 54,
-                "column": 8
-              },
-              "end": {
-                "line": 62,
-                "column": 9
-              }
-            }
-          ],
-          "line": 54
-        }
-      },
-      "s": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0,
-        "10": 0,
-        "11": 0,
-        "12": 0,
-        "13": 0,
-        "14": 0,
-        "15": 0,
-        "16": 0,
-        "17": 0,
-        "18": 0,
-        "19": 0,
-        "20": 0
-      },
-      "f": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0
-      },
-      "b": {
-        "0": [
-          0,
-          0
-        ],
-        "1": [
-          0,
-          0
-        ],
-        "2": [
-          0,
-          0
-        ]
-      },
-      "inputSourceMap": null
-    },
     "/Users/user/repo/github-action-user-contribution/tests/utils.js": {
       "path": "/Users/user/repo/github-action-user-contribution/tests/utils.js",
       "statementMap": {
@@ -8900,6 +8383,523 @@
           0
         ],
         "4": [
+          0,
+          0
+        ]
+      },
+      "inputSourceMap": null
+    },
+    "/Users/user/repo/github-action-user-contribution/tests/log.message.js": {
+      "path": "/Users/user/repo/github-action-user-contribution/tests/log.message.js",
+      "statementMap": {
+        "0": {
+          "start": {
+            "line": 32,
+            "column": 0
+          },
+          "end": {
+            "line": 70,
+            "column": 5
+          }
+        },
+        "1": {
+          "start": {
+            "line": 34,
+            "column": 14
+          },
+          "end": {
+            "line": 34,
+            "column": 31
+          }
+        },
+        "2": {
+          "start": {
+            "line": 35,
+            "column": 24
+          },
+          "end": {
+            "line": 44,
+            "column": 5
+          }
+        },
+        "3": {
+          "start": {
+            "line": 37,
+            "column": 8
+          },
+          "end": {
+            "line": 42,
+            "column": 9
+          }
+        },
+        "4": {
+          "start": {
+            "line": 38,
+            "column": 12
+          },
+          "end": {
+            "line": 38,
+            "column": 89
+          }
+        },
+        "5": {
+          "start": {
+            "line": 41,
+            "column": 12
+          },
+          "end": {
+            "line": 41,
+            "column": 75
+          }
+        },
+        "6": {
+          "start": {
+            "line": 45,
+            "column": 18
+          },
+          "end": {
+            "line": 52,
+            "column": 5
+          }
+        },
+        "7": {
+          "start": {
+            "line": 46,
+            "column": 8
+          },
+          "end": {
+            "line": 51,
+            "column": 9
+          }
+        },
+        "8": {
+          "start": {
+            "line": 47,
+            "column": 12
+          },
+          "end": {
+            "line": 47,
+            "column": 79
+          }
+        },
+        "9": {
+          "start": {
+            "line": 50,
+            "column": 12
+          },
+          "end": {
+            "line": 50,
+            "column": 65
+          }
+        },
+        "10": {
+          "start": {
+            "line": 54,
+            "column": 8
+          },
+          "end": {
+            "line": 62,
+            "column": 9
+          }
+        },
+        "11": {
+          "start": {
+            "line": 55,
+            "column": 25
+          },
+          "end": {
+            "line": 55,
+            "column": 65
+          }
+        },
+        "12": {
+          "start": {
+            "line": 56,
+            "column": 24
+          },
+          "end": {
+            "line": 56,
+            "column": 26
+          }
+        },
+        "13": {
+          "start": {
+            "line": 57,
+            "column": 12
+          },
+          "end": {
+            "line": 59,
+            "column": 15
+          }
+        },
+        "14": {
+          "start": {
+            "line": 58,
+            "column": 16
+          },
+          "end": {
+            "line": 58,
+            "column": 65
+          }
+        },
+        "15": {
+          "start": {
+            "line": 60,
+            "column": 12
+          },
+          "end": {
+            "line": 60,
+            "column": 28
+          }
+        },
+        "16": {
+          "start": {
+            "line": 61,
+            "column": 12
+          },
+          "end": {
+            "line": 61,
+            "column": 26
+          }
+        },
+        "17": {
+          "start": {
+            "line": 63,
+            "column": 8
+          },
+          "end": {
+            "line": 63,
+            "column": 22
+          }
+        },
+        "18": {
+          "start": {
+            "line": 66,
+            "column": 19
+          },
+          "end": {
+            "line": 66,
+            "column": 29
+          }
+        },
+        "19": {
+          "start": {
+            "line": 67,
+            "column": 8
+          },
+          "end": {
+            "line": 67,
+            "column": 83
+          }
+        },
+        "20": {
+          "start": {
+            "line": 69,
+            "column": 4
+          },
+          "end": {
+            "line": 69,
+            "column": 44
+          }
+        }
+      },
+      "fnMap": {
+        "0": {
+          "name": "(anonymous_0)",
+          "decl": {
+            "start": {
+              "line": 32,
+              "column": 1
+            },
+            "end": {
+              "line": 32,
+              "column": 2
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 32,
+              "column": 13
+            },
+            "end": {
+              "line": 70,
+              "column": 1
+            }
+          },
+          "line": 32
+        },
+        "1": {
+          "name": "(anonymous_1)",
+          "decl": {
+            "start": {
+              "line": 35,
+              "column": 24
+            },
+            "end": {
+              "line": 35,
+              "column": 25
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 35,
+              "column": 36
+            },
+            "end": {
+              "line": 44,
+              "column": 5
+            }
+          },
+          "line": 35
+        },
+        "2": {
+          "name": "(anonymous_2)",
+          "decl": {
+            "start": {
+              "line": 45,
+              "column": 18
+            },
+            "end": {
+              "line": 45,
+              "column": 19
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 45,
+              "column": 30
+            },
+            "end": {
+              "line": 52,
+              "column": 5
+            }
+          },
+          "line": 45
+        },
+        "3": {
+          "name": "filterObject",
+          "decl": {
+            "start": {
+              "line": 53,
+              "column": 13
+            },
+            "end": {
+              "line": 53,
+              "column": 25
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 53,
+              "column": 34
+            },
+            "end": {
+              "line": 64,
+              "column": 5
+            }
+          },
+          "line": 53
+        },
+        "4": {
+          "name": "(anonymous_4)",
+          "decl": {
+            "start": {
+              "line": 57,
+              "column": 27
+            },
+            "end": {
+              "line": 57,
+              "column": 28
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 57,
+              "column": 34
+            },
+            "end": {
+              "line": 59,
+              "column": 13
+            }
+          },
+          "line": 57
+        },
+        "5": {
+          "name": "getLogDate",
+          "decl": {
+            "start": {
+              "line": 65,
+              "column": 13
+            },
+            "end": {
+              "line": 65,
+              "column": 23
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 65,
+              "column": 26
+            },
+            "end": {
+              "line": 68,
+              "column": 5
+            }
+          },
+          "line": 65
+        }
+      },
+      "branchMap": {
+        "0": {
+          "loc": {
+            "start": {
+              "line": 37,
+              "column": 8
+            },
+            "end": {
+              "line": 42,
+              "column": 9
+            }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": {
+                "line": 37,
+                "column": 8
+              },
+              "end": {
+                "line": 42,
+                "column": 9
+              }
+            },
+            {
+              "start": {
+                "line": 37,
+                "column": 8
+              },
+              "end": {
+                "line": 42,
+                "column": 9
+              }
+            }
+          ],
+          "line": 37
+        },
+        "1": {
+          "loc": {
+            "start": {
+              "line": 46,
+              "column": 8
+            },
+            "end": {
+              "line": 51,
+              "column": 9
+            }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": {
+                "line": 46,
+                "column": 8
+              },
+              "end": {
+                "line": 51,
+                "column": 9
+              }
+            },
+            {
+              "start": {
+                "line": 46,
+                "column": 8
+              },
+              "end": {
+                "line": 51,
+                "column": 9
+              }
+            }
+          ],
+          "line": 46
+        },
+        "2": {
+          "loc": {
+            "start": {
+              "line": 54,
+              "column": 8
+            },
+            "end": {
+              "line": 62,
+              "column": 9
+            }
+          },
+          "type": "if",
+          "locations": [
+            {
+              "start": {
+                "line": 54,
+                "column": 8
+              },
+              "end": {
+                "line": 62,
+                "column": 9
+              }
+            },
+            {
+              "start": {
+                "line": 54,
+                "column": 8
+              },
+              "end": {
+                "line": 62,
+                "column": 9
+              }
+            }
+          ],
+          "line": 54
+        }
+      },
+      "s": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0
+      },
+      "f": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "b": {
+        "0": [
+          0,
+          0
+        ],
+        "1": [
+          0,
+          0
+        ],
+        "2": [
           0,
           0
         ]
