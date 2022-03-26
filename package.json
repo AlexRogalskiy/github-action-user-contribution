@@ -58,6 +58,7 @@
         "release-dry-run": "release-it minor --dry-run --ci --no-git.commit --no-git.push --no-git.tag --no-git.tagName='v${version}' --no-git.requireCleanWorkingDir --no-git.requireUpstream --no-github.release --no-npm.publish",
         "postpublish": "npm run clean",
         "clean": "del-cli --dot=true dist coverage",
+        "coverage:view": "[ -f coverage/lcov-report/index.html ] && open coverage/lcov-report/index.html",
         "precommit": "npm run lint:staged",
         "postinstall": "[ -f node_modules/.bin/husky ] && husky install || echo no husky installed.",
         "prebuild": "npm run clean",
