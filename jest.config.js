@@ -91,7 +91,6 @@ module.exports = {
         }]
     ],
     setupFilesAfterEnv: [
-        "jest-extended",
         "<rootDir>/tests/jest-default-timeout.js",
         "<rootDir>/tests/setup-tests.js",
         "<rootDir>/tests/jest-test-framework.js"
