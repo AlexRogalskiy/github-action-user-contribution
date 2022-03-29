@@ -35,8 +35,7 @@ module.exports = {
     ],
     watchPathIgnorePatterns: [
         "<rootDir>/src.*",
-        "<rootDir>/tsconfig.json",
-        "<rootDir>/src.*"
+        "<rootDir>/tsconfig.json"
     ],
     transform: {
         "^.+\\.(js|ts)$": "ts-jest",
