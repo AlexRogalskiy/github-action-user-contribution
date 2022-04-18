@@ -176,7 +176,7 @@
         "markdown-magic": "^2.5.2",
         "markdownlint-cli": "^0.27.1",
         "mockdate": "^3.0.5",
-        "moment": "^2.29.1",
+        "moment": "^2.29.3",
         "node-debug": "^0.1.0",
         "nodemon": "^2.0.9",
         "prettier": "^2.1.2",
