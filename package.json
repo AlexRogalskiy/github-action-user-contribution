@@ -43,7 +43,7 @@
         "git:clean": "git stash && git clean -fdX",
         "monitor": "monika -c monika.yml",
         "docs": "typedoc",
-        "docs:mdd": "typedoc --plugin typedoc-plugin-markdown",
+        "docs:mdd": "typedoc --plugin typedoc-plugin-markdown --hideInPageTOC true --hideBreadcrumbs true",
         "docs:md": "md-magic --path '**/*.md' --ignore 'node_modules' --config ./markdown.config.js",
         "compodocs": "compodoc -p tsconfig.doc.json -d docs",
         "compodocs:serve": "compodoc -p tsconfig.doc.json -d docs -s",
