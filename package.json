@@ -210,7 +210,7 @@
         "retext-english": "^3.0.4",
         "retext-indefinite-article": "^2.0.1",
         "retext-redundant-acronyms": "^3.0.0",
-        "retext-sentence-spacing": "^4.0.0",
+        "retext-sentence-spacing": "^5.0.0",
         "retext-spell": "^4.0.0",
         "retext-syntax-mentions": "^2.1.1",
         "retext-syntax-urls": "^2.0.0",
