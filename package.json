@@ -200,7 +200,7 @@
         "remark-preset-davidtheclark": "^0.12.0",
         "remark-preset-lint-markdown-style-guide": "^3.0.1",
         "remark-preset-lint-recommended": "^4.0.1",
-        "remark-preset-wooorm": "^8.0.0",
+        "remark-preset-wooorm": "^9.0.0",
         "remark-retext": "^4.0.0",
         "remark-stringify": "^10.0.2",
         "remark-toc": "^7.2.0",
