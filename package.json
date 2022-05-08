@@ -158,7 +158,7 @@
         "folio": "^0.3.18",
         "git-cz": "^4.1.0",
         "glow": "^1.2.2",
-        "husky": "^5.0.8",
+        "husky": "^8.0.0",
         "jest": "^27.0.5",
         "jest-circus": "^27.0.5",
         "jest-environment-node-debug": "^2.0.0",
