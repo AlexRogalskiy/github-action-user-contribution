@@ -6,5 +6,7 @@ tests/
 docs/
 scripts/
 reports/
+jest/
+eslint-local-rules/
 
 **/*.config.js

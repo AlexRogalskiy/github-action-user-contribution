@@ -47,6 +47,7 @@ pids
 # Build and temp folders
 .settings/
 .idea/
+.cache/
 .reporting/
 bin/
 tmp/
@@ -58,7 +59,6 @@ test-results/
 target/
 log/
 site/
-.cache
 node_modules
 .vercel
 reports

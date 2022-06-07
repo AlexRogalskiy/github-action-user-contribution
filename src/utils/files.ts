@@ -21,10 +21,9 @@ export const ensureDirExists = (dir: string, options: MakeDirectoryOptions = { r
     existsSync(dir) || mkdirSync(dir, options)
 }
 
-export const getFilesizeInBytes = (filename: string): number => {
-    //return await fs.promises.stat(file)).size
-    return statSync(filename).size
-}
+export const getFilesizeInBytes = (filename: string): number =>
+    // return await fs.promises.stat(file)).size
+    statSync(filename).size
 
 export const storeData = (filePath: string, fileName: string, data: any): string => {
     ensureDirExists(filePath)
@@ -52,13 +51,10 @@ export const isFileExists = (fileName: string, mode = constants.F_OK | constants
     }
 }
 
-export const getSizeInBytesAsync = async (filename: string): Promise<number> => {
-    return (await promises.stat(filename)).size
-}
+export const getSizeInBytesAsync = async (filename: string): Promise<number> =>
+    (await promises.stat(filename)).size
 
-export const getSizeInBytes = (filename: string): number => {
-    return statSync(filename).size
-}
+export const getSizeInBytes = (filename: string): number => statSync(filename).size
 
 export const createWritableStream = (filename: string): WriteStream => {
     closeSync(openSync(filename, 'w'))

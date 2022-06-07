@@ -39,9 +39,7 @@ const COLORS = {
     WHITE: getColor('\u001B[1;37m'),
 }
 
-const getTime = (format = DATETIME_FORMAT, utc = false): string => {
-    return dateFormat(Date.now(), format, utc)
-}
+const getTime = (format = DATETIME_FORMAT, utc = false): string => dateFormat(Date.now(), format, utc)
 
 export const toLog = (message: string, ...args: any[]): void => {
     console.group('>>>')
@@ -49,11 +47,11 @@ export const toLog = (message: string, ...args: any[]): void => {
     console.groupEnd()
 }
 
-export const createLogger = <T>(logger: Logger<T, any>, processor?: Processor<T, T>): Logger<T, any> => {
-    return (message, ...args) => {
+export const createLogger =
+    <T>(logger: Logger<T, any>, processor?: Processor<T, T>): Logger<T, any> =>
+    (message, ...args) => {
         logger(processor ? processor(message) : message, ...args)
     }
-}
 
 export const logs = createLogger((message, ...args) =>
     console.log(`${COLORS.PURPLE}${getTime()}:${COLORS.RESET}`, message, args)

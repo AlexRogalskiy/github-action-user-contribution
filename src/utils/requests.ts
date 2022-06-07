@@ -10,7 +10,7 @@ const checkStatus = async (response: Response): Promise<Response> => {
 
     const error = new ResponseError(response.statusText, response)
 
-    return Promise.reject(error)
+    throw error
 }
 
 export const fetchAsJson = async (url: string, options: RequestInit = {}): Promise<any> => {

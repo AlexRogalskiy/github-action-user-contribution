@@ -3,13 +3,10 @@ import decamelize from 'decamelize'
 
 import schema from '../configs/schema'
 
-export const getRequiredProperty = (property: string): string => {
-    return getProperty(property, { required: true })
-}
+export const getRequiredProperty = (property: string): string => getProperty(property, { required: true })
 
-export const getProperty = (property: string, options?: core.InputOptions): string => {
-    return core.getInput(property, options)
-}
+export const getProperty = (property: string, options?: core.InputOptions): string =>
+    core.getInput(property, options)
 
 export const getProperties = (): any => {
     const input = Object.fromEntries(

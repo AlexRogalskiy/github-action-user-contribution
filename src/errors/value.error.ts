@@ -17,6 +17,4 @@ export class ValueError extends GeneralError {
     }
 }
 
-export const valueError = (message: string, ...args: any[]): ValueError => {
-    return new ValueError(message, args)
-}
+export const valueError = (message: string, ...args: any[]): ValueError => new ValueError(message, args)

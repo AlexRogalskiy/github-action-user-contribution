@@ -24,9 +24,9 @@ const parseUserContribution = (content: string, colorPalette: ColorPalette): Con
     const rawCells = $('.js-calendar-graph rect[data-count]')
         .toArray()
         .map(x => {
-            const level = +x['attribs']['data-level']
-            const count = +x['attribs']['data-count']
-            const date = x['attribs']['data-date']
+            const level = 'attribs' in x ? +x.attribs['data-level'] : 0
+            const count = 'attribs' in x ? +x.attribs['data-count'] : 0
+            const date = 'attribs' in x ? x.attribs['data-date'] : 0
 
             const color = colorPalette[level]
 
@@ -68,17 +68,17 @@ const parseUserContribution = (content: string, colorPalette: ColorPalette): Con
 
 // returns the position of the svg elements, accounting for it's transform and it's parent transform
 const getSvgPosition = (elem: cheerio.Element): Position => {
-    if (!elem || elem['tagName'] === 'svg') {
+    if (!elem || ('tagName' in elem && elem.tagName === 'svg')) {
         return { x: 0, y: 0 }
     }
 
     const position = getSvgPosition(elem.parent)
 
-    if (elem['attribs'].x) position.x += +elem['attribs'].x
-    if (elem['attribs'].y) position.y += +elem['attribs'].y
+    if ('attribs' in elem && elem.attribs.x) position.x += +elem.attribs.x
+    if ('attribs' in elem && elem.attribs.y) position.y += +elem.attribs.y
 
-    if (elem['attribs'].transform) {
-        const match = elem['attribs'].transform.match(/translate\( *([\d.]+) *, *([\d.]+) *\)/)
+    if ('attribs' in elem && elem.attribs.transform) {
+        const match = elem.attribs.transform.match(/translate\( *([\d.]+) *, *([\d.]+) *\)/)
 
         if (match) {
             position.x += +match[1]
@@ -147,8 +147,12 @@ const runOperation = async (): Promise<void> => {
     const groupedDates = result.cells
         .filter(c => {
             const d = moment(c.date)
-            const from = moment(options.accountOptions.dateRange['from'])
-            const to = moment(options.accountOptions.dateRange['to'])
+            const from = moment(
+                'from' in options.accountOptions.dateRange ? options.accountOptions.dateRange.from : 0
+            )
+            const to = moment(
+                'to' in options.accountOptions.dateRange ? options.accountOptions.dateRange.to : 0
+            )
 
             return d.isBetween(from, to, 'days', '[]')
         })

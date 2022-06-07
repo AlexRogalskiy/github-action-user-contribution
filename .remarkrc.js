@@ -1,8 +1,11 @@
 const fs = require("fs");
+const path = require("path");
+const url = require("url");
 const unified = require("unified");
 const headings = require("rehype-autolink-headings");
 
-const dictionary = fs.readFileSync("./dictionary.txt");
+const dictionary = fs.readFileSync(url.pathToFileURL(path.join("./dictionary.txt")));
+
 const plugins = [
     ["remark-frontmatter", "yaml"],
     "remark-github",

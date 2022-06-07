@@ -11,8 +11,8 @@ module.exports = {
     verbose: true,
     clearMocks: true,
     restoreMocks: true,
-    globalSetup: './tests/jest-global-setup.js',
-    globalTeardown: './tests/jest-global-teardown.js',
+    globalSetup: ['<rootDir>/jest/jest-global-setup.js', '<rootDir>/jest/global-setup.js'],
+    globalTeardown: ['<rootDir>/jest/jest-global-teardown.js', '<rootDir>/global-teardown.js'],
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
     testEnvironment: 'node',
     testMatch: ['**/*.test.(ts|js)', '**/__tests__/**/?(*.)+(spec|test).ts'],
@@ -60,6 +60,6 @@ module.exports = {
             ancestorSeparator: " - "
         }]
     ],
-    setupFilesAfterEnv: ['jest-extended', '<rootDir>/tests/jest-default-timeout.js', '<rootDir>/tests/setupTests.js'],
+    setupFilesAfterEnv: ['jest-extended', '<rootDir>/jest/jest-env-timeout.js', '<rootDir>/jest/jest-env-mock.js'],
     watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
 }

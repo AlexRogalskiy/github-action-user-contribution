@@ -4,9 +4,12 @@
         "@typescript-eslint",
         "spellcheck",
         "eslint-comments",
+        "eslint-plugin-local-rules",
+        "eslint-plugin-import",
         "eslint-plugin-import-helpers",
         "cypress",
-        "unicorn"
+        "unicorn",
+        "prettier"
     ],
     "settings": {
         "import/parsers": {
@@ -17,13 +20,16 @@
         }
     },
     "extends": [
+        "airbnb-base",
         "eslint:recommended",
         "plugin:github/recommended",
         "plugin:cypress/recommended",
         "plugin:eslint-comments/recommended",
         "plugin:unicorn/recommended",
+        "plugin:jest/recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier"
+        "prettier",
+        "google"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -32,7 +38,7 @@
         "project": "./tsconfig.json"
     },
     "rules": {
-        "indent": ["error", 4],
+        "indent": ["warn", 4],
         "linebreak-style": ["error", "unix"],
         "jsx-quotes": ["error", "prefer-double"],
         "quotes": [
@@ -42,9 +48,12 @@
                 "avoidEscape": true
             }
         ],
+        "local-rules/disallow-identifiers": "off",
         "comma-dangle": ["error", "only-multiline"],
+        "filenames/match-regex": "off",
         "no-case-declarations": "off",
         "eqeqeq": "warn",
+        "radix": "warn",
         "quote-props": ["warn", "consistent-as-needed"],
         "no-console": "off",
         "no-shadow": "off",
@@ -52,7 +61,21 @@
         "no-caller": "error",
         "no-eval": "error",
         "no-undef": "warn",
+        "no-param-reassign": "warn",
+        "no-new": "warn",
+        "no-bitwise": "warn",
+        "require-jsdoc": "warn",
+        "valid-jsdoc": "warn",
+        "import/prefer-default-export": "warn",
+        "no-unreachable-loop": "warn",
         "no-implied-eval": "error",
+        "no-unused-expressions": "warn",
+        "no-use-before-define": "warn",
+        "no-restricted-syntax": "warn",
+        "default-param-last": "warn",
+        "i18n-text/no-en": "warn",
+        "arrow-parens": "warn",
+        "import/extensions": "warn",
         "no-extend-native": "error",
         "no-implicit-globals": "error",
         "no-multi-spaces": "error",
@@ -67,6 +90,7 @@
         "camelcase": "off",
         "no-invalid-this": "off",
         "no-angle-bracket-type-assertion": "off",
+        "unicorn/no-await-expression-member": "off",
         "unicorn/filename-case": "off",
         "unicorn/no-array-reduce": "off",
         "unicorn/prevent-abbreviations": "off",
