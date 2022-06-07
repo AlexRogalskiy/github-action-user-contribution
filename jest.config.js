@@ -1,44 +1,63 @@
-const path = require('path');
+// For a detailed explanation regarding each configuration property, visit:
+// https://jestjs.io/docs/en/configuration.html
+const path = require("path");
 
 const ROOT = path.resolve(__dirname);
-const SRC = path.resolve(ROOT, 'src');
-const LOCAL_PACKAGES = path.resolve(ROOT, 'packages');
-const COVERAGE_DIR = '<rootDir>/build2/reports/coverage/jest';
-const REPORT_DIR = '<rootDir>/build2/reports/unit';
+const SRC = path.resolve(ROOT, "src");
+const LOCAL_PACKAGES = path.resolve(ROOT, "packages");
+const COVERAGE_DIR = "<rootDir>/build2/reports/coverage/jest";
+const REPORT_DIR = "<rootDir>/build2/reports/unit";
 
 module.exports = {
-    roots: ['<rootDir>/tests/'],
+    globals: {
+        "ts-jest": {
+            isolatedModules: "true"
+        }
+    },
+    roots: ["<rootDir>/tests/"],
     verbose: true,
     clearMocks: true,
     restoreMocks: true,
-    globalSetup: ['<rootDir>/jest/jest-global-setup.js', '<rootDir>/jest/global-setup.js'],
-    globalTeardown: ['<rootDir>/jest/jest-global-teardown.js', '<rootDir>/global-teardown.js'],
-    moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-    testEnvironment: 'node',
-    testMatch: ['**/*.test.(ts|js)', '**/__tests__/**/?(*.)+(spec|test).ts'],
-    testRunner: 'jest-circus/runner',
-    testPathIgnorePatterns: ['/node_modules/', '/__fixtures__/', '/spec/'],
+    setupFiles: [
+        "<rootDir>/tests/setup-jest.js"
+    ],
+    moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+    testEnvironment: "node",
+    testMatch: ["**/*.test.(ts|js)", "**/__tests__/**/?(*.)+(spec|test).(ts|js)"],
+    testRunner: "jest-circus/runner",
+    testPathIgnorePatterns: [
+        "<rootDir>/node_modules.*",
+        "<rootDir>/__fixtures__.*",
+        "<rootDir>/spec.*"
+    ],
+    watchPathIgnorePatterns: [
+        "<rootDir>/src.*",
+        "<rootDir>/tsconfig.json"
+    ],
+    globalSetup: ["<rootDir>/jest/jest-global-setup.js", "<rootDir>/jest/global-setup.js"],
+    globalTeardown: ["<rootDir>/jest/jest-global-teardown.js", "<rootDir>/global-teardown.js"],
     transform: {
-        '^.+\\.(js|ts)$': 'ts-jest',
+        "^.+\\.(js|ts)$": "ts-jest",
+        "^.+\\.html$": "./jest/htmlLoader.js",
+        "^.+\\.css$": "./jest/cssLoader.js"
     },
     snapshotSerializers: [
-        '<rootDir>/node_modules/jest-html'
+        "<rootDir>/node_modules/jest-html"
     ],
     collectCoverage: true,
     collectCoverageFrom: [
-        '**/*.(ts|js)',
-        '!**/*.d.ts',
-        '!**/*.folio.ts',
-        '!**/*.spec.ts',
-        '!**/dist/**',
-        '!**/node_modules/**',
-        '!**/vendor/**',
-        '!**/generated/**',
-        '!**/__fixtures__/**',
-        '!**/scenarios/**',
-        '!**/redirects/**',
+        "**/*.(ts|js)",
+        "!**/*.d.ts",
+        "!**/*.folio.ts",
+        "!**/*.spec.ts",
+        "!**/dist/**",
+        "!**/node_modules/**",
+        "!**/vendor/**",
+        "!**/generated/**",
+        "!**/__fixtures__/**",
+        "!**/scenarios/**",
+        "!**/redirects/**",
     ],
-    coveragePathIgnorePatterns: ['/node_modules/'],
     coverageThreshold: {
         global: {
             branches: 4,
@@ -47,12 +66,18 @@ module.exports = {
             statements: 4,
         },
     },
-    coverageDirectory: './coverage',
-    testResultsProcessor: 'jest-sonar-reporter',
-    coverageReporters: ['json', 'lcov', 'text', 'clover', 'html'],
+    coverageDirectory: "<rootDir>/coverage",
+    testResultsProcessor: "jest-sonar-reporter",
+    coverageReporters: [
+        "json",
+        "lcov",
+        "text",
+        "clover",
+        "html"
+    ],
     reporters: [
-        'default',
-        ['jest-junit', {
+        "default",
+        ["jest-junit", {
             usePathForSuiteName: true,
             suiteNameTemplate: "{filename}",
             outputName: "coverage/jest-junit/junit.xml",
@@ -60,6 +85,13 @@ module.exports = {
             ancestorSeparator: " - "
         }]
     ],
-    setupFilesAfterEnv: ['jest-extended', '<rootDir>/jest/jest-env-timeout.js', '<rootDir>/jest/jest-env-mock.js'],
-    watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
+    watchPlugins: [
+        "jest-watch-select-projects",
+        "jest-watch-typeahead/filename",
+        "jest-watch-typeahead/testname"
+    ],
+    setupFilesAfterEnv: ["jest-extended", "<rootDir>/jest/jest-env-timeout.js", "<rootDir>/jest/jest-env-mock.js"],
+    coveragePathIgnorePatterns: [
+        "<rootDir>/node_modules/"
+    ],
 }

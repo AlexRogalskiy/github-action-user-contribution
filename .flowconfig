@@ -1,0 +1,13 @@
+[ignore]
+.*/node_modules/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+esproposal.export_star_as=enable
+module.file_ext=.js
+module.file_ext=.ts

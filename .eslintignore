@@ -9,4 +9,6 @@ reports/
 jest/
 eslint-local-rules/
 
-**/*.config.js
+**/*.eslintrc*.js
+**/*.config*.js
+index.d.ts

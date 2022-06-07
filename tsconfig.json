@@ -1,5 +1,5 @@
 {
-    "compileOnSave": false,
+    "extends": "./tsconfig-base.json",
     "compilerOptions": {
         "strict": false,
         "allowJs": true,

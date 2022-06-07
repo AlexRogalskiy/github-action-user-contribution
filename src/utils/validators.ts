@@ -1,10 +1,25 @@
+/*
+ * Copyright (C) 2021 The SensibleMetrics team (http://sensiblemetrics.io/)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 import { Optional } from '../../typings/standard-types'
 
 import { isFileExists } from './files'
 
 export const getType = (obj: any): Optional<string> => {
     const value: string = Object.prototype.toString.call(obj)
-    const result = value.match(/\s(\w+)/)
+    const result = /\s(\w+)/.exec(value)
 
     return result && result[1].toLowerCase()
 }
@@ -40,9 +55,9 @@ export const isNumber = (value: any): boolean =>
 
 /**
  * Returns a boolean indicating whether the object has the specified property.
- * @param {Object} obj An object.
- * @param {String} prop A property name.
- * @return {Boolean}
+ * @param obj - n object.
+ * @param prop - A property name.
+ * @returns {Boolean}
  */
 export const hasProperty = (obj: any, prop: Optional<PropertyKey>): boolean => {
     if (isNullOrUndefined(obj)) return false

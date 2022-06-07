@@ -1,1 +1,14 @@
-CHANGELOG.md
+node_modules
+.changeset
+.circleci
+.dependabot
+.github
+.husky
+.dist
+docs
+images
+jest
+scripts
+
+*.md
+
