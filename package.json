@@ -189,7 +189,7 @@
         "markdown-link-check": "^3.10.2",
         "markdown-magic": "^2.6.0",
         "markdownlint-cli": "^0.31.1",
-        "lit-analyzer": "^1.2.1",
+        "lit-analyzer": "^2.0.0-pre",
         "loglevel": "^1.8.0",
         "mockdate": "^3.0.5",
         "moment": "^2.29.3",
