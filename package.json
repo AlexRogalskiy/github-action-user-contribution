@@ -114,7 +114,7 @@
         "@semantic-release/npm": "^9.0.1",
         "@semantic-release/release-notes-generator": "^10.0.3",
         "@changesets/cli": "^2.16.0",
-        "@compodoc/compodoc": "^1.1.15",
+        "@compodoc/compodoc": "^1.1.19",
         "@hyperjumptech/monika": "^1.6.8",
         "@theowenyoung/remark-lint-no-dead-urls": "^1.1.0",
         "@types/cheerio": "^0.22.31",
