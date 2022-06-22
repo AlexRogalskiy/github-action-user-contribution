@@ -237,7 +237,7 @@
         "textlint": "^12.1.0",
         "textlint-rule-common-misspellings": "^1.0.1",
         "textlint-rule-terminology": "^2.1.5",
-        "typedoc-plugin-markdown": "^3.11.14"
+        "typedoc-plugin-markdown": "^3.12.1"
     },
     "jestSonar": {
         "reportPath": "reports",
