@@ -137,7 +137,7 @@
         "cz-conventional-changelog": "^3.3.0",
         "dateformat": "^5.0.3",
         "decamelize": "^6.0.0",
-        "del-cli": "^4.0.1",
+        "del-cli": "^5.0.0",
         "dictionary-en": "^3.2.0",
         "dockerfile_lint": "^0.3.4",
         "editorconfig-checker": "^4.0.2",
