@@ -227,7 +227,7 @@
         "retext-syntax-urls": "^3.1.2",
         "semantic-release": "^19.0.2",
         "remark-stringify": "^10.0.2",
-        "sonarqube-scanner": "^2.8.1",
+        "sonarqube-scanner": "^3.0.0",
         "source-map-explorer": "^2.5.2",
         "ts-jest": "^28.0.4",
         "ts-node": "^10.8.1",
