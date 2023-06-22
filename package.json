@@ -129,7 +129,7 @@
         "@typescript-eslint/typescript-estree": "^5.27.0",
         "@vercel/ncc": "^0.34.0",
         "await-sleep": "^0.0.1",
-        "boxen": "^6.2.1",
+        "boxen": "^7.0.0",
         "codecov": "^3.8.3",
         "conventional-changelog-cli": "^2.2.2",
         "coveralls": "^3.1.1",
