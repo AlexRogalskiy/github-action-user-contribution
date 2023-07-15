@@ -157,7 +157,7 @@
         "eslint-plugin-jest": "^26.5.1",
         "eslint-plugin-local-rules": "^1.1.0",
         "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-prettier": "^5.0.0",
         "eslint-plugin-spellcheck": "^0.0.19",
         "eslint-plugin-unicorn": "^42.0.0",
         "expect": "^28.1.0",
