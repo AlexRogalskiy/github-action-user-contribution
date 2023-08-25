@@ -170,7 +170,7 @@
         "if-env": "1.0.4",
         "jest": "^28.1.0",
         "jest-circus": "^28.1.0",
-        "jest-cli": "^28.1.0",
+        "jest-cli": "^29.0.0",
         "jest-dev-server": "^6.0.3",
         "glow": "^1.2.2",
         "jest-environment-node-debug": "^2.0.0",
