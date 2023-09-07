@@ -127,7 +127,7 @@
         "@typescript-eslint/eslint-plugin": "^5.27.0",
         "@typescript-eslint/parser": "^5.27.0",
         "@typescript-eslint/typescript-estree": "^5.27.0",
-        "@vercel/ncc": "^0.34.0",
+        "@vercel/ncc": "^0.38.0",
         "await-sleep": "^0.0.1",
         "boxen": "^6.2.1",
         "codecov": "^3.8.3",
