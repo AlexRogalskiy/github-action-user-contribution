@@ -200,7 +200,7 @@
         "release-it": "^15.0.0",
         "remark-cli": "^10.0.1",
         "remark-comment-config": "^7.0.1",
-        "remark-frontmatter": "^4.0.1",
+        "remark-frontmatter": "^5.0.0",
         "remark-gfm": "^3.0.1",
         "remark-github": "^11.2.3",
         "remark-html": "^15.0.1",
