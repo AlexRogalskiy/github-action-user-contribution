@@ -199,7 +199,7 @@
         "rehype-autolink-headings": "^6.1.1",
         "release-it": "^15.0.0",
         "remark-cli": "^10.0.1",
-        "remark-comment-config": "^7.0.1",
+        "remark-comment-config": "^8.0.0",
         "remark-frontmatter": "^4.0.1",
         "remark-gfm": "^3.0.1",
         "remark-github": "^11.2.3",
