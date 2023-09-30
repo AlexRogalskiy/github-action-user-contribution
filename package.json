@@ -215,7 +215,7 @@
         "remark-preset-wooorm": "^9.1.0",
         "remark-retext": "^5.0.1",
         "remark-toc": "^8.0.1",
-        "remark-validate-links": "^11.0.2",
+        "remark-validate-links": "^13.0.0",
         "retext-diacritics": "^4.2.0",
         "retext-emoji": "^8.1.0",
         "retext-english": "^4.1.0",
