@@ -203,7 +203,7 @@
         "remark-frontmatter": "^4.0.1",
         "remark-gfm": "^3.0.1",
         "remark-github": "^11.2.3",
-        "remark-html": "^15.0.1",
+        "remark-html": "^16.0.0",
         "remark-lint": "^9.1.1",
         "remark-lint-no-html": "^3.1.1",
         "node-debug": "^0.1.0",
