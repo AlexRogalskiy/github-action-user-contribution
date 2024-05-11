@@ -159,7 +159,7 @@
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-prettier": "^4.0.0",
         "eslint-plugin-spellcheck": "^0.0.19",
-        "eslint-plugin-unicorn": "^42.0.0",
+        "eslint-plugin-unicorn": "^53.0.0",
         "expect": "^28.1.0",
         "eslint-plugin-sonarjs": "^0.12.0",
         "eslint-plugin-tsdoc": "^0.2.14",
