@@ -162,7 +162,7 @@
         "eslint-plugin-unicorn": "^42.0.0",
         "expect": "^28.1.0",
         "eslint-plugin-sonarjs": "^0.12.0",
-        "eslint-plugin-tsdoc": "^0.2.14",
+        "eslint-plugin-tsdoc": "^0.3.0",
         "folio": "^0.3.18",
         "git-cz": "^4.9.0",
         "git-http-mock-server": "^2.0.0",
