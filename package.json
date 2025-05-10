@@ -117,7 +117,7 @@
         "@compodoc/compodoc": "^1.1.15",
         "@hyperjumptech/monika": "^1.6.8",
         "@theowenyoung/remark-lint-no-dead-urls": "^1.1.0",
-        "@types/cheerio": "^0.22.31",
+        "@types/cheerio": "^1.0.0",
         "@types/eslint": "^8.4.2",
         "@types/jest": "^28.1.1",
         "@types/lodash.mergewith": "^4.6.7",
