@@ -224,7 +224,7 @@
         "retext-sentence-spacing": "^5.2.0",
         "retext-spell": "^5.1.0",
         "retext-syntax-mentions": "^3.1.0",
-        "retext-syntax-urls": "^3.1.2",
+        "retext-syntax-urls": "^4.0.0",
         "semantic-release": "^19.0.2",
         "remark-stringify": "^10.0.2",
         "sonarqube-scanner": "^2.8.1",
