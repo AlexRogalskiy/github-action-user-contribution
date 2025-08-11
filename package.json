@@ -166,7 +166,7 @@
         "folio": "^0.3.18",
         "git-cz": "^4.9.0",
         "git-http-mock-server": "^2.0.0",
-        "husky": "^8.0.1",
+        "husky": "^9.0.0",
         "if-env": "1.0.4",
         "jest": "^28.1.0",
         "jest-circus": "^28.1.0",
