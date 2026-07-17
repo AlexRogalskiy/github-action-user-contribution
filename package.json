@@ -150,7 +150,7 @@
         "eslint-plugin-cypress": "^2.12.1",
         "dtslint": "^4.1.6",
         "eslint-friendly-formatter": "^4.0.1",
-        "eslint-plugin-eslint-comments": "^3.2.0",
+        "@eslint-community/eslint-plugin-eslint-comments": "^3.2.0",
         "eslint-plugin-github": "^4.3.6",
         "eslint-plugin-import": "^2.26.0",
         "eslint-plugin-import-helpers": "^1.2.1",
