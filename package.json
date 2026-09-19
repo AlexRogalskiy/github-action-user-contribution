@@ -217,7 +217,7 @@
         "remark-toc": "^8.0.1",
         "remark-validate-links": "^11.0.2",
         "retext-diacritics": "^4.2.0",
-        "retext-emoji": "^8.1.0",
+        "retext-emoji": "^9.0.0",
         "retext-english": "^4.1.0",
         "retext-indefinite-article": "^4.1.0",
         "retext-redundant-acronyms": "^4.3.0",
